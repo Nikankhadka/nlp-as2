@@ -5,8 +5,8 @@
     "macro_f1": 0.1955
   },
   "logreg_tfidf_full_test": {
-    "accuracy": 0.6526,
-    "macro_f1": 0.4686,
+    "accuracy": 0.7072,
+    "macro_f1": 0.5128,
     "rows": 1134
   },
   "model_note": "Uses gold aspect terms and predicts aspect-term polarity from marked sentence context."
