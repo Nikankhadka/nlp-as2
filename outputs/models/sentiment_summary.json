@@ -4,10 +4,34 @@
     "accuracy": 0.642,
     "macro_f1": 0.1955
   },
-  "logreg_tfidf_full_test": {
-    "accuracy": 0.7072,
-    "macro_f1": 0.5128,
+  "selection_metric": "macro_f1",
+  "selected_model": "linearsvc_word_tfidf",
+  "selected_model_results": {
+    "accuracy": 0.7302,
+    "macro_f1": 0.5173,
     "rows": 1134
   },
-  "model_note": "Uses gold aspect terms and predicts aspect-term polarity from marked sentence context."
+  "all_model_results": [
+    {
+      "model_name": "logreg_word_tfidf",
+      "accuracy": 0.7072,
+      "macro_f1": 0.5128,
+      "rows": 1134
+    },
+    {
+      "model_name": "logreg_word_char_tfidf",
+      "accuracy": 0.7222,
+      "macro_f1": 0.5149,
+      "rows": 1134
+    },
+    {
+      "model_name": "linearsvc_word_tfidf",
+      "accuracy": 0.7302,
+      "macro_f1": 0.5173,
+      "rows": 1134
+    }
+  ],
+  "metric_note": "Macro-F1 is the primary selection metric because sentiment labels are imbalanced.",
+  "model_note": "Sentiment is still using gold aspect terms unless changed later. The model predicts aspect-term polarity from marked sentence context.",
+  "limitation_note": "This sentiment stage does not depend on predicted aspect extraction or predicted category mapping. It evaluates polarity only after gold aspect terms are already known."
 }

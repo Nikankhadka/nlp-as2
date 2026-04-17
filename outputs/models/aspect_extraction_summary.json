@@ -1,0 +1,13 @@
+{
+  "precision": 0.5957,
+  "recall": 0.6363,
+  "f1": 0.6153,
+  "sentences": 800,
+  "gold_terms": 1134,
+  "predicted_terms": 1207,
+  "average_predicted_terms_per_sentence": 1.5088,
+  "match_rule": "exact_normalized_match",
+  "metric_note": "Exact normalized match is a strict extraction metric. It may underestimate partially correct predictions when a predicted span overlaps a gold aspect but is not an exact normalized match.",
+  "method_note": "The extraction baseline uses short train-lexicon matches and conservative noun-like headword fallbacks. It is intended as a simple, explainable baseline rather than a full sequence tagger.",
+  "limitation_note": "This extraction stage is evaluated separately from category mapping and sentiment. Sentiment still uses gold aspect terms unless changed later."
+}

@@ -1,5 +1,5 @@
 ,pred_positive,pred_negative,pred_neutral,pred_conflict
-gold_positive,600,57,54,17
-gold_negative,35,120,34,7
-gold_neutral,73,44,77,2
-gold_conflict,4,4,1,5
+gold_positive,646,44,32,6
+gold_negative,56,110,28,2
+gold_neutral,87,40,69,0
+gold_conflict,5,5,1,3

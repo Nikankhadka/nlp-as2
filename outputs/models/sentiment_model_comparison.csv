@@ -1,0 +1,4 @@
+model_name,accuracy,macro_f1,rows
+logreg_word_tfidf,0.7072,0.5128,1134
+logreg_word_char_tfidf,0.7222,0.5149,1134
+linearsvc_word_tfidf,0.7302,0.5173,1134

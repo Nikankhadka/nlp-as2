@@ -1,0 +1,6 @@
+prediction_source,rows,accuracy,low_confidence
+term_support_score,348,0.8851,0
+low_confidence_majority_fallback,237,0.865,237
+headword_support_score,98,0.9184,0
+seed_keyword,25,0.84,0
+regex_ambience,1,0.0,0

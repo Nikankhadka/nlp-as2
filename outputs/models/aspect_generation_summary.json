@@ -1,19 +1,35 @@
 {
-  "evaluation_note": "Evaluation uses only single-category sentences, because SemEval restaurant data does not directly align each aspect term to a category in multi-category sentences.",
+  "evaluation_note": "Aspect-category evaluation uses only single-category sentences, because the SemEval restaurant data does not directly align each aspect term to a category in multi-category sentences.",
+  "metric_note": "Macro-F1 is the primary metric because category labels are imbalanced.",
+  "method_note": "The hybrid mapper uses smoothed support-aware category scores with minimum-support checks, then falls back through seed keywords, regex rules, and a low-confidence majority-category fallback.",
+  "limitation_note": "Category mapping is evaluated separately from raw aspect-term extraction. Any majority-category fallback predictions are low-confidence cases and are tracked explicitly in the outputs.",
   "train_eval_rows": 2477,
   "test_eval_rows": 709,
+  "smoothing_alpha": 1.0,
+  "term_min_support": 3,
+  "headword_min_support": 5,
+  "majority_category_fallback": "food",
   "baseline": {
     "rows": 709,
-    "accuracy": 0.7941,
-    "macro_f1": 0.5588,
-    "coverage": 1.0
+    "accuracy": 0.7983,
+    "macro_f1": 0.595,
+    "coverage": 1.0,
+    "low_confidence_predictions": 0
   },
   "hybrid": {
     "rows": 709,
-    "accuracy": 0.787,
-    "macro_f1": 0.6284,
-    "coverage": 1.0
+    "accuracy": 0.8801,
+    "macro_f1": 0.7334,
+    "coverage": 1.0,
+    "low_confidence_predictions": 237
   },
-  "improvement_accuracy": -0.0071,
-  "improvement_macro_f1": 0.0696
+  "hybrid_source_counts": {
+    "term_support_score": 348,
+    "low_confidence_majority_fallback": 237,
+    "headword_support_score": 98,
+    "seed_keyword": 25,
+    "regex_ambience": 1
+  },
+  "improvement_accuracy": 0.0818,
+  "improvement_macro_f1": 0.1384
 }

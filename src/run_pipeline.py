@@ -10,6 +10,7 @@ SRC_DIR = PROJECT_ROOT / 'src'
 SCRIPTS = [
     'prepare_data.py',
     'eda.py',
+    'aspect_extraction.py',
     'aspect_generation.py',
     'sentiment_model.py',
 ]

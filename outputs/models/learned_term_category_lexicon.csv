@@ -1,1028 +1,1028 @@
-term_normalized,predicted_category,best_score
-'gourmet' indian cuisine,food,0.823167
-abby's treasure,food,0.823167
-actors,ambience,3.308594
-aesthetics,ambience,3.308594
-after dinner drinks,price,4.428888
-aisle,ambience,3.308594
-ala carte,anecdotes/miscellaneous,3.397861
-all you can eat deal,price,4.428888
-ambiance,ambience,2.986666
-ambience,ambience,3.115949
-american chinese food,food,0.823167
-amuse bouche,service,2.376533
-angry lobster,food,0.823167
-anti-pasta,food,0.823167
-antipasti,food,0.823167
-apetizers,food,0.823167
-appetizer,food,0.40813
-appetizer platter,anecdotes/miscellaneous,3.397861
-appetizers,price,1.728448
-appitizers,food,0.823167
-apple tarte tatin,food,0.823167
-apples,food,0.823167
-apppetizers,food,0.823167
-apps,service,2.376533
-architecture,ambience,3.308594
-area,service,2.376533
-argentinian pizza,food,0.823167
-asian appetizers,food,0.823167
-assorted sashimi,food,0.823167
-assortment of fish,food,0.823167
-assortment of fresh mushrooms and vegetables,food,0.823167
-at moshphere,ambience,3.308594
-atmorphere,ambience,3.308594
-atmoshere,ambience,3.308594
-atmosphere,ambience,3.221131
-atomosphere,ambience,3.308594
-attitude,service,2.376533
-attitudes,ambience,3.308594
-avocado,food,0.823167
-baby pizzas,anecdotes/miscellaneous,2.397861
-back garden,ambience,3.308594
-back garden sitting area,ambience,3.308594
-back patio,ambience,3.308594
-bacon,food,0.823167
-bacos,food,0.823167
-bagel,price,0.728448
-bagel with lox spread,food,0.823167
-bagels,food,0.436144
-bagles,food,0.823167
-banana tempura,food,0.823167
-banana tower,food,0.823167
-bannan fritter,anecdotes/miscellaneous,3.397861
-bar,anecdotes/miscellaneous,1.347235
-bar food,food,0.823167
-bar scene,anecdotes/miscellaneous,2.397861
-bar service,service,2.376533
-barbecued codfish,food,0.823167
-barebecued salmon,food,0.823167
-bartender,service,1.376533
-bartenders,service,2.376533
-basic dishes,food,0.823167
-basil,food,0.823167
-basmati rice dish,food,0.823167
-bathrooms,ambience,3.308594
-bbq ribs,food,0.823167
-bbq salmon,food,0.823167
-beans on toast,food,0.823167
-beef,food,0.823167
-beef cube on rice,food,0.823167
-beef cubes,food,0.823167
-beef noodle soup,food,0.823167
-beef version,food,0.823167
-beer,price,1.621533
-beer selection,food,0.823167
-beers,food,0.40813
-beginning appetizers,food,0.823167
-beverage manager,service,2.376533
-beverage selections,food,0.823167
-beverages,food,0.823167
-bhelpuri,food,0.823167
-bill,price,3.428888
-bills,price,4.428888
-bistro fare,food,0.823167
-bistro-type vibe,ambience,3.308594
-black cod with yuzu sauce,food,0.823167
-black white shakes,food,0.823167
-blue cheese,food,0.823167
-blue fin torro fatty tuna ,food,0.823167
-blue point oysters,price,4.428888
-bombay beer,food,0.823167
-bombay cosmopolitan,food,0.823167
-bombay style chaat,food,0.823167
-botle of wine,price,4.428888
-boton shrimp,food,0.823167
-bottle,price,4.428888
-bottle of sake,food,0.823167
-bottle of wine,price,2.843926
-braised lamb shank in red wine,food,0.823167
-brassiere food,food,0.823167
-bread,food,0.600775
-breads,food,0.823167
-brioche and lollies,food,0.823167
-broth with noodles,food,0.823167
-brunch,anecdotes/miscellaneous,2.397861
-bruscetta,food,0.823167
-bruschetta,food,0.823167
-bruschettas,food,0.823167
-buffet,food,0.823167
-bun,food,0.823167
-buns,food,0.823167
-burger,food,0.823167
-busboy,service,2.376533
-business dinner,anecdotes/miscellaneous,3.397861
-butter,food,0.823167
-buttery and tender langostine entree,food,0.823167
-cakebread cabernet,food,0.823167
-calamari,food,0.823167
-calzones,food,0.823167
-canned vegetables,food,0.823167
-cantonese,food,0.823167
-caprese salad,food,0.823167
-caprese salad appetizer,anecdotes/miscellaneous,3.397861
-care,food,0.823167
-cart attendant,service,2.376533
-case of snapple,anecdotes/miscellaneous,3.397861
-casual dinner,anecdotes/miscellaneous,3.397861
-caviar,food,0.823167
-ceiling,ambience,2.723631
-ceviche mix special ,food,0.823167
-chai,food,0.823167
-chai tea,food,0.823167
-champagne,food,0.823167
-change mojito,food,0.823167
-check,service,2.376533
-cheescake,food,0.823167
-cheese,food,0.501239
-cheese fondue,food,0.823167
-cheese sticks,anecdotes/miscellaneous,3.397861
-cheeseburgers,food,0.823167
-cheesecake,food,0.823167
-chef,anecdotes/miscellaneous,0.812899
-chef app,food,0.823167
-cheff,food,0.823167
-chefs,anecdotes/miscellaneous,3.397861
-chicken,food,0.823167
-chicken casserole,food,0.823167
-chicken in curry sauc,food,0.823167
-chicken on rice with ginger,food,0.823167
-chicken pad tai,food,0.823167
-chicken parm,food,0.823167
-chicken teriyaki dish,food,0.823167
-chicken tikka,food,0.823167
-chicken tikka masala,food,0.823167
-chicken tikka-masala,food,0.823167
-chicken vindaloo,food,0.823167
-chicken with black bean sauce,food,0.823167
-chicken with cashew nuts,food,0.823167
-chicken with chili and lemon grass,food,0.823167
-chicken with garlic sauce,food,0.823167
-chicken with portobello mushrooms,food,0.823167
-chinese food,anecdotes/miscellaneous,1.812899
-chips,price,4.428888
-chocolate,anecdotes/miscellaneous,3.397861
-chocolate bread pudding,food,0.823167
-chocolate mud cake warmed ,food,0.823167
-chocolate sampler,price,3.428888
-chocolate souffle with rasberry mint sorbet,food,0.823167
-choices per course,food,0.823167
-chole,food,0.823167
-chopsticks,food,0.823167
-chow fun and chow see,food,0.823167
-christmas dinner,anecdotes/miscellaneous,3.397861
-chu chu curry,food,0.823167
-clams oreganta,food,0.823167
-club soda filled with ice no lime,service,2.376533
-coat check girls,service,2.376533
-coconut rice,food,0.823167
-cod,food,0.823167
-cod with paella,food,0.823167
-coffee,food,0.823167
-cold appetizer dishes,food,0.823167
-cold lobster salad,food,0.823167
-cold udon,food,0.823167
-cole slaw,food,0.823167
-comfort food,food,0.823167
-congee,price,3.428888
-congee rice porridge ,food,0.823167
-cook,food,0.823167
-cooked,food,0.823167
-cooking,food,0.823167
-corned beef,food,0.823167
-corned beef sandwich,food,0.823167
-corner booth table,ambience,3.308594
-corriander,ambience,3.308594
-corridor,ambience,3.308594
-cost,price,3.843926
-counter,ambience,3.308594
-counter service,service,2.376533
-counters,ambience,3.308594
-course,price,3.428888
-courses,food,0.823167
-crab cakes,food,0.823167
-crab cocktail,food,0.823167
-crab dumplings,food,0.823167
-crabmeat,food,0.823167
-crabmeat lasagna,food,0.823167
-crackling calamari salad,food,0.823167
-crawfish boiled,food,0.823167
-cream cheese,food,0.823167
-cream cheeses,food,0.823167
-creme brulee,food,0.823167
-crew,service,2.376533
-crispy chicken,food,0.823167
-crispy duck,food,0.823167
-crowd,anecdotes/miscellaneous,2.397861
-crowds,anecdotes/miscellaneous,3.397861
-crunchy tuna,food,0.823167
-crust,food,0.823167
-cuisine,anecdotes/miscellaneous,1.812899
-curry,food,0.823167
-curry flavor,food,0.823167
-curry sauce,food,0.823167
-dal bukhara,food,0.823167
-dals,food,0.823167
-dance floor,ambience,3.308594
-date spot,anecdotes/miscellaneous,3.397861
-decor,ambience,3.308594
-deep fried skewers,food,0.823167
-deli,anecdotes/miscellaneous,3.397861
-delicate butternut squash ravioli in a delicious truffle sauce,food,0.823167
-delivered,anecdotes/miscellaneous,2.397861
-delivery,service,2.376533
-delivery guys,service,2.376533
-delivery service,service,2.376533
-design,ambience,3.308594
-dessert,service,0.698461
-dessert menu,service,2.376533
-dessert wine,price,3.428888
-desserts,service,0.569178
-desserts with frog jelly,food,0.823167
-dhal,food,0.823167
-dhosas,food,0.823167
-dim sum,food,0.630522
-dim sum atmosphere,ambience,3.308594
-dim sum dish,food,0.823167
-dim sum orders,food,0.823167
-dim sum servings,food,0.823167
-dine,anecdotes/miscellaneous,3.397861
-diners,service,2.376533
-dining,anecdotes/miscellaneous,2.397861
-dining experience,anecdotes/miscellaneous,3.397861
-dining experiences,anecdotes/miscellaneous,3.397861
-dining hall,ambience,3.308594
-dining room,ambience,3.308594
-dining rooms,ambience,3.308594
-dinner,anecdotes/miscellaneous,2.620254
-dinner location,anecdotes/miscellaneous,3.397861
-dinner meeting,anecdotes/miscellaneous,3.397861
-dinner menu,food,0.823167
-dinner menu to sit,price,4.428888
-dinner plates,ambience,3.308594
-dinner reservations,ambience,3.308594
-dinner special,anecdotes/miscellaneous,2.397861
-dinners,anecdotes/miscellaneous,2.397861
-dinosaur rolls,food,0.823167
-dish,food,0.697636
-dishes,food,0.685664
-donut like deep fried dough they call ow ley soh,food,0.823167
-doors,ambience,3.308594
-dosa,price,2.843926
-dosa batter,food,0.823167
-dosas,food,0.823167
-dough,food,0.823167
-downstairs lounge,ambience,3.308594
-dress cod,ambience,3.308594
-dress codes,ambience,3.308594
-drink,anecdotes/miscellaneous,1.982824
-drink refills,service,2.376533
-drinks,price,1.341425
-drumsticks over rice,food,0.823167
-drunken chicken,food,0.823167
-duck breast special,food,0.823167
-duck confit,food,0.823167
-duck noodles,food,0.823167
-dulce de leche gelato,food,0.823167
-dumpling,anecdotes/miscellaneous,2.397861
-dumpling menu,food,0.823167
-dumplings,price,2.10696
-eat,price,4.428888
-eat family style,food,0.823167
-eating,anecdotes/miscellaneous,3.397861
-eats,food,0.823167
-edamame pureed,food,0.823167
-edamames,food,0.823167
-eel,anecdotes/miscellaneous,3.397861
-egg custards,food,0.823167
-egg noodles in the beef broth with shrimp dumplings and slices of bbq roast pork,food,0.823167
-eggplant,food,0.823167
-eggs,service,1.376533
-eggs benedict,food,0.823167
-employees,service,2.376533
-entertaining,ambience,3.308594
-entertainment,ambience,3.308594
-entree,price,1.621533
-entrees,anecdotes/miscellaneous,0.812899
-escargot,food,0.823167
-espresso cup filled with chocolate mousse,service,2.376533
-establishment,ambience,3.308594
-ethnic food,food,0.823167
-exotic food,food,0.823167
-exotic salad,food,0.823167
-expresso,food,0.823167
-extra virgnin olive oil,food,0.823167
-fast food,food,0.823167
-fat,food,0.823167
-fatty yellow tail,food,0.823167
-filet,food,0.823167
-filet mignon,food,0.823167
-filet mignon dish,food,0.823167
-filet mignon with garlic mash,food,0.823167
-filling pasta mains,food,0.823167
-fillings,food,0.823167
-fish,food,0.730058
-fish and chips,food,0.823167
-fish dishes,food,0.823167
-fish fillet in spicy source,food,0.823167
-fish tanks,ambience,3.308594
-fish with hot bean source,food,0.823167
-flavor,food,0.823167
-flavors,food,0.823167
-flour,food,0.823167
-fluke sashimi,food,0.823167
-foie gras terrine with figs,food,0.823167
-fondue,food,0.823167
-food,food,0.554877
-food art,food,0.823167
-food options,food,0.823167
-food portions,food,0.823167
-food quality,food,0.823167
-food spot,anecdotes/miscellaneous,3.397861
-food suggestions,service,2.376533
-foods,food,0.823167
-fountain drinks,food,0.823167
-french cuisine,food,0.823167
-french fare,food,0.823167
-french food,food,0.823167
-french fries,food,0.823167
-french indian fusion,food,0.823167
-fresh mozz cheese,food,0.823167
-fresh mozzarella,food,0.823167
-fresh mozzerella slices,food,0.823167
-fresh tomato sauce,food,0.823167
-fresh tomatoes,food,0.823167
-fried chicken,food,0.823167
-fried clams,food,0.823167
-fried dumpling,anecdotes/miscellaneous,3.397861
-fried dumplings,food,0.823167
-fried rice,food,0.823167
-fried shrimp,food,0.823167
-fried tofu,food,0.823167
-fries,food,0.823167
-frites,food,0.823167
-fromager,service,2.376533
-front doors,ambience,3.308594
-fruit of the oil,food,0.823167
-frying,food,0.823167
-fusion of french and indian cooking,food,0.823167
-garden terrace,ambience,3.308594
-garlic,food,0.823167
-garlic mashed potatoes,food,0.823167
-garlic naan,food,0.823167
-garlic shrimp,food,0.823167
-general tao chicken,food,0.823167
-getting a table,anecdotes/miscellaneous,2.397861
-gigondas,food,0.823167
-gin and tonic,service,2.376533
-ginger lemonade with vodka,food,0.823167
-glass noodles,food,0.823167
-glass of leaping lizard,food,0.823167
-glass of prosecco,food,0.823167
-glass of sangria,food,0.823167
-glass of wine,price,2.428888
-glasses of champagne,price,4.428888
-glasses of water,food,0.823167
-glasses of wine,price,4.428888
-gnocchi,food,0.823167
-gnochi,anecdotes/miscellaneous,2.397861
-go go hamburgers,food,0.823167
-goat cheese,food,0.823167
-godmother pizza,food,0.823167
-godmother pizza a sort of traditional flat pizza with an olive oil-brushed crust and less tomato sauce than usual ,food,0.823167
-gourmet food,food,0.823167
-grapes,service,2.376533
-green curry,food,0.823167
-green curry dish,food,0.823167
-green curry with vegetables,food,0.823167
-green salad,food,0.823167
-grilled branzino,food,0.823167
-grilled cheese,food,0.823167
-grilled chicken special with edamame puree,food,0.823167
-group dinner,anecdotes/miscellaneous,3.397861
-guacamole shrimp appetizer,food,0.823167
-guizhou chicken,food,0.823167
-gulab jamun,food,0.823167
-gulab jamun dessert ,food,0.823167
-guy,service,2.376533
-half price sushi deal,price,4.428888
-half-price saturday night special,anecdotes/miscellaneous,3.397861
-hall,ambience,3.308594
-hand-crafted beers,food,0.823167
-hanger steak,food,0.823167
-hanger steak au poivre,food,0.823167
-herb mix,food,0.823167
-herbs,food,0.823167
-hollondaise sauce,food,0.823167
-homemade lasagna,food,0.823167
-homemade pasta,food,0.823167
-horedevous,food,0.823167
-host,service,1.79157
-hostess,service,2.376533
-hosting staff,service,2.376533
-hosts,service,2.376533
-hot bagel,food,0.823167
-hot dogs,food,0.823167
-hot pot with seafood,food,0.823167
-hot tea,service,2.376533
-house champagne,food,0.823167
-house salad,food,0.823167
-house varities,food,0.823167
-house wine,food,0.823167
-hummus platter,service,2.376533
-hunan chicken,food,0.823167
-ice cream,food,0.823167
-iceberg,food,0.823167
-iced tea,food,0.823167
-icing on the cake,food,0.823167
-in sandwiches,food,0.823167
-in-house lady dj,ambience,3.308594
-indian,food,0.823167
-indian appetizers,food,0.823167
-indian cuisine,food,0.823167
-indian fast food,food,0.823167
-indian food,food,0.823167
-indian restaurant food,food,0.823167
-indoor,ambience,3.308594
-ingrediants,food,0.823167
-ingredients,food,0.823167
-insde table,service,2.376533
-interior,ambience,3.308594
-italian cheese,food,0.823167
-italian decor,ambience,3.308594
-italian dishes,food,0.823167
-italian food,food,0.823167
-jalapeno,food,0.823167
-jalapeno-lime olive oil,food,0.823167
-japanese classic cuisine,food,0.823167
-japanese comfort food,food,0.823167
-japanese cuisine,food,0.823167
-japanese food,anecdotes/miscellaneous,2.397861
-japanese tapas,food,0.823167
-jazz,ambience,3.308594
-jazz bands,ambience,3.308594
-jazz nights,ambience,3.308594
-jelly fish,food,0.823167
-jukebox,ambience,3.308594
-kababs,food,0.823167
-kalbi,food,0.823167
-kamasutra,food,0.823167
-kamikaze,food,0.823167
-kebabs,food,0.823167
-kielbasa,food,0.823167
-kinds of beer,food,0.823167
-kitchen,service,0.79157
-knish,food,0.823167
-knishes,food,0.823167
-korma,food,0.823167
-kosher dills,food,0.823167
-lad nar,food,0.823167
-ladies,ambience,3.308594
-lamb,food,0.823167
-lamb chettinad,food,0.823167
-lamb chop,food,0.823167
-lamb chops,food,0.823167
-lamb dishes,food,0.823167
-lamb glazed with balsamic vinegar,food,0.823167
-lamb meat,food,0.823167
-lamb sandwhich,food,0.823167
-lamb sausages,food,0.823167
-lambchops,food,0.823167
-large whole shrimp,food,0.823167
-lasagnette appetizer,food,0.823167
-lassi,service,2.376533
-lava cake dessert,food,0.823167
-lawns,ambience,3.308594
-lazy susans,ambience,3.308594
-lemon,food,0.823167
-lemon grass chicken,food,0.823167
-lemon salad,food,0.823167
-lentil dish,food,0.823167
-lettuce,food,0.823167
-lime,food,0.823167
-lime juice concoction,food,0.823167
-line,anecdotes/miscellaneous,3.397861
-lines,anecdotes/miscellaneous,3.397861
-little dishes,food,0.823167
-live entertainment,ambience,3.308594
-live music,ambience,3.308594
-lobby,service,2.376533
-lobby area,service,2.376533
-lobster bisque,food,0.823167
-lobster ravioli,food,0.823167
-lobster sandwich,food,0.823167
-lobster teriyaki,food,0.823167
-located,ambience,3.308594
-location,price,3.428888
-look,ambience,3.308594
-lotus leaf wrapped rice,service,2.376533
-lox,food,0.823167
-lox spread,food,0.823167
-lunch,anecdotes/miscellaneous,2.574739
-lunch buffet,anecdotes/miscellaneous,3.397861
-lunch food,food,0.823167
-lunch meetings,anecdotes/miscellaneous,3.397861
-lunch menu,food,0.823167
-lunch special,price,4.428888
-lunch specials,food,0.823167
-mahi mahi on saffron risotto,food,0.823167
-main course,service,1.054605
-main courses,food,0.823167
-main dining room,ambience,3.308594
-main dishes,price,3.428888
-main entree,food,0.823167
-maine lobster,food,0.823167
-maitre,service,2.376533
-makhani,food,0.823167
-malai kofta,food,0.823167
-malai tikka wrap,food,0.823167
-man,service,2.376533
-management,service,1.79157
-manager,service,2.376533
-mango chicken,food,0.823167
-margarita,food,0.823167
-margarite pizza with cold prosciutto and baby arugula on top,food,0.823167
-margheritta,food,0.823167
-martini,food,0.823167
-martinis,food,0.823167
-mascarpone with chocolate chip,food,0.823167
-mashed potatoes,food,0.823167
-mayo,food,0.823167
-mayonnaise,food,0.823167
-meal,anecdotes/miscellaneous,0.397861
-meals,food,0.823167
-meat,food,0.823167
-meat dishes,food,0.823167
-meatballs,food,0.823167
-meats,food,0.823167
-mediterranean salad,food,0.823167
-menu,food,0.588702
-menu choices,food,0.823167
-menu description,food,0.823167
-menu items,anecdotes/miscellaneous,1.812899
-menu selections,service,2.376533
-mesclun,food,0.823167
-mexican food,anecdotes/miscellaneous,3.397861
-mimosas,service,2.376533
-miso soup,food,0.823167
-mix of greens,food,0.823167
-mixed drink special,food,0.823167
-mixed drinks,food,0.823167
-money,price,2.843926
-moules,food,0.823167
-mozzarella,food,0.823167
-msg cooking,food,0.823167
-mushroom consomme,food,0.823167
-mushroom pizza,food,0.823167
-mushroom ravioli,price,4.428888
-mushrooms,price,4.428888
-music,ambience,3.308594
-mussaman curry,food,0.823167
-mussel selection,food,0.823167
-mussels,food,0.823167
-mussels in spicy tomato sauce,food,0.823167
-naan,anecdotes/miscellaneous,1.812899
-neapolitan fare,food,0.823167
-nebbiolo,food,0.823167
-new england chowder,food,0.823167
-new york bagel,anecdotes/miscellaneous,3.397861
-night scene,ambience,3.308594
-nightcap,ambience,3.308594
-noise,anecdotes/miscellaneous,2.397861
-noise level,ambience,2.308594
-non-veg selections,food,0.823167
-noodle and rices dishes,food,0.823167
-noodle dishes,food,0.823167
-noodle soup dishes,food,0.823167
-noodles,price,2.843926
-noodles with ground beef,food,0.823167
-nori,food,0.823167
-nori-wrapped tuna,food,0.823167
-oatmeal,food,0.823167
-obv caviar,food,0.823167
-octopus salad,food,0.823167
-office lunch,anecdotes/miscellaneous,3.397861
-oil,anecdotes/miscellaneous,1.812899
-okra bindi ,food,0.823167
-olive cream cheese,food,0.823167
-omelet,food,0.823167
-omelletes,food,0.823167
-onglet,food,0.823167
-onion soup,food,0.823167
-onions,food,0.823167
-open faced cheese sandwich,service,2.376533
-open kitchen,ambience,3.308594
-order,service,2.376533
-ordering a la carte,food,0.823167
-outdoor atmosphere,ambience,3.308594
-outdoor seating,ambience,3.308594
-outside,service,2.376533
-owner,service,1.724456
-owners,anecdotes/miscellaneous,2.397861
-oyster,anecdotes/miscellaneous,3.397861
-oysters,food,0.823167
-pad penang,food,0.823167
-pad se-ew,food,0.823167
-pad see ew,food,0.823167
-pad thai,food,0.823167
-pad thai chicken,food,0.823167
-pakistani food,food,0.823167
-palak paneer,food,0.823167
-pam's special fried fish,food,0.823167
-panang duck,food,0.823167
-panchetta,food,0.823167
-paneer roll,food,0.823167
-panini,food,0.823167
-paninis,food,0.823167
-paratha bread,food,0.823167
-parathas,food,0.823167
-parmesean porcini souffle,food,0.823167
-pasta,food,0.501239
-pasta dishes,food,0.823167
-pasta entre'es,food,0.823167
-pastas,food,0.823167
-pastrami,food,0.823167
-pastrami on challah sandwich,food,0.823167
-pastrami or corned beef,food,0.823167
-pastrami sandwich,food,0.823167
-pastrami sandwiches,anecdotes/miscellaneous,3.397861
-pastries,food,0.823167
-patio,ambience,3.308594
-peanut sauce,food,0.823167
-pelligrino,food,0.823167
-people,service,2.15414
-pepper,food,0.823167
-pepper powder,food,0.823167
-personal herb garden,ambience,3.308594
-personal pans,food,0.823167
-pesto pizza,food,0.823167
-peter's favourite pizza with prosciutto and baby arugula,food,0.823167
-pho,food,0.823167
-pickels and slaw,price,4.428888
-pickles,food,0.823167
-pie,food,0.823167
-pieces of sushi,food,0.823167
-pig feet ginger simmered in black vinegar,food,0.823167
-pinot noir,price,4.428888
-pistachio ice cream,food,0.823167
-pita,service,2.376533
-pita bread,food,0.823167
-pizza,anecdotes/miscellaneous,1.112459
-pizzas,food,0.823167
-place,ambience,2.893556
-places,food,0.823167
-plain cheese slice,food,0.823167
-plain pizza,food,0.823167
-plain slice,food,0.823167
-plastic forks,service,2.376533
-plate,food,0.823167
-plate of dumplings,anecdotes/miscellaneous,3.397861
-plates,service,1.376533
-platter,food,0.823167
-popcorn topping,food,0.823167
-porcini mushroom pasta special,food,0.823167
-pork,food,0.823167
-pork belly,food,0.823167
-pork buns,food,0.823167
-pork chop,food,0.823167
-pork chops,food,0.823167
-pork loin,food,0.823167
-portioins,food,0.823167
-portion,food,0.823167
-portion size,food,0.823167
-portion sizes,food,0.823167
-portions,food,0.823167
-portraits,ambience,3.308594
-pot of boiling water,food,0.823167
-pot-stickers,food,0.823167
-potato,food,0.823167
-potato chips,food,0.823167
-potato pancakes,food,0.823167
-pre-fixe menu,food,0.823167
-pre-theater menu,food,0.823167
-pre-theatre 3-course dinner,food,0.823167
-pre-theatre menu,price,4.428888
-presentation,food,0.823167
-price,price,4.066318
-price category,service,2.376533
-price tag,price,4.428888
-priced,price,4.165854
-prices,price,4.354888
-privacy,ambience,3.308594
-private room,service,2.376533
-prix fix,price,4.428888
-prix fixe,food,0.823167
-prix fixe lunch,food,0.823167
-prix fixe meal,price,4.428888
-prix fixe pricing,anecdotes/miscellaneous,3.397861
-pub,ambience,3.308594
-pub atmosphere,ambience,3.308594
-pudding dessert,food,0.823167
-puff pastry goat cheese,food,0.823167
-pumkin tortelini,food,0.823167
-quail,food,0.823167
-qualities,food,0.823167
-quality,food,0.823167
-quality of food,food,0.823167
-quality value,anecdotes/miscellaneous,3.397861
-quantity,food,0.823167
-quasi-thai,food,0.823167
-raddichio,food,0.823167
-rasamalai,food,0.823167
-ravioli,food,0.823167
-raw vegatables,food,0.823167
-red curry,food,0.823167
-red wine,service,2.376533
-refleshment,anecdotes/miscellaneous,3.397861
-regular menu-fare,food,0.823167
-reputation,service,2.376533
-reservation,anecdotes/miscellaneous,1.912434
-reservation sigh,service,2.376533
-reservations,service,1.917101
-reuben sandwich,food,0.823167
-rice,price,0.521998
-rice congee soup,anecdotes/miscellaneous,3.397861
-rice dishes,price,3.428888
-rice to fish ration,food,0.823167
-roast chicken,food,0.823167
-roast duck,food,0.823167
-roast pork buns,food,0.823167
-rock shrimp tempura,food,0.823167
-rolls,price,1.621533
-roofdeck,ambience,3.308594
-room,ambience,2.308594
-root vegetables,food,0.823167
-rose special roll,food,0.823167
-roti,food,0.823167
-roti rolls,food,0.823167
-round of drinks,service,2.376533
-rush,ambience,3.308594
-rye bread,food,0.823167
-sake,price,2.10696
-sake martini,food,0.823167
-sake menu,food,0.823167
-salad,food,0.823167
-salad with a delicious dressing,food,0.823167
-salad with perfectly marinated cucumbers and tomatoes with lots of shrimp and basil,food,0.823167
-salads,food,0.823167
-salmon,food,0.823167
-salmon caserole,food,0.823167
-salmon dish,food,0.823167
-salt pepper shrimps,food,0.823167
-samosa chaats,food,0.823167
-sandwhiches,food,0.823167
-sandwich,service,1.376533
-sandwiches,price,4.428888
-sangria,anecdotes/miscellaneous,1.812899
-santa fe chopped salad,food,0.823167
-sardines with biscuits,food,0.823167
-sashimi,food,0.823167
-sashimi plate,food,0.823167
-sauce,food,0.823167
-sauce on the pizza,food,0.823167
-sauces,food,0.823167
-saul,food,0.823167
-scallion pancake,food,0.823167
-scallion pancakes,food,0.823167
-scallop roll,food,0.823167
-scallops,food,0.823167
-scenery,ambience,3.308594
-scents,anecdotes/miscellaneous,3.397861
-sea bass,food,0.823167
-sea eel,food,0.823167
-sea salt,food,0.823167
-sea urchin,food,0.823167
-seafood,food,0.630522
-seafood dishes,food,0.823167
-seafood tagliatelle,food,0.823167
-seasonal beer,food,0.823167
-seasoning,food,0.823167
-seat,ambience,3.308594
-seated,service,2.376533
-seating,ambience,2.986666
-seating in the garden,service,2.376533
-seats,anecdotes/miscellaneous,1.812899
-seaweed,food,0.823167
-secret back room,ambience,3.308594
-selection,food,0.823167
-selection of meats and seafoods,food,0.823167
-selection of wine,food,0.823167
-seltzer with lime,food,0.823167
-semi-private boths,ambience,3.308594
-servants,service,2.376533
-serve,service,2.376533
-served,service,1.528536
-server,service,2.376533
-servers,service,2.376533
-serves,service,2.376533
-service,service,2.344471
-serving,service,0.79157
-servings,food,0.823167
-sesame chicken,food,0.823167
-setting,ambience,3.308594
-sevpuri,food,0.823167
-shabu-shabu,food,0.823167
-shabu-shabu dinner,food,0.823167
-shanghai low mein,food,0.823167
-shows,ambience,3.308594
-shredded cheese,food,0.823167
-shredded squid family style,food,0.823167
-shrimp,food,0.823167
-shrimp appetizers,food,0.823167
-shrimp fritters,food,0.823167
-shrimp scampi,food,0.823167
-shuizhu fish,food,0.823167
-sichuan chef,anecdotes/miscellaneous,3.397861
-sichuan food,food,0.823167
-sichuan spicy soft shell crab,food,0.823167
-sicilian,food,0.823167
-side,price,4.428888
-sides,food,0.823167
-singapore mai fun,food,0.823167
-slice,anecdotes/miscellaneous,2.397861
-smoked salmon and roe appetizer,food,0.823167
-snack foods,food,0.823167
-snacking,ambience,3.308594
-snapple,price,4.428888
-sommelier,service,2.376533
-somosas,food,0.823167
-soup,price,2.843926
-soup for the udon,food,0.823167
-soups,food,0.823167
-soupy dumplings,food,0.823167
-sour spicy soup,food,0.823167
-southern indian cuisine,food,0.823167
-soy sauce,food,0.823167
-space,ambience,3.045559
-spaghetti with scallops and shrimp,food,0.823167
-special,food,0.823167
-special effects,ambience,3.308594
-special menu,food,0.823167
-specials,service,1.054605
-spice,food,0.823167
-spice rub,food,0.823167
-spices,food,0.823167
-spicy ethnic foods,food,0.823167
-spicy food,food,0.823167
-spicy fried clam rolls,food,0.823167
-spicy scallop roll,food,0.823167
-spicy tuna,food,0.823167
-spicy tuna hand rolls,food,0.823167
-spicy tuna roll,food,0.823167
-spicy wontons,food,0.823167
-spider rolls,food,0.823167
-spinach,food,0.823167
-spinach mushroom calzone,food,0.823167
-spinach ravioli in a light oil and garlic sauce,food,0.823167
-spot,ambience,3.308594
-spot lights,ambience,3.308594
-spreads,food,0.823167
-squid,food,0.823167
-staff,service,2.302532
-staff member,service,2.376533
-staples,food,0.823167
-stauff,ambience,3.308594
-steak,food,0.823167
-steak au poivre,food,0.823167
-steak dish,food,0.823167
-steak tartare,food,0.823167
-steak with portobello mushrooms,food,0.823167
-steaks,food,0.823167
-stir fry blue crab,food,0.823167
-strawberry daiquiries,food,0.823167
-striped bass,food,0.823167
-stuff,service,1.961495
-stuffing,food,0.823167
-styles of pizza,food,0.823167
-sugar,service,1.376533
-summer rolls,service,1.376533
-surroundings,ambience,3.308594
-sushi,price,0.621533
-sushi bar,anecdotes/miscellaneous,3.397861
-sushi chef,food,0.823167
-sushi plate,food,0.823167
-sushi rolls,food,0.823167
-sushimi cucumber roll,food,0.823167
-sweet basil fried tofu,food,0.823167
-sweet lassi,food,0.823167
-table,service,1.592261
-table by the window,anecdotes/miscellaneous,3.397861
-table grilling,food,0.823167
-table service,service,2.376533
-tables,ambience,2.656517
-taiwanese food,food,0.823167
-take out,price,4.428888
-take-out pies,food,0.823167
-take-out pizza,food,0.823167
-takeout,service,2.376533
-takeout menu,food,0.823167
-tamarind duck,food,0.823167
-tamarind margaritas,food,0.823167
-tandoori,food,0.823167
-tandoori salmon,food,0.823167
-tapas,food,0.823167
-taste,food,0.823167
-tastes,food,0.823167
-taxan,food,0.823167
-tea room,ambience,3.308594
-tempura dish,food,0.823167
-terrace,ambience,3.308594
-texture,food,0.823167
-thai,food,0.823167
-thai cuisine,food,0.823167
-thai flavors,food,0.823167
-thai food,anecdotes/miscellaneous,0.93843
-thai ice tea,food,0.823167
-thai noodles with shrimp and chicken and coconut juice,food,0.823167
-thai popcorn,food,0.823167
-thia food,anecdotes/miscellaneous,3.397861
-thin crusted pizza,food,0.823167
-thin-crust pizza,food,0.823167
-three course meal,price,3.428888
-times square cocktail,food,0.823167
-tip,price,2.10696
-tips,service,2.376533
-tiramisu,food,0.823167
-tiramisu chocolate cake,food,0.823167
-toast,food,0.823167
-toaster,anecdotes/miscellaneous,2.397861
-toasting,food,0.823167
-tofu plates,food,0.823167
-tom kha soup,food,0.823167
-tom yum soup,food,0.823167
-tomato sauce,food,0.823167
-tomatoes,food,0.823167
-tonic,service,2.376533
-topping,food,0.823167
-toppings,price,2.428888
-traditional french decour,ambience,3.308594
-traffic noise,ambience,3.308594
-tramezzinis,food,0.823167
-trays of dim sum,ambience,3.308594
-trout,food,0.823167
-truffle oil,food,0.823167
-tuna,food,0.501239
-tuna melt,food,0.823167
-tuna sandwich,food,0.823167
-tuna tartar appetizer,food,0.823167
-tuna tartare,price,4.428888
-turkey burger,food,0.823167
-turnip cake,food,0.823167
-tuscan cuisine,food,0.823167
-unda egg rolls,food,0.823167
-valentines day dinner,anecdotes/miscellaneous,3.397861
-value,anecdotes/miscellaneous,3.397861
-value ofr money,price,4.428888
-values for your money,price,4.428888
-variety of dishes,food,0.823167
-variety of fish,food,0.823167
-veal parmigana,food,0.823167
-vegetable juice,food,0.823167
-vegetable samosa,food,0.823167
-vegetables,food,0.823167
-vegetarian dishes,food,0.823167
-vegetarian entree,food,0.823167
-vegetarian-friendly choices,food,0.823167
-vibe,ambience,3.308594
-view,ambience,3.308594
-wait,anecdotes/miscellaneous,2.310398
-wait staff,service,2.376533
-wait time,anecdotes/miscellaneous,2.397861
-waiter,service,2.071678
-waiter traffic,ambience,3.308594
-waiters,service,2.15414
-waiting,anecdotes/miscellaneous,1.812899
-waiting area,ambience,3.308594
-waitress,service,2.087026
-waitresses,service,2.376533
-waitstaff,service,2.376533
-walnuts,food,0.823167
-wasabe potatoes,food,0.823167
-wasabi,food,0.823167
-water,service,1.376533
-water and wine glasses,service,2.376533
-white bean brushetta,food,0.823167
-white chocolate bread pudding with gelato and hot chocolate,food,0.823167
-white tuna sashimi,food,0.823167
-white wine,food,0.823167
-whitefish,food,0.823167
-whitefish salad,food,0.823167
-whole grilled fish,food,0.823167
-wild mushroom third generation-fornini pizza,food,0.823167
-wine,price,0.969456
-wine by the glass,food,0.823167
-wine choices,food,0.823167
-wine flight,food,0.823167
-wine list,food,0.823167
-wine list selection,food,0.823167
-wine menu,food,0.823167
-wine selection,food,0.823167
-wine-by-the-glass,food,0.823167
-wines,food,0.823167
-wines by the glass,food,0.823167
-wintermelon,food,0.823167
-workers,service,1.376533
-yellowfun tuna,food,0.823167
-yellowtail,food,0.823167
-zen feel,ambience,3.308594
-zucchini,food,0.823167
+term_normalized,support,predicted_category,best_score
+'gourmet' indian cuisine,1,food,0.333333
+abby's treasure,1,food,0.333333
+actors,1,ambience,0.333333
+aesthetics,1,ambience,0.333333
+after dinner drinks,1,price,0.333333
+aisle,1,ambience,0.333333
+ala carte,1,anecdotes/miscellaneous,0.333333
+all you can eat deal,1,price,0.333333
+ambiance,10,ambience,0.6
+ambience,8,ambience,0.615385
+american chinese food,1,food,0.333333
+amuse bouche,1,service,0.333333
+angry lobster,1,food,0.333333
+anti-pasta,1,food,0.333333
+antipasti,1,food,0.333333
+apetizers,1,food,0.333333
+appetizer,8,food,0.538462
+appetizer platter,1,anecdotes/miscellaneous,0.333333
+appetizers,13,food,0.444444
+appitizers,1,food,0.333333
+apple tarte tatin,1,food,0.333333
+apples,1,food,0.333333
+apppetizers,1,food,0.333333
+apps,1,service,0.333333
+architecture,1,ambience,0.333333
+area,1,service,0.333333
+argentinian pizza,1,food,0.333333
+asian appetizers,1,food,0.333333
+assorted sashimi,1,food,0.333333
+assortment of fish,1,food,0.333333
+assortment of fresh mushrooms and vegetables,1,food,0.333333
+at moshphere,1,ambience,0.333333
+atmorphere,1,ambience,0.333333
+atmoshere,2,ambience,0.428571
+atmosphere,17,ambience,0.772727
+atomosphere,2,ambience,0.428571
+attitude,1,service,0.333333
+attitudes,1,ambience,0.333333
+avocado,1,food,0.333333
+baby pizzas,2,food,0.285714
+back garden,2,ambience,0.428571
+back garden sitting area,1,ambience,0.333333
+back patio,1,ambience,0.333333
+bacon,2,food,0.428571
+bacos,1,food,0.333333
+bagel,13,food,0.444444
+bagel with lox spread,1,food,0.333333
+bagels,17,food,0.636364
+bagles,1,food,0.333333
+banana tempura,1,food,0.333333
+banana tower,1,food,0.333333
+bannan fritter,1,anecdotes/miscellaneous,0.333333
+bar,29,service,0.323529
+bar food,1,food,0.333333
+bar scene,2,ambience,0.285714
+bar service,1,service,0.333333
+barbecued codfish,1,food,0.333333
+barebecued salmon,1,food,0.333333
+bartender,8,service,0.384615
+bartenders,1,service,0.333333
+basic dishes,1,food,0.333333
+basil,1,food,0.333333
+basmati rice dish,1,food,0.333333
+bathrooms,1,ambience,0.333333
+bbq ribs,1,food,0.333333
+bbq salmon,1,food,0.333333
+beans on toast,1,food,0.333333
+beef,6,food,0.636364
+beef cube on rice,1,food,0.333333
+beef cubes,2,food,0.428571
+beef noodle soup,1,food,0.333333
+beef version,1,food,0.333333
+beer,7,food,0.416667
+beer selection,1,food,0.333333
+beers,4,food,0.444444
+beginning appetizers,1,food,0.333333
+beverage manager,1,service,0.333333
+beverage selections,1,food,0.333333
+beverages,1,food,0.333333
+bhelpuri,1,food,0.333333
+bill,10,price,0.4
+bills,1,price,0.333333
+bistro fare,1,food,0.333333
+bistro-type vibe,1,ambience,0.333333
+black cod with yuzu sauce,1,food,0.333333
+black white shakes,1,food,0.333333
+blue cheese,1,food,0.333333
+blue fin torro fatty tuna ,1,food,0.333333
+blue point oysters,1,price,0.333333
+bombay beer,1,food,0.333333
+bombay cosmopolitan,1,food,0.333333
+bombay style chaat,1,food,0.333333
+botle of wine,1,price,0.333333
+boton shrimp,1,food,0.333333
+bottle,1,price,0.333333
+bottle of sake,1,food,0.333333
+bottle of wine,3,food,0.25
+braised lamb shank in red wine,1,food,0.333333
+brassiere food,1,food,0.333333
+bread,7,food,0.583333
+breads,1,food,0.333333
+brioche and lollies,1,food,0.333333
+broth with noodles,1,food,0.333333
+brunch,6,anecdotes/miscellaneous,0.363636
+bruscetta,1,food,0.333333
+bruschetta,1,food,0.333333
+bruschettas,1,food,0.333333
+buffet,2,food,0.428571
+bun,1,food,0.333333
+buns,1,food,0.333333
+burger,4,food,0.555556
+busboy,2,service,0.428571
+business dinner,1,anecdotes/miscellaneous,0.333333
+butter,3,food,0.5
+buttery and tender langostine entree,1,food,0.333333
+cakebread cabernet,1,food,0.333333
+calamari,3,food,0.5
+calzones,1,food,0.333333
+canned vegetables,1,food,0.333333
+cantonese,1,food,0.333333
+caprese salad,1,food,0.333333
+caprese salad appetizer,1,anecdotes/miscellaneous,0.333333
+care,1,food,0.333333
+cart attendant,1,service,0.333333
+case of snapple,1,anecdotes/miscellaneous,0.333333
+casual dinner,1,anecdotes/miscellaneous,0.333333
+caviar,1,food,0.333333
+ceiling,3,ambience,0.375
+ceviche mix special ,1,food,0.333333
+chai,1,food,0.333333
+chai tea,1,food,0.333333
+champagne,1,food,0.333333
+change mojito,1,food,0.333333
+check,4,service,0.555556
+cheescake,1,food,0.333333
+cheese,10,food,0.6
+cheese fondue,1,food,0.333333
+cheese sticks,1,anecdotes/miscellaneous,0.333333
+cheeseburgers,1,food,0.333333
+cheesecake,2,food,0.428571
+chef,12,food,0.470588
+chef app,1,food,0.333333
+cheff,1,food,0.333333
+chefs,1,anecdotes/miscellaneous,0.333333
+chicken,7,food,0.666667
+chicken casserole,1,food,0.333333
+chicken in curry sauc,1,food,0.333333
+chicken on rice with ginger,1,food,0.333333
+chicken pad tai,1,food,0.333333
+chicken parm,1,food,0.333333
+chicken teriyaki dish,1,food,0.333333
+chicken tikka,1,food,0.333333
+chicken tikka masala,1,food,0.333333
+chicken tikka-masala,1,food,0.333333
+chicken vindaloo,1,food,0.333333
+chicken with black bean sauce,1,food,0.333333
+chicken with cashew nuts,1,food,0.333333
+chicken with chili and lemon grass,1,food,0.333333
+chicken with garlic sauce,1,food,0.333333
+chicken with portobello mushrooms,1,food,0.333333
+chinese food,3,food,0.375
+chips,1,price,0.333333
+chocolate,1,anecdotes/miscellaneous,0.333333
+chocolate bread pudding,1,food,0.333333
+chocolate mud cake warmed ,1,food,0.333333
+chocolate sampler,2,food,0.285714
+chocolate souffle with rasberry mint sorbet,1,food,0.333333
+choices per course,1,food,0.333333
+chole,1,food,0.333333
+chopsticks,1,food,0.333333
+chow fun and chow see,1,food,0.333333
+christmas dinner,1,anecdotes/miscellaneous,0.333333
+chu chu curry,1,food,0.333333
+clams oreganta,1,food,0.333333
+club soda filled with ice no lime,1,service,0.333333
+coat check girls,2,service,0.428571
+coconut rice,1,food,0.333333
+cod,1,food,0.333333
+cod with paella,1,food,0.333333
+coffee,2,food,0.428571
+cold appetizer dishes,1,food,0.333333
+cold lobster salad,1,food,0.333333
+cold udon,1,food,0.333333
+cole slaw,1,food,0.333333
+comfort food,2,food,0.428571
+congee,2,food,0.285714
+congee rice porridge ,1,food,0.333333
+cook,1,food,0.333333
+cooked,1,food,0.333333
+cooking,1,food,0.333333
+corned beef,2,food,0.428571
+corned beef sandwich,1,food,0.333333
+corner booth table,1,ambience,0.333333
+corriander,1,ambience,0.333333
+corridor,1,ambience,0.333333
+cost,3,price,0.375
+counter,2,ambience,0.428571
+counter service,2,service,0.428571
+counters,1,ambience,0.333333
+course,2,food,0.285714
+courses,3,food,0.5
+crab cakes,1,food,0.333333
+crab cocktail,1,food,0.333333
+crab dumplings,1,food,0.333333
+crabmeat,1,food,0.333333
+crabmeat lasagna,1,food,0.333333
+crackling calamari salad,1,food,0.333333
+crawfish boiled,1,food,0.333333
+cream cheese,2,food,0.428571
+cream cheeses,2,food,0.428571
+creme brulee,1,food,0.333333
+crew,2,service,0.428571
+crispy chicken,1,food,0.333333
+crispy duck,1,food,0.333333
+crowd,2,ambience,0.285714
+crowds,1,anecdotes/miscellaneous,0.333333
+crunchy tuna,1,food,0.333333
+crust,5,food,0.6
+cuisine,9,food,0.5
+curry,1,food,0.333333
+curry flavor,1,food,0.333333
+curry sauce,1,food,0.333333
+dal bukhara,1,food,0.333333
+dals,1,food,0.333333
+dance floor,1,ambience,0.333333
+date spot,1,anecdotes/miscellaneous,0.333333
+decor,12,ambience,0.764706
+deep fried skewers,1,food,0.333333
+deli,1,anecdotes/miscellaneous,0.333333
+delicate butternut squash ravioli in a delicious truffle sauce,1,food,0.333333
+delivered,2,service,0.285714
+delivery,4,service,0.555556
+delivery guys,1,service,0.333333
+delivery service,1,service,0.333333
+design,1,ambience,0.333333
+dessert,16,food,0.571429
+dessert menu,1,service,0.333333
+dessert wine,2,food,0.285714
+desserts,7,food,0.5
+desserts with frog jelly,1,food,0.333333
+dhal,1,food,0.333333
+dhosas,1,food,0.333333
+dim sum,8,food,0.615385
+dim sum atmosphere,1,ambience,0.333333
+dim sum dish,1,food,0.333333
+dim sum orders,1,food,0.333333
+dim sum servings,1,food,0.333333
+dine,1,anecdotes/miscellaneous,0.333333
+diners,2,service,0.428571
+dining,6,anecdotes/miscellaneous,0.363636
+dining experience,3,anecdotes/miscellaneous,0.5
+dining experiences,1,anecdotes/miscellaneous,0.333333
+dining hall,1,ambience,0.333333
+dining room,1,ambience,0.333333
+dining rooms,1,ambience,0.333333
+dinner,48,anecdotes/miscellaneous,0.54717
+dinner location,1,anecdotes/miscellaneous,0.333333
+dinner meeting,1,anecdotes/miscellaneous,0.333333
+dinner menu,1,food,0.333333
+dinner menu to sit,1,price,0.333333
+dinner plates,1,ambience,0.333333
+dinner reservations,1,ambience,0.333333
+dinner special,2,service,0.285714
+dinners,2,food,0.285714
+dinosaur rolls,1,food,0.333333
+dish,12,food,0.705882
+dishes,22,food,0.777778
+donut like deep fried dough they call ow ley soh,1,food,0.333333
+doors,1,ambience,0.333333
+dosa,3,food,0.25
+dosa batter,1,food,0.333333
+dosas,1,food,0.333333
+dough,1,food,0.333333
+downstairs lounge,1,ambience,0.333333
+dress cod,1,ambience,0.333333
+dress codes,1,ambience,0.333333
+drink,8,anecdotes/miscellaneous,0.307692
+drink refills,1,service,0.333333
+drinks,17,food,0.318182
+drumsticks over rice,1,food,0.333333
+drunken chicken,1,food,0.333333
+duck breast special,1,food,0.333333
+duck confit,1,food,0.333333
+duck noodles,1,food,0.333333
+dulce de leche gelato,1,food,0.333333
+dumpling,2,food,0.285714
+dumpling menu,1,food,0.333333
+dumplings,5,food,0.5
+eat,1,price,0.333333
+eat family style,1,food,0.333333
+eating,1,anecdotes/miscellaneous,0.333333
+eats,2,food,0.428571
+edamame pureed,1,food,0.333333
+edamames,1,food,0.333333
+eel,1,anecdotes/miscellaneous,0.333333
+egg custards,1,food,0.333333
+egg noodles in the beef broth with shrimp dumplings and slices of bbq roast pork,1,food,0.333333
+eggplant,2,food,0.428571
+eggs,2,food,0.285714
+eggs benedict,1,food,0.333333
+employees,1,service,0.333333
+entertaining,1,ambience,0.333333
+entertainment,2,ambience,0.428571
+entree,7,food,0.583333
+entrees,6,food,0.363636
+escargot,1,food,0.333333
+espresso cup filled with chocolate mousse,1,service,0.333333
+establishment,2,ambience,0.428571
+ethnic food,1,food,0.333333
+exotic food,1,food,0.333333
+exotic salad,1,food,0.333333
+expresso,1,food,0.333333
+extra virgnin olive oil,1,food,0.333333
+fast food,1,food,0.333333
+fat,1,food,0.333333
+fatty yellow tail,1,food,0.333333
+filet,2,food,0.428571
+filet mignon,1,food,0.333333
+filet mignon dish,1,food,0.333333
+filet mignon with garlic mash,1,food,0.333333
+filling pasta mains,1,food,0.333333
+fillings,1,food,0.333333
+fish,16,food,0.761905
+fish and chips,2,food,0.428571
+fish dishes,1,food,0.333333
+fish fillet in spicy source,1,food,0.333333
+fish tanks,1,ambience,0.333333
+fish with hot bean source,1,food,0.333333
+flavor,8,food,0.692308
+flavors,4,food,0.555556
+flour,1,food,0.333333
+fluke sashimi,1,food,0.333333
+foie gras terrine with figs,1,food,0.333333
+fondue,1,food,0.333333
+food,165,food,0.811765
+food art,1,food,0.333333
+food options,1,food,0.333333
+food portions,1,food,0.333333
+food quality,1,food,0.333333
+food spot,1,anecdotes/miscellaneous,0.333333
+food suggestions,1,service,0.333333
+foods,2,food,0.428571
+fountain drinks,1,food,0.333333
+french cuisine,1,food,0.333333
+french fare,1,food,0.333333
+french food,2,food,0.428571
+french fries,1,food,0.333333
+french indian fusion,1,food,0.333333
+fresh mozz cheese,1,food,0.333333
+fresh mozzarella,1,food,0.333333
+fresh mozzerella slices,1,food,0.333333
+fresh tomato sauce,1,food,0.333333
+fresh tomatoes,1,food,0.333333
+fried chicken,1,food,0.333333
+fried clams,1,food,0.333333
+fried dumpling,1,anecdotes/miscellaneous,0.333333
+fried dumplings,2,food,0.428571
+fried rice,2,food,0.428571
+fried shrimp,1,food,0.333333
+fried tofu,1,food,0.333333
+fries,3,food,0.5
+frites,2,food,0.428571
+fromager,1,service,0.333333
+front doors,1,ambience,0.333333
+fruit of the oil,1,food,0.333333
+frying,1,food,0.333333
+fusion of french and indian cooking,1,food,0.333333
+garden terrace,1,ambience,0.333333
+garlic,3,food,0.5
+garlic mashed potatoes,1,food,0.333333
+garlic naan,2,food,0.428571
+garlic shrimp,1,food,0.333333
+general tao chicken,1,food,0.333333
+getting a table,2,service,0.285714
+gigondas,1,food,0.333333
+gin and tonic,1,service,0.333333
+ginger lemonade with vodka,1,food,0.333333
+glass noodles,1,food,0.333333
+glass of leaping lizard,1,food,0.333333
+glass of prosecco,1,food,0.333333
+glass of sangria,1,food,0.333333
+glass of wine,4,service,0.333333
+glasses of champagne,1,price,0.333333
+glasses of water,1,food,0.333333
+glasses of wine,1,price,0.333333
+gnocchi,1,food,0.333333
+gnochi,2,food,0.285714
+go go hamburgers,1,food,0.333333
+goat cheese,2,food,0.428571
+godmother pizza,1,food,0.333333
+godmother pizza a sort of traditional flat pizza with an olive oil-brushed crust and less tomato sauce than usual ,1,food,0.333333
+gourmet food,1,food,0.333333
+grapes,1,service,0.333333
+green curry,1,food,0.333333
+green curry dish,1,food,0.333333
+green curry with vegetables,1,food,0.333333
+green salad,1,food,0.333333
+grilled branzino,1,food,0.333333
+grilled cheese,1,food,0.333333
+grilled chicken special with edamame puree,1,food,0.333333
+group dinner,1,anecdotes/miscellaneous,0.333333
+guacamole shrimp appetizer,1,food,0.333333
+guizhou chicken,2,food,0.428571
+gulab jamun,1,food,0.333333
+gulab jamun dessert ,1,food,0.333333
+guy,2,service,0.428571
+half price sushi deal,1,price,0.333333
+half-price saturday night special,1,anecdotes/miscellaneous,0.333333
+hall,1,ambience,0.333333
+hand-crafted beers,1,food,0.333333
+hanger steak,1,food,0.333333
+hanger steak au poivre,1,food,0.333333
+herb mix,1,food,0.333333
+herbs,1,food,0.333333
+hollondaise sauce,1,food,0.333333
+homemade lasagna,1,food,0.333333
+homemade pasta,1,food,0.333333
+horedevous,1,food,0.333333
+host,3,service,0.375
+hostess,7,service,0.666667
+hosting staff,1,service,0.333333
+hosts,1,service,0.333333
+hot bagel,1,food,0.333333
+hot dogs,2,food,0.428571
+hot pot with seafood,1,food,0.333333
+hot tea,1,service,0.333333
+house champagne,1,food,0.333333
+house salad,2,food,0.428571
+house varities,1,food,0.333333
+house wine,1,food,0.333333
+hummus platter,1,service,0.333333
+hunan chicken,1,food,0.333333
+ice cream,1,food,0.333333
+iceberg,1,food,0.333333
+iced tea,1,food,0.333333
+icing on the cake,1,food,0.333333
+in sandwiches,1,food,0.333333
+in-house lady dj,1,ambience,0.333333
+indian,2,food,0.428571
+indian appetizers,1,food,0.333333
+indian cuisine,1,food,0.333333
+indian fast food,1,food,0.333333
+indian food,5,food,0.6
+indian restaurant food,1,food,0.333333
+indoor,1,ambience,0.333333
+ingrediants,1,food,0.333333
+ingredients,8,food,0.692308
+insde table,1,service,0.333333
+interior,1,ambience,0.333333
+italian cheese,1,food,0.333333
+italian decor,1,ambience,0.333333
+italian dishes,1,food,0.333333
+italian food,3,food,0.5
+jalapeno,1,food,0.333333
+jalapeno-lime olive oil,1,food,0.333333
+japanese classic cuisine,1,food,0.333333
+japanese comfort food,1,food,0.333333
+japanese cuisine,1,food,0.333333
+japanese food,2,food,0.285714
+japanese tapas,1,food,0.333333
+jazz,1,ambience,0.333333
+jazz bands,1,ambience,0.333333
+jazz nights,1,ambience,0.333333
+jelly fish,1,food,0.333333
+jukebox,1,ambience,0.333333
+kababs,1,food,0.333333
+kalbi,1,food,0.333333
+kamasutra,1,food,0.333333
+kamikaze,1,food,0.333333
+kebabs,1,food,0.333333
+kielbasa,1,food,0.333333
+kinds of beer,1,food,0.333333
+kitchen,3,food,0.375
+knish,1,food,0.333333
+knishes,1,food,0.333333
+korma,1,food,0.333333
+kosher dills,1,food,0.333333
+lad nar,1,food,0.333333
+ladies,1,ambience,0.333333
+lamb,1,food,0.333333
+lamb chettinad,1,food,0.333333
+lamb chop,1,food,0.333333
+lamb chops,1,food,0.333333
+lamb dishes,1,food,0.333333
+lamb glazed with balsamic vinegar,1,food,0.333333
+lamb meat,1,food,0.333333
+lamb sandwhich,1,food,0.333333
+lamb sausages,1,food,0.333333
+lambchops,1,food,0.333333
+large whole shrimp,1,food,0.333333
+lasagnette appetizer,1,food,0.333333
+lassi,1,service,0.333333
+lava cake dessert,1,food,0.333333
+lawns,1,ambience,0.333333
+lazy susans,1,ambience,0.333333
+lemon,1,food,0.333333
+lemon grass chicken,1,food,0.333333
+lemon salad,1,food,0.333333
+lentil dish,1,food,0.333333
+lettuce,2,food,0.428571
+lime,1,food,0.333333
+lime juice concoction,1,food,0.333333
+line,1,anecdotes/miscellaneous,0.333333
+lines,1,anecdotes/miscellaneous,0.333333
+little dishes,1,food,0.333333
+live entertainment,1,ambience,0.333333
+live music,1,ambience,0.333333
+lobby,1,service,0.333333
+lobby area,1,service,0.333333
+lobster bisque,2,food,0.428571
+lobster ravioli,1,food,0.333333
+lobster sandwich,2,food,0.428571
+lobster teriyaki,1,food,0.333333
+located,1,ambience,0.333333
+location,2,price,0.285714
+look,1,ambience,0.333333
+lotus leaf wrapped rice,1,service,0.333333
+lox,2,food,0.428571
+lox spread,1,food,0.333333
+lunch,23,anecdotes/miscellaneous,0.5
+lunch buffet,1,anecdotes/miscellaneous,0.333333
+lunch food,1,food,0.333333
+lunch meetings,1,anecdotes/miscellaneous,0.333333
+lunch menu,1,food,0.333333
+lunch special,1,price,0.333333
+lunch specials,1,food,0.333333
+mahi mahi on saffron risotto,1,food,0.333333
+main course,5,food,0.4
+main courses,1,food,0.333333
+main dining room,1,ambience,0.333333
+main dishes,2,service,0.285714
+main entree,1,food,0.333333
+maine lobster,1,food,0.333333
+maitre,1,service,0.333333
+makhani,1,food,0.333333
+malai kofta,1,food,0.333333
+malai tikka wrap,1,food,0.333333
+man,1,service,0.333333
+management,3,service,0.375
+manager,9,service,0.714286
+mango chicken,1,food,0.333333
+margarita,1,food,0.333333
+margarite pizza with cold prosciutto and baby arugula on top,1,food,0.333333
+margheritta,1,food,0.333333
+martini,2,food,0.428571
+martinis,1,food,0.333333
+mascarpone with chocolate chip,1,food,0.333333
+mashed potatoes,1,food,0.333333
+mayo,1,food,0.333333
+mayonnaise,1,food,0.333333
+meal,24,food,0.517241
+meals,1,food,0.333333
+meat,3,food,0.5
+meat dishes,2,food,0.428571
+meatballs,1,food,0.333333
+meats,1,food,0.333333
+mediterranean salad,1,food,0.333333
+menu,40,food,0.777778
+menu choices,1,food,0.333333
+menu description,1,food,0.333333
+menu items,3,food,0.25
+menu selections,1,service,0.333333
+mesclun,1,food,0.333333
+mexican food,1,anecdotes/miscellaneous,0.333333
+mimosas,1,service,0.333333
+miso soup,1,food,0.333333
+mix of greens,1,food,0.333333
+mixed drink special,1,food,0.333333
+mixed drinks,1,food,0.333333
+money,3,service,0.25
+moules,1,food,0.333333
+mozzarella,1,food,0.333333
+msg cooking,1,food,0.333333
+mushroom consomme,1,food,0.333333
+mushroom pizza,1,food,0.333333
+mushroom ravioli,1,price,0.333333
+mushrooms,1,price,0.333333
+music,11,ambience,0.75
+mussaman curry,1,food,0.333333
+mussel selection,1,food,0.333333
+mussels,3,food,0.5
+mussels in spicy tomato sauce,1,food,0.333333
+naan,3,food,0.25
+neapolitan fare,1,food,0.333333
+nebbiolo,1,food,0.333333
+new england chowder,1,food,0.333333
+new york bagel,1,anecdotes/miscellaneous,0.333333
+night scene,1,ambience,0.333333
+nightcap,1,ambience,0.333333
+noise,2,ambience,0.285714
+noise level,2,service,0.285714
+non-veg selections,1,food,0.333333
+noodle and rices dishes,1,food,0.333333
+noodle dishes,2,food,0.428571
+noodle soup dishes,1,food,0.333333
+noodles,3,food,0.25
+noodles with ground beef,1,food,0.333333
+nori,1,food,0.333333
+nori-wrapped tuna,1,food,0.333333
+oatmeal,1,food,0.333333
+obv caviar,1,food,0.333333
+octopus salad,1,food,0.333333
+office lunch,1,anecdotes/miscellaneous,0.333333
+oil,3,food,0.375
+okra bindi ,1,food,0.333333
+olive cream cheese,1,food,0.333333
+omelet,1,food,0.333333
+omelletes,1,food,0.333333
+onglet,1,food,0.333333
+onion soup,1,food,0.333333
+onions,1,food,0.333333
+open faced cheese sandwich,1,service,0.333333
+open kitchen,1,ambience,0.333333
+order,2,service,0.428571
+ordering a la carte,1,food,0.333333
+outdoor atmosphere,1,ambience,0.333333
+outdoor seating,4,ambience,0.555556
+outside,1,service,0.333333
+owner,11,service,0.5
+owners,4,service,0.333333
+oyster,1,anecdotes/miscellaneous,0.333333
+oysters,1,food,0.333333
+pad penang,1,food,0.333333
+pad se-ew,1,food,0.333333
+pad see ew,2,food,0.428571
+pad thai,6,food,0.636364
+pad thai chicken,1,food,0.333333
+pakistani food,1,food,0.333333
+palak paneer,1,food,0.333333
+pam's special fried fish,1,food,0.333333
+panang duck,1,food,0.333333
+panchetta,1,food,0.333333
+paneer roll,1,food,0.333333
+panini,1,food,0.333333
+paninis,1,food,0.333333
+paratha bread,1,food,0.333333
+parathas,1,food,0.333333
+parmesean porcini souffle,1,food,0.333333
+pasta,5,food,0.5
+pasta dishes,1,food,0.333333
+pasta entre'es,1,food,0.333333
+pastas,4,food,0.555556
+pastrami,3,food,0.5
+pastrami on challah sandwich,1,food,0.333333
+pastrami or corned beef,1,food,0.333333
+pastrami sandwich,2,food,0.428571
+pastrami sandwiches,1,anecdotes/miscellaneous,0.333333
+pastries,1,food,0.333333
+patio,1,ambience,0.333333
+peanut sauce,1,food,0.333333
+pelligrino,1,food,0.333333
+people,7,service,0.583333
+pepper,2,food,0.428571
+pepper powder,1,food,0.333333
+personal herb garden,1,ambience,0.333333
+personal pans,1,food,0.333333
+pesto pizza,2,food,0.428571
+peter's favourite pizza with prosciutto and baby arugula,1,food,0.333333
+pho,1,food,0.333333
+pickels and slaw,1,price,0.333333
+pickles,3,food,0.5
+pie,1,food,0.333333
+pieces of sushi,1,food,0.333333
+pig feet ginger simmered in black vinegar,1,food,0.333333
+pinot noir,1,price,0.333333
+pistachio ice cream,1,food,0.333333
+pita,2,service,0.428571
+pita bread,1,food,0.333333
+pizza,39,food,0.704545
+pizzas,1,food,0.333333
+place,36,ambience,0.682927
+places,1,food,0.333333
+plain cheese slice,1,food,0.333333
+plain pizza,2,food,0.428571
+plain slice,1,food,0.333333
+plastic forks,1,service,0.333333
+plate,2,food,0.428571
+plate of dumplings,1,anecdotes/miscellaneous,0.333333
+plates,2,food,0.285714
+platter,1,food,0.333333
+popcorn topping,1,food,0.333333
+porcini mushroom pasta special,1,food,0.333333
+pork,1,food,0.333333
+pork belly,1,food,0.333333
+pork buns,1,food,0.333333
+pork chop,1,food,0.333333
+pork chops,1,food,0.333333
+pork loin,1,food,0.333333
+portioins,1,food,0.333333
+portion,5,food,0.6
+portion size,1,food,0.333333
+portion sizes,2,food,0.428571
+portions,19,food,0.833333
+portraits,1,ambience,0.333333
+pot of boiling water,1,food,0.333333
+pot-stickers,1,food,0.333333
+potato,1,food,0.333333
+potato chips,1,food,0.333333
+potato pancakes,1,food,0.333333
+pre-fixe menu,1,food,0.333333
+pre-theater menu,1,food,0.333333
+pre-theatre 3-course dinner,1,food,0.333333
+pre-theatre menu,1,price,0.333333
+presentation,1,food,0.333333
+price,9,price,0.571429
+price category,1,service,0.333333
+price tag,1,price,0.333333
+priced,6,price,0.545455
+prices,20,price,0.8
+privacy,1,ambience,0.333333
+private room,1,service,0.333333
+prix fix,1,price,0.333333
+prix fixe,1,food,0.333333
+prix fixe lunch,1,food,0.333333
+prix fixe meal,1,price,0.333333
+prix fixe pricing,1,anecdotes/miscellaneous,0.333333
+pub,1,ambience,0.333333
+pub atmosphere,1,ambience,0.333333
+pudding dessert,1,food,0.333333
+puff pastry goat cheese,1,food,0.333333
+pumkin tortelini,1,food,0.333333
+quail,1,food,0.333333
+qualities,1,food,0.333333
+quality,3,food,0.5
+quality of food,1,food,0.333333
+quality value,1,anecdotes/miscellaneous,0.333333
+quantity,1,food,0.333333
+quasi-thai,1,food,0.333333
+raddichio,1,food,0.333333
+rasamalai,1,food,0.333333
+ravioli,1,food,0.333333
+raw vegatables,1,food,0.333333
+red curry,1,food,0.333333
+red wine,1,service,0.333333
+refleshment,1,anecdotes/miscellaneous,0.333333
+regular menu-fare,1,food,0.333333
+reputation,1,service,0.333333
+reservation,14,service,0.473684
+reservation sigh,1,service,0.333333
+reservations,11,service,0.5625
+reuben sandwich,1,food,0.333333
+rice,15,food,0.6
+rice congee soup,1,anecdotes/miscellaneous,0.333333
+rice dishes,2,food,0.285714
+rice to fish ration,1,food,0.333333
+roast chicken,1,food,0.333333
+roast duck,1,food,0.333333
+roast pork buns,1,food,0.333333
+rock shrimp tempura,1,food,0.333333
+rolls,7,food,0.583333
+roofdeck,1,ambience,0.333333
+room,2,service,0.285714
+root vegetables,1,food,0.333333
+rose special roll,1,food,0.333333
+roti,1,food,0.333333
+roti rolls,1,food,0.333333
+round of drinks,1,service,0.333333
+rush,1,ambience,0.333333
+rye bread,1,food,0.333333
+sake,5,food,0.3
+sake martini,2,food,0.428571
+sake menu,1,food,0.333333
+salad,3,food,0.5
+salad with a delicious dressing,1,food,0.333333
+salad with perfectly marinated cucumbers and tomatoes with lots of shrimp and basil,1,food,0.333333
+salads,9,food,0.714286
+salmon,5,food,0.6
+salmon caserole,1,food,0.333333
+salmon dish,2,food,0.428571
+salt pepper shrimps,1,food,0.333333
+samosa chaats,1,food,0.333333
+sandwhiches,1,food,0.333333
+sandwich,2,food,0.285714
+sandwiches,2,price,0.428571
+sangria,3,food,0.375
+santa fe chopped salad,1,food,0.333333
+sardines with biscuits,1,food,0.333333
+sashimi,3,food,0.5
+sashimi plate,1,food,0.333333
+sauce,10,food,0.733333
+sauce on the pizza,1,food,0.333333
+sauces,2,food,0.428571
+saul,1,food,0.333333
+scallion pancake,1,food,0.333333
+scallion pancakes,1,food,0.333333
+scallop roll,1,food,0.333333
+scallops,3,food,0.5
+scenery,1,ambience,0.333333
+scents,1,anecdotes/miscellaneous,0.333333
+sea bass,2,food,0.428571
+sea eel,1,food,0.333333
+sea salt,1,food,0.333333
+sea urchin,2,food,0.428571
+seafood,8,food,0.615385
+seafood dishes,1,food,0.333333
+seafood tagliatelle,1,food,0.333333
+seasonal beer,1,food,0.333333
+seasoning,3,food,0.5
+seat,2,ambience,0.428571
+seated,4,service,0.555556
+seating,5,ambience,0.5
+seating in the garden,1,service,0.333333
+seats,3,service,0.25
+seaweed,1,food,0.333333
+secret back room,1,ambience,0.333333
+selection,2,food,0.428571
+selection of meats and seafoods,1,food,0.333333
+selection of wine,1,food,0.333333
+seltzer with lime,1,food,0.333333
+semi-private boths,1,ambience,0.333333
+servants,1,service,0.333333
+serve,1,service,0.333333
+served,9,service,0.428571
+server,6,service,0.636364
+servers,7,service,0.666667
+serves,1,service,0.333333
+service,91,service,0.9375
+serving,3,food,0.375
+servings,1,food,0.333333
+sesame chicken,1,food,0.333333
+setting,3,ambience,0.5
+sevpuri,1,food,0.333333
+shabu-shabu,1,food,0.333333
+shabu-shabu dinner,1,food,0.333333
+shanghai low mein,1,food,0.333333
+shows,2,ambience,0.428571
+shredded cheese,2,food,0.428571
+shredded squid family style,1,food,0.333333
+shrimp,1,food,0.333333
+shrimp appetizers,1,food,0.333333
+shrimp fritters,1,food,0.333333
+shrimp scampi,1,food,0.333333
+shuizhu fish,1,food,0.333333
+sichuan chef,1,anecdotes/miscellaneous,0.333333
+sichuan food,1,food,0.333333
+sichuan spicy soft shell crab,1,food,0.333333
+sicilian,1,food,0.333333
+side,1,price,0.333333
+sides,3,food,0.5
+singapore mai fun,1,food,0.333333
+slice,2,food,0.285714
+smoked salmon and roe appetizer,1,food,0.333333
+snack foods,1,food,0.333333
+snacking,1,ambience,0.333333
+snapple,1,price,0.333333
+sommelier,1,service,0.333333
+somosas,1,food,0.333333
+soup,3,food,0.375
+soup for the udon,1,food,0.333333
+soups,3,food,0.5
+soupy dumplings,1,food,0.333333
+sour spicy soup,1,food,0.333333
+southern indian cuisine,1,food,0.333333
+soy sauce,2,food,0.428571
+space,6,ambience,0.545455
+spaghetti with scallops and shrimp,1,food,0.333333
+special,1,food,0.333333
+special effects,1,ambience,0.333333
+special menu,1,food,0.333333
+specials,10,food,0.466667
+spice,2,food,0.428571
+spice rub,1,food,0.333333
+spices,1,food,0.333333
+spicy ethnic foods,1,food,0.333333
+spicy food,1,food,0.333333
+spicy fried clam rolls,1,food,0.333333
+spicy scallop roll,1,food,0.333333
+spicy tuna,1,food,0.333333
+spicy tuna hand rolls,1,food,0.333333
+spicy tuna roll,2,food,0.428571
+spicy wontons,1,food,0.333333
+spider rolls,1,food,0.333333
+spinach,1,food,0.333333
+spinach mushroom calzone,1,food,0.333333
+spinach ravioli in a light oil and garlic sauce,1,food,0.333333
+spot,7,ambience,0.666667
+spot lights,1,ambience,0.333333
+spreads,1,food,0.333333
+squid,1,food,0.333333
+staff,40,service,0.866667
+staff member,1,service,0.333333
+staples,1,food,0.333333
+stauff,1,ambience,0.333333
+steak,7,food,0.666667
+steak au poivre,2,food,0.428571
+steak dish,1,food,0.333333
+steak tartare,1,food,0.333333
+steak with portobello mushrooms,1,food,0.333333
+steaks,1,food,0.333333
+stir fry blue crab,1,food,0.333333
+strawberry daiquiries,1,food,0.333333
+striped bass,1,food,0.333333
+stuff,4,service,0.444444
+stuffing,1,food,0.333333
+styles of pizza,1,food,0.333333
+sugar,2,food,0.285714
+summer rolls,2,food,0.285714
+surroundings,1,ambience,0.333333
+sushi,28,food,0.69697
+sushi bar,3,anecdotes/miscellaneous,0.5
+sushi chef,1,food,0.333333
+sushi plate,1,food,0.333333
+sushi rolls,1,food,0.333333
+sushimi cucumber roll,1,food,0.333333
+sweet basil fried tofu,1,food,0.333333
+sweet lassi,1,food,0.333333
+table,31,service,0.527778
+table by the window,1,anecdotes/miscellaneous,0.333333
+table grilling,1,food,0.333333
+table service,1,service,0.333333
+tables,11,ambience,0.5
+taiwanese food,1,food,0.333333
+take out,1,price,0.333333
+take-out pies,1,food,0.333333
+take-out pizza,1,food,0.333333
+takeout,1,service,0.333333
+takeout menu,1,food,0.333333
+tamarind duck,1,food,0.333333
+tamarind margaritas,1,food,0.333333
+tandoori,1,food,0.333333
+tandoori salmon,1,food,0.333333
+tapas,1,food,0.333333
+taste,3,food,0.5
+tastes,1,food,0.333333
+taxan,1,food,0.333333
+tea room,1,ambience,0.333333
+tempura dish,1,food,0.333333
+terrace,1,ambience,0.333333
+texture,1,food,0.333333
+thai,4,food,0.555556
+thai cuisine,2,food,0.428571
+thai flavors,1,food,0.333333
+thai food,11,food,0.625
+thai ice tea,1,food,0.333333
+thai noodles with shrimp and chicken and coconut juice,1,food,0.333333
+thai popcorn,1,food,0.333333
+thia food,1,anecdotes/miscellaneous,0.333333
+thin crusted pizza,1,food,0.333333
+thin-crust pizza,1,food,0.333333
+three course meal,2,food,0.285714
+times square cocktail,1,food,0.333333
+tip,5,service,0.5
+tips,1,service,0.333333
+tiramisu,3,food,0.5
+tiramisu chocolate cake,1,food,0.333333
+toast,1,food,0.333333
+toaster,2,service,0.285714
+toasting,1,food,0.333333
+tofu plates,1,food,0.333333
+tom kha soup,1,food,0.333333
+tom yum soup,1,food,0.333333
+tomato sauce,1,food,0.333333
+tomatoes,1,food,0.333333
+tonic,1,service,0.333333
+topping,1,food,0.333333
+toppings,4,food,0.333333
+traditional french decour,1,ambience,0.333333
+traffic noise,1,ambience,0.333333
+tramezzinis,1,food,0.333333
+trays of dim sum,1,ambience,0.333333
+trout,1,food,0.333333
+truffle oil,1,food,0.333333
+tuna,5,food,0.5
+tuna melt,1,food,0.333333
+tuna sandwich,1,food,0.333333
+tuna tartar appetizer,1,food,0.333333
+tuna tartare,1,price,0.333333
+turkey burger,1,food,0.333333
+turnip cake,1,food,0.333333
+tuscan cuisine,1,food,0.333333
+unda egg rolls,1,food,0.333333
+valentines day dinner,1,anecdotes/miscellaneous,0.333333
+value,2,anecdotes/miscellaneous,0.428571
+value ofr money,1,price,0.333333
+values for your money,1,price,0.333333
+variety of dishes,1,food,0.333333
+variety of fish,1,food,0.333333
+veal parmigana,1,food,0.333333
+vegetable juice,1,food,0.333333
+vegetable samosa,1,food,0.333333
+vegetables,3,food,0.5
+vegetarian dishes,1,food,0.333333
+vegetarian entree,1,food,0.333333
+vegetarian-friendly choices,1,food,0.333333
+vibe,2,ambience,0.428571
+view,1,ambience,0.333333
+wait,17,anecdotes/miscellaneous,0.409091
+wait staff,6,service,0.636364
+wait time,2,service,0.285714
+waiter,21,service,0.692308
+waiter traffic,1,ambience,0.333333
+waiters,7,service,0.583333
+waiting,3,service,0.375
+waiting area,1,ambience,0.333333
+waitress,11,service,0.625
+waitresses,2,service,0.428571
+waitstaff,6,service,0.636364
+walnuts,1,food,0.333333
+wasabe potatoes,1,food,0.333333
+wasabi,1,food,0.333333
+water,4,food,0.333333
+water and wine glasses,1,service,0.333333
+white bean brushetta,1,food,0.333333
+white chocolate bread pudding with gelato and hot chocolate,1,food,0.333333
+white tuna sashimi,1,food,0.333333
+white wine,1,food,0.333333
+whitefish,1,food,0.333333
+whitefish salad,1,food,0.333333
+whole grilled fish,1,food,0.333333
+wild mushroom third generation-fornini pizza,1,food,0.333333
+wine,11,food,0.5625
+wine by the glass,1,food,0.333333
+wine choices,1,food,0.333333
+wine flight,1,food,0.333333
+wine list,9,food,0.714286
+wine list selection,1,food,0.333333
+wine menu,1,food,0.333333
+wine selection,2,food,0.428571
+wine-by-the-glass,1,food,0.333333
+wines,3,food,0.5
+wines by the glass,1,food,0.333333
+wintermelon,1,food,0.333333
+workers,2,food,0.285714
+yellowfun tuna,1,food,0.333333
+yellowtail,1,food,0.333333
+zen feel,1,ambience,0.333333
+zucchini,1,food,0.333333
