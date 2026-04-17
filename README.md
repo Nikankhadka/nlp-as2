@@ -1,20 +1,73 @@
 # ABSA Restaurant Project
 
 ## What this project does
-This project turns the SemEval-2014 restaurant review XML data into a clean, runnable ABSA workflow.
+This project turns the SemEval-2014 restaurant review XML data into a simple aspect-based sentiment analysis (ABSA) workflow.
 
-It does four practical things:
+It does four main things:
 
 1. parses the raw XML files into CSV tables
-2. creates EDA outputs and summary charts
+2. creates EDA tables and charts
 3. runs aspect-term to category mapping experiments
 4. runs aspect-term sentiment classification
 
-This version is set up for the restaurant dataset only and is focused on the full train and gold test splits.
+This repo is focused on the restaurant dataset only and uses the full train split plus the gold test split.
 
----
+## Quick Start
 
-## Project structure
+### 1. Open the project folder
+Run all commands from the project root:
+
+```bash
+cd /path/to/absa_project
+```
+
+### 2. Create and activate a virtual environment
+Using a virtual environment is the easiest way for a junior developer to avoid package conflicts.
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+If your machine uses `python` instead of `python3`, that is also fine.
+
+### 3. Install dependencies
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+### 4. Run the full pipeline
+
+```bash
+python3 src/run_pipeline.py
+```
+
+This runs the full sequence:
+
+1. data preparation
+2. EDA
+3. aspect generation evaluation
+4. sentiment modelling
+
+### 5. Check the outputs
+When the run completes, look at:
+
+- `data/processed/`
+- `outputs/eda/`
+- `outputs/models/`
+
+## Input files
+The project expects these two XML files in `data/raw/`:
+
+- `Restaurants_Train_v2.xml`
+- `Restaurants_Test_Gold.xml`
+
+These are already included in this repo, so you do not need to download anything extra to run the current project.
+
+If you replace them later, keep the same filenames and folder location.
+
+## Project Structure
 
 ```text
 absa_project/
@@ -34,51 +87,14 @@ absa_project/
 │   ├── aspect_generation.py
 │   ├── sentiment_model.py
 │   └── run_pipeline.py
+├── requirements.txt
 └── README.md
 ```
-
----
-
-## Input files you need
-
-The project expects these two XML files in `data/raw/`:
-
-- `Restaurants_Train_v2.xml`
-- `Restaurants_Test_Gold.xml`
-
-These are the SemEval-2014 restaurant train and gold test files.
-
-### What is included right now
-This package already includes both files in the correct folder.
-
-### If you need to replace or re-add them later
-Put the files back into `data/raw/` using the exact same filenames.
-
----
-
-## How to run the project
-
-Open a terminal in the `absa_project` folder.
-
-### Run everything end to end
-
-```bash
-python src/run_pipeline.py
-```
-
-This runs the full sequence:
-
-1. data preparation
-2. EDA
-3. aspect generation evaluation
-4. sentiment modelling
-
----
 
 ## What each script does
 
 ### `src/config.py`
-Stores project paths and the fixed category and polarity label order.
+Defines shared paths and the fixed label order used across the project.
 
 ### `src/prepare_data.py`
 Reads the raw XML files and creates clean CSV outputs.
@@ -100,7 +116,7 @@ Outputs include:
 - category distribution tables
 - top aspect-term frequency table
 - EDA charts as PNG files
-- a small JSON file with headline findings
+- a JSON file with headline findings
 
 ### `src/aspect_generation.py`
 Evaluates two ways of mapping aspect terms into restaurant categories.
@@ -131,9 +147,7 @@ Outputs include:
 - test predictions CSV
 
 ### `src/run_pipeline.py`
-Runs all major scripts in order.
-
----
+Runs all major scripts in order so you do not need to execute each file manually.
 
 ## What outputs are generated
 
@@ -153,12 +167,9 @@ You get:
 
 - dataset summary tables
 - top-term frequency table
-- polarity and category distribution tables
-- charts such as:
-  - train polarity distribution
-  - category distribution
-  - sentence length histogram
-  - aspects-per-sentence histogram
+- polarity distribution tables
+- category distribution tables
+- charts such as train polarity distribution, category distribution, sentence length histogram, and aspects-per-sentence histogram
 
 ### In `outputs/models/`
 You get:
@@ -169,69 +180,56 @@ You get:
 - confusion matrix
 - sentiment test predictions
 
----
+## Recommended Order For A Beginner
 
-## What is working now
-
-These parts are working:
-
-- full XML parsing
-- clean CSV export
-- EDA output generation
-- rule-based and hybrid aspect-category mapping evaluation
-- full-dataset aspect-level sentiment baseline
-
----
-
-## What is partial
-
-These parts are intentionally limited:
-
-- aspect generation is evaluated on single-category sentences only because the dataset does not directly link each aspect term to a category in multi-category sentences
-- sentiment modelling currently uses classic ML with gold aspect terms, not a joint extraction model
-- the pipeline is focused on sentence-level ABSA, not full-review aggregation across multiple sentences
-
----
-
-## What still depends on future work
-
-These improvements would require extra work beyond the current package:
-
-- joint aspect extraction and sentiment prediction from raw text alone
-- transformer-based models or instruction-tuned ABSA models
-- better handling of the rare `conflict` class
-- domain adaptation to more recent restaurant reviews
-- production-style review dashboard or deployment layer
-
----
-
-## Limitations and prerequisites
-
-### Prerequisites
-This project expects a Python environment with common data science packages such as:
-
-- pandas
-- matplotlib
-- scikit-learn
-
-### Important limitations
-
-- The dataset is old and English-only
-- Labels are sentence-level, not full-review level
-- The `anecdotes/miscellaneous` class is broad and noisy
-- Positive sentiment is the majority class
-- Conflict examples are very rare
-
----
-
-## Recommended workflow for a beginner
-
-1. run `python src/run_pipeline.py`
+1. run `python3 src/run_pipeline.py`
 2. open `data/processed/dataset_summary.json`
 3. inspect the files in `outputs/eda/`
 4. inspect `outputs/models/aspect_generation_summary.json`
 5. inspect `outputs/models/sentiment_summary.json`
 6. read the files in `reports/`
 
-That order will help you understand the project from raw data to final report material.
-# nlp-as2
+That order helps you understand the project from raw data to outputs.
+
+## Troubleshooting
+
+### `python: command not found`
+Use `python3` instead:
+
+```bash
+python3 src/run_pipeline.py
+```
+
+### `ModuleNotFoundError`
+Your dependencies are not installed yet. Activate the virtual environment and run:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+### Import errors when running scripts
+Run the command from the project root folder, not from inside `src/`.
+
+## Current Scope And Limitations
+
+What is working now:
+
+- full XML parsing
+- clean CSV export
+- EDA output generation
+- rule-based and hybrid aspect-category mapping evaluation
+- aspect-level sentiment baseline using classic ML
+
+What is intentionally limited:
+
+- aspect generation is evaluated on single-category sentences only because the dataset does not directly link each aspect term to a category in multi-category sentences
+- sentiment modelling uses gold aspect terms, not joint extraction from raw text
+- the pipeline is focused on sentence-level ABSA, not full-review aggregation
+
+What would require future work:
+
+- joint aspect extraction and sentiment prediction from raw text alone
+- transformer-based or instruction-tuned ABSA models
+- better handling of the rare `conflict` class
+- domain adaptation to newer restaurant reviews
+- a production dashboard or deployment layer

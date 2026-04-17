@@ -1,0 +1,13 @@
+{
+  "majority_baseline": {
+    "label": "positive",
+    "accuracy": 0.642,
+    "macro_f1": 0.1955
+  },
+  "logreg_tfidf_full_test": {
+    "accuracy": 0.6526,
+    "macro_f1": 0.4686,
+    "rows": 1134
+  },
+  "model_note": "Uses gold aspect terms and predicts aspect-term polarity from marked sentence context."
+}

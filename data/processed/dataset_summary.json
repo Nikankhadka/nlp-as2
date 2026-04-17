@@ -1,0 +1,42 @@
+{
+  "train": {
+    "sentence_count": 3041,
+    "aspect_term_count": 3693,
+    "aspect_category_count": 3713,
+    "aspect_term_polarities": {
+      "positive": 2164,
+      "negative": 805,
+      "neutral": 633,
+      "conflict": 91
+    },
+    "aspect_category_distribution": {
+      "food": 1232,
+      "service": 597,
+      "price": 321,
+      "ambience": 431,
+      "anecdotes/miscellaneous": 1132
+    }
+  },
+  "test": {
+    "sentence_count": 800,
+    "aspect_term_count": 1134,
+    "aspect_category_count": 1025,
+    "aspect_term_polarities": {
+      "positive": 728,
+      "negative": 196,
+      "neutral": 196,
+      "conflict": 14
+    },
+    "aspect_category_distribution": {
+      "food": 418,
+      "service": 172,
+      "price": 83,
+      "ambience": 118,
+      "anecdotes/miscellaneous": 234
+    }
+  },
+  "notes": {
+    "full_dataset_present": true,
+    "format": "SemEval 2014 restaurant XML with sentence text, aspect terms, and aspect categories."
+  }
+}

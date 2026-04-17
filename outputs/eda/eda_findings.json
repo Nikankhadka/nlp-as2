@@ -1,0 +1,9 @@
+{
+  "positive_term_share_train": 0.586,
+  "negative_term_share_train": 0.218,
+  "conflict_term_share_train": 0.0246,
+  "food_category_share_train": 0.3318,
+  "multi_category_sentence_share_train": 0.1894,
+  "median_tokens_per_sentence_train": 12,
+  "median_aspect_terms_per_sentence_train": 1
+}

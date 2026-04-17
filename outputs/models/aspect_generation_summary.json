@@ -1,0 +1,19 @@
+{
+  "evaluation_note": "Evaluation uses only single-category sentences, because SemEval restaurant data does not directly align each aspect term to a category in multi-category sentences.",
+  "train_eval_rows": 2477,
+  "test_eval_rows": 709,
+  "baseline": {
+    "rows": 709,
+    "accuracy": 0.7941,
+    "macro_f1": 0.5588,
+    "coverage": 1.0
+  },
+  "hybrid": {
+    "rows": 709,
+    "accuracy": 0.787,
+    "macro_f1": 0.6284,
+    "coverage": 1.0
+  },
+  "improvement_accuracy": -0.0071,
+  "improvement_macro_f1": 0.0696
+}
