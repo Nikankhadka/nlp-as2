@@ -2,7 +2,7 @@ num,type,input,response,time_s,verdict
 1,greeting,Hello!,"Hello! 👋 I am your restaurant review expert chatbot.
 I can analyse reviews and tell you how people feel about
 the food, service, price, or ambience.
-Just type a review or ask a question!",0.712,correct
+Just type a review or ask a question!",0.746,correct
 2,greeting,Hi there,"Hello! 👋 I am your restaurant review expert chatbot.
 I can analyse reviews and tell you how people feel about
 the food, service, price, or ambience.
@@ -33,7 +33,7 @@ Try typing:
 
   😊 FOOD: positive  (about: pizza)
 
-Want to ask about a specific aspect like food quality or service?",0.003,correct
+Want to ask about a specific aspect like food quality or service?",0.004,correct
 10,restaurant_pos,The service was excellent,"Here is what I found:
 
   😊 SERVICE: positive  (about: service)
@@ -48,7 +48,7 @@ Want to ask about a specific aspect like food quality or service?",0.002,correct
 
   😊 SERVICE: positive  (about: waitress)
 
-Want to ask about a specific aspect like food quality or service?",0.003,correct
+Want to ask about a specific aspect like food quality or service?",0.002,correct
 13,restaurant_pos,The ambience was wonderful,"Here is what I found:
 
   😊 AMBIENCE: positive  (about: ambience)
@@ -56,7 +56,7 @@ Want to ask about a specific aspect like food quality or service?",0.003,correct
 Want to ask about a specific aspect like food quality or service?",0.002,correct
 14,restaurant_pos,Best pasta I have ever had,"Here is what I found:
 
-  😊 FOOD: positive  (about: pasta, best pasta)
+  😊 FOOD: positive  (about: best pasta, pasta)
 
 Want to ask about a specific aspect like food quality or service?",0.003,correct
 15,restaurant_neg,The pasta was cold,"Here is what I found:
@@ -68,12 +68,12 @@ Want to ask about a specific aspect like food quality or service?",0.002,partial
 
   😞 SERVICE: negative  (about: waiter)
 
-Want to ask about a specific aspect like food quality or service?",0.002,correct
+Want to ask about a specific aspect like food quality or service?",0.003,correct
 17,restaurant_neg,The food was terrible and overpriced,"Here is what I found:
 
   😞 FOOD: negative  (about: food)
 
-Want to ask about a specific aspect like food quality or service?",0.002,correct
+Want to ask about a specific aspect like food quality or service?",0.003,correct
 18,restaurant_neg,The music was too loud,"Here is what I found:
 
   😞 AMBIENCE: negative  (about: music)
@@ -86,39 +86,39 @@ Want to ask about a specific aspect like food quality or service?",0.002,correct
 Want to ask about a specific aspect like food quality or service?",0.002,correct
 20,restaurant_neg,This place is dirty,"Here is what I found:
 
-  😞 MISCELLANEOUS: negative  (about: place, this place)
+  😞 MISCELLANEOUS: negative  (about: this place, place)
 
 Want to ask about a specific aspect like food quality or service?",0.002,correct
 21,restaurant_mixed,The pasta was cold but the waiter was incredibly friendly and fast,"Here is what I found:
 
-  😞 FOOD: negative  (about: pasta)
   😞 SERVICE: negative  (about: waiter)
+  😞 FOOD: negative  (about: pasta)
 
 Want to ask about a specific aspect like food quality or service?",0.003,correct
 22,restaurant_mixed,"Overpriced for the tiny portions, though the atmosphere was cozy","Here is what I found:
 
-  😞 MISCELLANEOUS: negative  (about: portions, tiny portions)
   🤔 AMBIENCE: conflict  (about: atmosphere)
+  😞 MISCELLANEOUS: negative  (about: tiny portions, portions)
 
-Want to ask about a specific aspect like food quality or service?",0.003,correct
+Want to ask about a specific aspect like food quality or service?",0.004,correct
 23,restaurant_mixed,"Great value and quick service, but the music was too loud to talk","Here is what I found:
 
-  😞 SERVICE: negative  (about: quick service, service)
+  😞 PRICE: negative  (about: great value, value)
   😞 AMBIENCE: negative  (about: music)
-  😞 PRICE: negative  (about: value, great value)
+  😞 SERVICE: negative  (about: quick service, service)
 
-Want to ask about a specific aspect like food quality or service?",0.003,correct
+Want to ask about a specific aspect like food quality or service?",0.004,correct
 24,restaurant_mixed,The staff was rude and the waiting time was too long,"Here is what I found:
 
-  😞 MISCELLANEOUS: negative  (about: time, waiting, waiting time)
+  😞 MISCELLANEOUS: negative  (about: waiting, waiting time, time)
   😞 SERVICE: negative  (about: staff)
 
 Want to ask about a specific aspect like food quality or service?",0.003,correct
 25,restaurant_mixed,Amazing desserts and the ambience was perfect for a date night,"Here is what I found:
 
-  😊 MISCELLANEOUS: positive  (about: date night, night, date)
+  😊 FOOD: positive  (about: amazing desserts, desserts)
+  😊 MISCELLANEOUS: positive  (about: date, date night, night)
   😊 AMBIENCE: positive  (about: ambience)
-  😊 FOOD: positive  (about: desserts, amazing desserts)
 
 Want to ask about a specific aspect like food quality or service?",0.003,correct
 26,restaurant_mixed,The risotto was overcooked and the sommelier was rude,"Here is what I found:
@@ -136,9 +136,9 @@ Want to ask about a specific aspect like food quality or service?",0.002,correct
 28,restaurant_mixed,Excellent taste but small portions,"Here is what I found:
 
   😊 FOOD: positive  (about: taste, excellent taste)
-  😞 MISCELLANEOUS: negative  (about: portions, small portions)
+  😞 MISCELLANEOUS: negative  (about: small portions, portions)
 
-Want to ask about a specific aspect like food quality or service?",0.003,correct
+Want to ask about a specific aspect like food quality or service?",0.002,correct
 29,domain_query,Is the food here good?,"Based on 3713 reviews in my training data, food is rated positively 70% of the time and negatively 17% of the time.",0.0,correct
 30,domain_query,What do people say about the service?,"Based on 3713 reviews in my training data, service is rated positively 54% of the time and negatively 37% of the time.",0.0,correct
 31,domain_query,How is the ambience?,"Based on 3713 reviews in my training data, ambience is rated positively 61% of the time and negatively 23% of the time.",0.0,correct
@@ -185,7 +185,7 @@ Want to ask about a specific aspect like food quality or service?",0.002,correct
 52,edge,spagetti,"I specialise in restaurant review analysis. Try typing a restaurant review like:
   ""The pasta was cold but the waiter was friendly""",0.002,correct
 53,edge,A,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.001,partial
+  ""The pasta was cold but the waiter was friendly""",0.002,partial
 54,edge,12345,"I specialise in restaurant review analysis. Try typing a restaurant review like:
   ""The pasta was cold but the waiter was friendly""",0.002,partial
 55,edge,!!!!,"I specialise in restaurant review analysis. Try typing a restaurant review like:
@@ -211,15 +211,15 @@ Want to ask about a specific aspect like food quality or service?",0.002,correct
 Want to ask about a specific aspect like food quality or service?",0.002,correct
 67,negation,Oh great another cold meal,"Here is what I found:
 
-  😊 FOOD: positive  (about: meal, another cold meal)
+  😊 FOOD: positive  (about: another cold meal, meal)
 
 Want to ask about a specific aspect like food quality or service?",0.002,correct
 68,negation,It's not the worst but it could be better,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.003,partial
+  ""The pasta was cold but the waiter was friendly""",0.002,partial
 69,long_review,We went for dinner last night and had the most amazing steak cooked perfectly medium rare with a side of truffle fries that were crispy and delicious,"Here is what I found:
 
-  😊 MISCELLANEOUS: positive  (about: side, night, crispy, dinner)
-  😊 FOOD: positive  (about: most amazing steak, truffle fries, fries, steak)
+  😊 MISCELLANEOUS: positive  (about: side, crispy, dinner, night)
+  😊 FOOD: positive  (about: fries, steak, most amazing steak, truffle fries)
 
 Want to ask about a specific aspect like food quality or service?",0.006,correct
 70,long_review,"The appetizers were cold when they arrived, the main course took forty five minutes to come out, and when we complained the manager was completely unhelpful and dismissive","I can help you with:
@@ -236,7 +236,7 @@ the food, service, price, or ambience.
 Just type a review or ask a question!",0.0,partial
 72,long_review,"Arrived at seven, seated by eight, ordered by eight thirty, food arrived at nine fifteen, no apology, no discount, the pasta was lukewarm and the wine was served at room temperature on a hot summer night","Here is what I found:
 
-  😐 MISCELLANEOUS: neutral  (about: room, night, summer, temperature, seated, room temperature, served, discount, apology, hot summer night)
+  😐 MISCELLANEOUS: neutral  (about: apology, summer, temperature, night, hot summer night, room, discount, served, room temperature, seated)
   😊 FOOD: positive  (about: wine, pasta, food)
 
 Want to ask about a specific aspect like food quality or service?",0.008,correct

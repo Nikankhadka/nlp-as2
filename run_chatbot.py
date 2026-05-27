@@ -276,7 +276,11 @@ QUERY_INTENT_WORDS = ['how is', 'how are', 'what do people', 'what about', 'tell
                       'is the', 'are the', 'do people', 'how about', 'what is the',
                       'what are the', 'what do you', 'what is your', 'what about',
                       'any good', 'people like', 'people say', 'people think',
-                      'how would you', 'anything to', 'can you tell']
+                      'how would you', 'anything to', 'can you tell',
+                      'what meals', 'what food', 'what kind', 'do you serve',
+                      'do you have', 'would like to know', 'i want to know',
+                      'could you tell', 'what sort of', 'how good is',
+                      'what kind of', 'best thing', 'most popular']
 
 COMPLAINT_KEYWORDS = ['complaint', 'worst', 'bad things', 'disappointing', 'negative about',
                       'most hated', 'what do people hate', 'why do people complain',
@@ -315,30 +319,36 @@ def classify_domain_query(text):
 def answer_domain_query(category):
     stats = DOMAIN_KNOWLEDGE.get(category)
     if not stats:
-        return ("I have data on food, service, price, and ambience. "
-                "Which would you like to know about?")
+        return ("I can tell you about our food, service, prices, or atmosphere — "
+                "which would you like to know about?")
+
+    cat_keywords = DOMAIN_QUERY_PATTERNS.get(category, [])
+    top_for_cat = [(t, c) for t, c in DOMAIN_KNOWLEDGE['_top_terms']
+                   if any(k in t for k in cat_keywords)][:3]
+    top_str = ', '.join(f'{t}' for t, _ in top_for_cat) if top_for_cat else 'various items'
+
+    if stats['positive_pct'] > 50:
+        verdict = f'guests really enjoy the {category}'
+    elif stats['positive_pct'] > 40:
+        verdict = f'{category} feedback is a bit mixed'
+    else:
+        verdict = f'{category} gets a fair amount of criticism'
 
     templates = [
-        f"Based on {DOMAIN_KNOWLEDGE['_overall_total']} reviews in my training data, "
-        f"{category} is rated positively {stats['positive_pct']}% of the time "
-        f"and negatively {stats['negative_pct']}% of the time.",
+        f"Our guests really enjoy the {category} — about {stats['positive_pct']}% "
+        f"of {stats['total']} mentions are positive. "
+        f"The most talked-about are {top_str}.",
 
-        f"Across my training set, {category} gets positive marks "
-        f"{stats['positive_pct']}% of the time ({stats['positive']} out of "
-        f"{stats['total']} mentions) — with {stats['negative_pct']}% negative.",
+        f"People tend to say good things about our {category}: "
+        f"{stats['positive_pct']}% positive out of {stats['total']} mentions. "
+        f"{top_str} come up a lot in guest feedback.",
 
-        f"Looking at {stats['total']} {category} mentions in my data: "
-        f"{stats['positive_pct']}% positive, {stats['negative_pct']}% negative, "
-        f"{stats['neutral_pct']}% neutral.",
+        f"Looking at guest feedback, {verdict} — "
+        f"{stats['positive_pct']}% positive vs {stats['negative_pct']}% negative. "
+        f"The standouts are {top_str}.",
 
-        f"From {stats['total']} {category} annotations: most are positive "
-        f"({stats['positive_pct']}%), followed by negative ({stats['negative_pct']}%), "
-        f"with {stats['neutral_pct']}% neutral.",
-
-        f"My knowledge base shows {category} sentiment is "
-        f"{'mostly favorable' if stats['positive_pct'] > 50 else 'mixed'}: "
-        f"{stats['positive_pct']}% positive vs {stats['negative_pct']}% negative "
-        f"across {stats['total']} mentions.",
+        f"{stats['positive_pct']}% of guests mention {category} positively. "
+        f"{top_str} get the most attention — that's {stats['total']} mentions total.",
     ]
     return random.choice(templates)
 
@@ -346,13 +356,16 @@ def answer_overall_query():
     overall_pos = round(100 * sum(
         DOMAIN_KNOWLEDGE[c]['positive'] for c in CATEGORIES
         if c in DOMAIN_KNOWLEDGE) / DOMAIN_KNOWLEDGE['_overall_total'])
+    top_5 = ', '.join(t for t, _ in DOMAIN_KNOWLEDGE['_top_terms'][:5])
     templates = [
-        f"Across {DOMAIN_KNOWLEDGE['_overall_total']} annotations, about "
-        f"{overall_pos}% of all restaurant feedback is positive.",
-        f"My training data of {DOMAIN_KNOWLEDGE['_overall_total']} reviews shows "
-        f"roughly {overall_pos}% positive sentiment overall.",
-        f"Overall, {overall_pos}% of annotations in my knowledge base are positive. "
-        f"Food and ambience are the highest-rated categories.",
+        f"Overall, our guests are pretty happy — about {overall_pos}% of all feedback is positive. "
+        f"The most talked-about things are {top_5}.",
+
+        f"Across all guest mentions, roughly {overall_pos}% are positive. "
+        f"{top_5} get mentioned the most.",
+
+        f"Most guests leave happy — {overall_pos}% positive overall from "
+        f"{DOMAIN_KNOWLEDGE['_overall_total']} mentions. Top topics: {top_5}.",
     ]
     return random.choice(templates)
 
@@ -361,18 +374,19 @@ def answer_complaints_query():
         [(c, DOMAIN_KNOWLEDGE[c]) for c in CATEGORIES if c in DOMAIN_KNOWLEDGE],
         key=lambda x: x[1]['negative_pct'], reverse=True
     )
-    lines = [f"Based on {DOMAIN_KNOWLEDGE['_overall_total']} annotations, "
-             f"the most common complaints by category:"]
+    lines = ["Here's what guests tend to flag:"]
     for cat, stats in categories_by_neg:
-        lines.append(f"  {cat}: {stats['negative_pct']}% negative ({stats['negative']}/{stats['total']})")
+        lines.append(f"  {cat}: {stats['negative_pct']}% negative mentions "
+                     f"({stats['negative']} out of {stats['total']})")
     return '\n'.join(lines)
 
 def answer_popular_query():
-    top = DOMAIN_KNOWLEDGE['_top_terms'][:10]
-    terms = ', '.join(f'"{t}" ({c}x)' for t, c in top)
-    return (f"The most mentioned terms in my training data are: {terms}.\n"
-            f"Food is the dominant category with {DOMAIN_KNOWLEDGE['food']['total']} annotations "
-            f"({DOMAIN_KNOWLEDGE['food']['positive_pct']}% positive).")
+    top = DOMAIN_KNOWLEDGE['_top_terms'][:8]
+    terms = ', '.join(f'{t}' for t, c in top)
+    return (f"The most mentioned things by our guests: {terms}. "
+            f"Food gets the most love — "
+            f"{DOMAIN_KNOWLEDGE['food']['positive_pct']}% positive across "
+            f"{DOMAIN_KNOWLEDGE['food']['total']} mentions.")
 
 # ============================================================
 # EXAMINER / SELF-KNOWLEDGE RESPONSES
@@ -518,7 +532,9 @@ HELP_PATTERNS = ['help', 'capabilities', 'what can you do', 'how do you work',
                  'what do you do', 'what are you', 'what can i ask', 'how can you',
                  'what is your purpose', 'what are your functions', 'commands',
                  'options', 'features', 'what questions can', 'what kind of',
-                 'how does this work', 'explain yourself']
+                 'how does this work', 'explain yourself',
+                 'what else', 'what other', 'what more', 'is there anything else',
+                 'what else can']
 
 RESTAURANT_TERMS = {
     # Food items & dishes
@@ -558,6 +574,18 @@ FAREWELL_TOKENS  = {'bye','goodbye','quit','thanks','thank','later','farewell',
 GREETING_PHRASES = ['good afternoon', 'good evening']
 FAREWELL_PHRASES = ['see you', 'take care']
 
+RESTAURANT_ABOUT_US = [
+    'your restaurant', 'your menu', 'your food', 'you serve',
+    'do you serve', 'do you have', 'what meals do you',
+    'what food do you', 'what kind of restaurant',
+    'tell me about your', 'about your restaurant',
+    'what is your best', 'what is your most popular',
+    'what is the best', 'most popular dish', 'best food',
+    'best thing on the menu', 'what do you recommend',
+    'what should i order', 'whats your best', "what's your best",
+    'what is good here', 'whats good here', "what's good here",
+]
+
 def detect_intent(text):
     if not text or not text.strip():
         return 'off_domain'
@@ -589,20 +617,24 @@ def detect_intent(text):
                                       'in general', 'what do you think', 'opinion']):
         return 'domain_query'
 
-    # 5. Greetings (token intersection, not substring)
+    # 5. Restaurant about-us questions (before review check — catches "what meals do you serve?")
+    if any(p in text_lower for p in RESTAURANT_ABOUT_US):
+        return 'domain_query'
+
+    # 6. Greetings (token intersection, not substring)
     if tokens & GREETING_TOKENS or any(p in text_lower for p in GREETING_PHRASES):
         return 'greeting'
 
-    # 6. Farewells (token intersection + multi-word phrases)
+    # 7. Farewells (token intersection + multi-word phrases)
     if tokens & FAREWELL_TOKENS or any(p in text_lower for p in FAREWELL_PHRASES):
         return 'farewell'
 
-    # 7. Restaurant review (expanded keywords + lemmatized tokens)
+    # 8. Restaurant review (expanded keywords + lemmatized tokens)
     restaurant_terms_lem = {LEMMATIZER.lemmatize(t) for t in RESTAURANT_TERMS}
     if tokens_lem & restaurant_terms_lem:
         return 'restaurant_review'
 
-    # 8. spaCy fallback for reviews with unknown food terms
+    # 9. spaCy fallback for reviews with unknown food terms
     # Only trigger if text has review-like structure (adjective before/after noun)
     doc = nlp(clean_text(text))
     nouns = [token.text.lower() for token in doc
@@ -717,11 +749,11 @@ def _format_absa_v5(by_cat, results):
 def general_responses(intent, context=None):
     if intent == 'greeting':
         templates = [
-            "Hello! \U0001f44b I am your restaurant review expert chatbot. I can analyse reviews and tell you how people feel about the food, service, price, or ambience. Just type a review or ask a question!",
-            "Hi there! I'm a restaurant review analyst. I can evaluate the sentiment in dining reviews, answer questions about what people like and dislike, and explain how my system works. What would you like to explore?",
-            "Hey! Welcome to your restaurant review assistant. I can break down the sentiment of any dining experience — tell me about a meal you had, or ask me about trends in restaurant feedback!",
-            "Good to see you! I specialise in restaurant review analysis. Share a review and I'll tell you which aspects people loved or hated. Or ask me 'Is the food good?' for insights from my training data.",
-            "\U0001f374 Hello! I analyse restaurant reviews. Describe a dining experience and I'll break down the sentiment for each aspect — food, service, price, and ambience. What can I help with?",
+            "Welcome! \U0001f44b I can tell you what our guests love about the food, service, and atmosphere — or help if you have questions. What would you like to know?",
+            "Hi there! I'm your restaurant assistant. Ask me about our food, what guests tend to say, or anything else about your dining experience. How can I help?",
+            "Hey! Looking for recommendations, or curious what people say about us? I've got the scoop on our food, service, prices, and ambience. What can I help with?",
+            "\U0001f374 Good to see you! I can answer questions about our restaurant, share what guests love most, or break down a review for you. Where should we start?",
+            "Hello! I'm here to help with anything restaurant-related — what's popular, how our service rates, or analysing your experience. What are you curious about?",
         ]
         response = random.choice(templates)
         MEMORY.add_exchange('(greeting)', response, 'greeting')
@@ -729,41 +761,30 @@ def general_responses(intent, context=None):
 
     if intent == 'farewell':
         templates = [
-            "Thanks for chatting! Hope the insights were helpful. Goodbye! \U0001f44b",
-            "Glad I could help with the restaurant analysis. Come back if you have more reviews to share. Bye!",
-            "Enjoyed our conversation! When you have more dining experiences to analyse, I'll be here. Take care!",
-            "Goodbye! Hope the restaurant insights were useful. Feel free to return anytime. \U0001f44b",
-            "Thanks for the chat! Best of luck with your dining adventures. See you next time!",
+            "Thanks for stopping by! Hope that was helpful. Come back anytime. \U0001f44b",
+            "Glad I could help! Enjoy your meal — and when you have more questions, I'll be here.",
+            "Take care! If you ever want to know more about our food or service, just ask. Bye!",
+            "Goodbye! Hope the insights were useful. See you next time! \U0001f44b",
+            "Thanks for chatting! Happy dining — reach out anytime you need restaurant info.",
         ]
         return random.choice(templates)
 
     if intent == 'help':
         templates = [
-            "I can help you with:\n  \u2022 Analysing sentiment in restaurant reviews\n  \u2022 Identifying which aspects are positive or negative\n  \u2022 Answering questions about food, service, price, ambience\n  \u2022 Explaining how my ABSA system works\n\nTry typing:\n  'The pasta was cold but the waiter was friendly'\n  'What do people think about the service?'\n  'What model are you using?'",
-            "Here's what I do:\n  \u2022 Sentiment analysis on restaurant reviews (food, service, price, ambience)\n  \u2022 Domain Q&A — 'Is food good?' answers from 3,693 annotated examples\n  \u2022 System explanation — ask me about my model, accuracy, or training data\n\nTry a review like 'The pizza was amazing' or a question like 'How is the service?'",
-            "I'm a restaurant review expert! My capabilities:\n  \u2022 ABSA: Extract aspects and classify sentiment (positive/negative/neutral)\n  \u2022 Knowledge Q&A: Stats from 3,693 training annotations\n  \u2022 Self-knowledge: I can explain my architecture and performance\n\nGo ahead, try any restaurant question or share a dining review!",
-            "You can ask me to:\n  1. Analyse a review — 'The steak was overcooked but the ambience was lovely'\n  2. Check trends — 'Is the food good?' or 'What do people complain about?'\n  3. Explain myself — 'How accurate are you?' or 'What model do you use?'\n\nWhat would you like to try?",
-            "Welcome! I offer:\n  \u2022 Review Analysis — I break down the sentiment of each aspect in your review\n  \u2022 Knowledge Lookup — I have stats on 3,693 restaurant annotations\n  \u2022 System Info — Ask me about my model, accuracy, or limitations\n\nTry something like: 'The service was slow but the food was delicious'",
+            "I can help with:\n  \u2022 What guests love about our food, service, price, atmosphere\n  \u2022 Popular dishes and most-mentioned items\n  \u2022 Breaking down a review you have\n  \u2022 How my system works behind the scenes\n\nTry: 'What's your best food?' or 'The pasta was amazing'",
+            "Here's what I do:\n  \u2022 Answer questions about our restaurant from guest feedback\n  \u2022 Analyse a dining review you share with me\n  \u2022 Explain my model and accuracy if you're curious\n\nTry asking 'Is the food good here?' or 'What do people complain about?'",
+            "Ask me anything about our restaurant! I can tell you:\n  \u2022 What dishes guests mention most and how they rate them\n  \u2022 How people feel about the service, price, and atmosphere\n  \u2022 How my analysis system works\n\nTry: 'What's popular?' or 'How accurate are you?'",
+            "I'm your restaurant knowledge assistant. I can:\n  1. Share what guests say about our food, service, prices, and vibe\n  2. Analyse a review — 'The steak was overcooked but the ambience was lovely'\n  3. Explain how I work — 'What model do you use?'\n\nWhat would you like to try?",
         ]
         return random.choice(templates)
 
     if intent == 'off_domain':
         templates = [
-            ("I specialise in restaurant review analysis — I'd be more helpful "
-             "analysing a dining experience or answering questions about restaurant "
-             "trends. Would you like to share a review?"),
-            ("That's outside my domain — I focus on restaurant reviews and sentiment "
-             "analysis. Try describing a restaurant experience, or ask me 'Is the "
-             "food good?' and I'll check my knowledge base."),
-            ("I'm a restaurant review chatbot, so I'm not equipped for that. But I can "
-             "analyse a dining review or tell you what people tend to say about "
-             "restaurant food, service, price, or ambience. Want to try?"),
-            ("That's not my area of expertise unfortunately. I analyse restaurant "
-             "reviews and answer questions about dining trends. Share a review "
-             "like 'The pizza was great' and I'll break it down for you!"),
-            ("Sorry, I stick to restaurant reviews! I can break down the sentiment "
-             "of any dining experience or answer questions about what people say "
-             "about restaurants. Would you like to analyze a review instead?"),
+            "I'm here for restaurant questions! Want to know what guests love about our food, or how our service rates? That's where I can really help.",
+            "That's a bit outside my area — but I can tell you everything about our restaurant. Popular dishes, guest feedback, service quality... what interests you?",
+            "Happy to help with anything restaurant-related! Ask about our food, what people say about the service, or share a review. That's my sweet spot.",
+            "I'm best at answering restaurant questions. Curious what guests tend to say about our food? Or want me to break down a dining experience?",
+            "Sorry, I stick to restaurant topics! But I've got plenty to share — popular dishes, service ratings, guest feedback. What would you like to know?",
         ]
         return random.choice(templates)
 
@@ -823,38 +844,42 @@ def _build_llm_system_prompt():
 
     top_terms = ', '.join(f'"{t}" ({c}x)' for t, c in DOMAIN_KNOWLEDGE['_top_terms'][:15])
 
-    return f"""You are RestaurantXpert, a restaurant review analysis chatbot.
+    return f"""You are a friendly restaurant assistant. You help customers using insights from real guest feedback.
 
-You help users by:
-1. Analysing restaurant reviews for sentiment on FOOD, SERVICE, PRICE, and AMBIENCE
-2. Answering questions about restaurant review trends using your training statistics
-3. Explaining how your ABSA system (model, accuracy, limitations) works
+SWITCH YOUR TONE BASED ON WHAT THE USER NEEDS:
 
-CRITICAL: All facts MUST come from the data below. Never invent restaurant facts, names, or statistics.
+1. REVIEW ANALYSIS (intent=restaurant_review): Act as an analyzer. Break down the sentiment of each aspect professionally but conversationally. Use phrases like "Your review shows..." or "I found mixed feelings about...".
 
-DOMAIN KNOWLEDGE (use these exact numbers):
+2. CUSTOMER QUESTIONS (all other intents: domain_query, examiner, help, greeting, off_domain): Be warm and helpful — like restaurant staff. Use "our guests", "people tend to", "most mentioned". Frame statistics as guest feedback, never as research.
+
+CRITICAL TONE RULES:
+- NEVER say "training data" or "annotations" — say "guest feedback" or "mentions"
+- NEVER say "sentiment was observed" — say "guests tend to feel" or "people say"
+- NEVER say "positive sentiment in 70% of cases" — say "7 out of 10 guests mention it positively"
+- NEVER say "based on reviews in my training data" — say "from what guests tell us"
+- Keep every response under 4 sentences, casual and natural, NEVER robotic
+- When redirecting off-domain, vary your response — don't repeat yourself
+
+DOMAIN KNOWLEDGE (use these exact numbers, but rephrase naturally):
 {chr(10).join(stats_text)}
 
-Most mentioned terms: {top_terms}
-Overall dataset: {DOMAIN_KNOWLEDGE['_overall_total']} annotations, majority positive.
+Most mentioned: {top_terms}
+Overall: {DOMAIN_KNOWLEDGE['_overall_total']} guest mentions, majority positive.
 
-MODEL FACTS:
+MODEL FACTS (for examiner questions only — explain naturally, not like a datasheet):
 - Architecture: TF-IDF vectorizer + SMOTE oversampling + Logistic Regression + keyword category mapper
 - Test accuracy: 70.99%, Weighted F1: 0.715
 - Strongest class: positive (F1=0.837), Weakest: conflict (F1=0.213), neutral (F1=0.451)
 - Training data: SemEval-2014 Task 4, 3,041 sentences, 3,693 aspects
-- Category mapping: Keyword-based rule engine (340x faster than BART zero-shot)
 
 GUARD RAILS:
 - NEVER give medical, legal, or financial advice
 - NEVER make up restaurant names, reviews, or statistics
-- If user goes off-domain twice, politely redirect and stop engaging with off-topic queries
+- If user goes off-domain twice, politely redirect and stop engaging
 - Never engage with harmful, offensive, or NSFW content
-- Keep responses to 1-4 sentences, conversational and natural
+- Keep responses conversational, 1-4 sentences
 
-OFF-DOMAIN RESPONSE: Politely redirect to restaurant review domain. Mention what you can do (analyse reviews, answer restaurant questions, explain your system).
-
-YOUR TASK: Take the structured analysis result I provide and rephrase it naturally. If I give you "intent=greeting", reply with a warm greeting. If I give you "intent=restaurant_review" with analysis results, summarise them conversationally. Always use the facts provided — never make up your own."""
+YOUR TASK: Take the structured Phase 1 result I provide and rephrase it naturally in the right tone for the intent. Never invent facts — use only the numbers provided."""
 
 
 LLM_SYSTEM_PROMPT = _build_llm_system_prompt()
@@ -900,7 +925,7 @@ def call_llm(user_message, context, phase1_result, intent):
         if response.status_code == 200:
             data = response.json()
             llm_response = data['choices'][0]['message']['content'].strip()
-            return _apply_guard_rails(llm_response, user_message, intent)
+            return '[LLM] ' + _apply_guard_rails(llm_response, user_message, intent)
         else:
             print(f'[LLM API error {response.status_code}]', flush=True)
             return _llm_fallback(phase1_result, intent)
@@ -979,15 +1004,25 @@ def chat(user_input):
     intent = detect_intent(user_input)
     context = MEMORY.get_context()
 
-    # Handle each intent path
+    # Greetings and farewells skip LLM — templates are already good
+    if intent in ('greeting', 'farewell'):
+        response = general_responses(intent)
+        if intent == 'greeting':
+            MEMORY.add_exchange(user_input, response, intent)
+        return response
+
+    # All other intents: Phase 1 first, then optionally wrap with LLM
+    should_use_llm = LLM_ENABLED and not _no_llm
     if intent == 'restaurant_review':
         absa_results = analyse(user_input)
         phase1_response = format_absa_response(absa_results)
         MEMORY.add_exchange(user_input, phase1_response, intent, topic='restaurant_review')
-        try:
-            return call_llm(user_input, context, phase1_response, intent)
-        except Exception:
-            return phase1_response
+        if should_use_llm:
+            try:
+                return call_llm(user_input, context, phase1_response, intent)
+            except Exception:
+                return phase1_response
+        return phase1_response
 
     elif intent == 'domain_query':
         prev_topic = MEMORY.get_previous_topic()
@@ -1022,49 +1057,43 @@ def chat(user_input):
                 category = 'overall'
 
         MEMORY.add_exchange(user_input, phase1_response, intent, topic=category)
-        try:
-            return call_llm(user_input, context, phase1_response, intent)
-        except Exception:
-            return phase1_response
+        if should_use_llm:
+            try:
+                return call_llm(user_input, context, phase1_response, intent)
+            except Exception:
+                return phase1_response
+        return phase1_response
 
     elif intent == 'examiner':
         examiner_topic = detect_examiner_intent(user_input)
         phase1_response = answer_examiner(examiner_topic)
         MEMORY.add_exchange(user_input, phase1_response, intent, topic=examiner_topic)
-        try:
-            return call_llm(user_input, context, phase1_response, intent)
-        except Exception:
-            return phase1_response
+        if should_use_llm:
+            try:
+                return call_llm(user_input, context, phase1_response, intent)
+            except Exception:
+                return phase1_response
+        return phase1_response
 
     elif intent == 'help':
         phase1_response = general_responses(intent)
         MEMORY.add_exchange(user_input, phase1_response, intent)
-        try:
-            return call_llm(user_input, context, phase1_response, intent)
-        except Exception:
-            return phase1_response
-
-    elif intent == 'greeting':
-        phase1_response = general_responses(intent)
-        try:
-            return call_llm(user_input, context, phase1_response, intent)
-        except Exception:
-            return phase1_response
-
-    elif intent == 'farewell':
-        phase1_response = general_responses(intent)
-        try:
-            return call_llm(user_input, context, phase1_response, intent)
-        except Exception:
-            return phase1_response
+        if should_use_llm:
+            try:
+                return call_llm(user_input, context, phase1_response, intent)
+            except Exception:
+                return phase1_response
+        return phase1_response
 
     elif intent == 'off_domain':
         phase1_response = general_responses(intent)
         MEMORY.add_exchange(user_input, phase1_response, intent)
-        try:
-            return call_llm(user_input, context, phase1_response, intent)
-        except Exception:
-            return phase1_response
+        if should_use_llm:
+            try:
+                return call_llm(user_input, context, phase1_response, intent)
+            except Exception:
+                return phase1_response
+        return phase1_response
 
     return general_responses('general')
 
@@ -1208,6 +1237,7 @@ results = evaluate_test_set()
 # ============================================================
 _chat_only = '--chat-only' in sys.argv
 _test_only = '--test-only' in sys.argv
+_no_llm    = '--no-llm' in sys.argv
 _show_test = not _chat_only
 
 # ============================================================

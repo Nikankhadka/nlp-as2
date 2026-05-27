@@ -111,7 +111,37 @@
 | **Before** | 1 template per response type |
 | **After** | 4-5 variants, randomly selected |
 
-### 8. Added Conversation Memory (3-turn sliding window)
+### 8. Mixed Persona + Response Naturalization
+
+| Aspect | Detail |
+|--------|--------|
+| **Why necessary** | Previous responses sounded like research papers ("Based on reviews in my training data..."). Restaurant questions like "what's your best food?" were misrouted to ABSA or returned academic responses. The chatbot needed a tone appropriate to context — analytical for reviews, conversational for customer questions. |
+| **Which failures it fixes** | 4 routes fixed: about-us queries now map to domain_query (via RESTAURANT_ABOUT_US detection), "what else" queries now route to help (expanded HELP_PATTERNS), and all templates use casual staff language ("Our guests really enjoy...") |
+| **Alternative approach** | Could have used a single neutral tone throughout. Rejected: a restaurant assistant should sound like staff when helping customers but analytical when breaking down reviews. The mixed persona makes the bot more realistic and less robotic. |
+| **Before** | Academic, research-paper tone across all responses; about-us questions misrouted |
+| **After** | Casual staff tone for customer questions, analytical tone for reviews; about-us → domain_query, what-else → help |
+
+### 9. `--no-llm` CLI Flag
+
+| Aspect | Detail |
+|--------|--------|
+| **Why necessary** | No way to test or demonstrate keyword-only mode without making API calls. Every `chat()` invocation triggered the LLM, making fast iteration and offline demos impossible. |
+| **Which failures it fixes** | Enables quick keyword-mode testing and offline demonstrations (no API key needed) |
+| **Alternative approach** | Could have required commenting out LLM code or setting an environment variable. Rejected: a CLI flag is cleaner, self-documenting, and trivially toggleable. |
+| **Before** | LLM always called; no offline demo path |
+| **After** | `--no-llm` flag forces keyword-only mode, zero API calls |
+
+### 10. LLM Response Tagging
+
+| Aspect | Detail |
+|--------|--------|
+| **Why necessary** | Impossible to distinguish LLM-generated responses from deterministic fallback output. When debugging or demonstrating, you couldn't tell if the natural phrasing came from the LLM or a hand-written template. |
+| **Which failures it fixes** | Debuggability and transparency — the `[LLM]` prefix makes the response source immediately obvious |
+| **Alternative approach** | Could have added a debug flag logging response origin to console only. Rejected: showing the prefix in the response itself is more transparent for demos and viva evaluation. |
+| **Before** | Responses identical regardless of source; no visibility into LLM vs fallback |
+| **After** | `[LLM]` prefix on all LLM-generated responses; no prefix on deterministic fallback |
+
+### 11. Added Conversation Memory (3-turn sliding window)
 
 | Aspect | Detail |
 |--------|--------|

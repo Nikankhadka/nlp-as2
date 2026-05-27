@@ -337,7 +337,11 @@ When the user types "What model are you using?", the system finds "model" in `EX
 
 ### Component 9: LLM Wrapper (Phase 2)
 
-The optional LLM layer wraps all responses in natural conversation through OpenRouter's API:
+The optional LLM layer wraps all responses in natural conversation through OpenRouter's API. The system uses a **mixed persona** approach: the LLM adopts an analytical tone when presenting review results ("Here is what I found: FOOD: negative") but switches to a casual restaurant-staff voice for domain queries ("Our guests really enjoy the food here — 70% positive!"). The system prompt instructs the model to use "our guests" instead of "reviewers" and "people say" instead of "sentiment was observed."
+
+**Skipping LLM for greetings/farewells:** Greetings and farewells bypass the LLM entirely. Their templates are already natural and conversational (e.g., "Hello! I am your restaurant review expert..."), and skipping the API call saves ~1.5 seconds of latency per interaction.
+
+**`[LLM]` tag:** Every LLM-generated response is prefixed with `[LLM]` to distinguish it from deterministic fallback output. If the API is unreachable, the Phase 1 response appears without the prefix — making it immediately obvious which mode is active.
 
 ```python
 def call_llm(user_message, context, phase1_result, intent):
@@ -423,10 +427,15 @@ def chat(user_input):
         MEMORY.add_exchange(user_input, phase1_response, intent, topic=topic)
         return call_llm(user_input, context, phase1_response, intent)
 
-    elif intent in ('greeting', 'farewell', 'help', 'off_domain'):
+    elif intent in ('help', 'off_domain'):
         phase1_response = general_responses(intent)   # Pick a template
         MEMORY.add_exchange(user_input, phase1_response, intent)
         return call_llm(user_input, context, phase1_response, intent)
+
+    elif intent in ('greeting', 'farewell'):
+        phase1_response = general_responses(intent)   # Pick a template
+        MEMORY.add_exchange(user_input, phase1_response, intent)
+        return phase1_response  # Skips LLM — templates are natural enough, saves latency
 
     # 4. Edge case — shouldn't reach here, but defensive return
     return general_responses('general')

@@ -38,11 +38,10 @@
 **Interaction 1 — Greeting**
 ```
 User: Hello!
-Bot: Hello! I am your restaurant review expert chatbot. I can analyse reviews
-     and tell you how people feel about the food, service, price, or ambience.
-     Just type a review or ask a question!
+Bot: Welcome! 👋 I can tell you what our guests love about the food, service,
+     and atmosphere — or help if you have questions. What would you like to know?
 ```
-*Intent path: greeting → diversified template → (Phase 2) LLM wrapper*
+*Intent path: greeting → diversified template (skips LLM — casual enough, saves latency)*
 
 ---
 
@@ -63,16 +62,16 @@ Bot: Here is what I found:
 **Interaction 3 — Domain Q&A (Stats Lookup)**
 ```
 User: Is the food here good?
-Bot: Based on 3,713 reviews in my training data, food is rated positively
-     70% of the time and negatively 17% of the time.
+Bot: [LLM] Our guests really enjoy the food here! 70% of mentions are positive
+     — people often highlight dishes like pasta and pizza.
 ```
 *Intent path: domain_query → classify_domain_query() → answer_domain_query("food") → (Phase 2) LLM wrapper*
 
 Follow-up with memory:
 ```
 User: What about the service?
-Bot: Across my training set, service gets positive marks 54% of the time
-     (324 out of 597 mentions) — with 37% negative.
+Bot: [LLM] Our guests are a bit split on service — it's positive 54% of the time
+     but 37% of mentions are negative. The team works hard, though!
 ```
 *Intent path: domain_query → detect previous topic was "food" → "what about" triggers topic switch → answer_domain_query("service")*
 
@@ -97,27 +96,27 @@ Bot: I achieve 70.99% accuracy on the standard test set. My weighted F1 is
 **Interaction 5 — Off-Domain (Graceful Redirect)**
 ```
 User: What's the weather like today?
-Bot: That's outside my domain — I focus on restaurant reviews and sentiment
-     analysis. Try describing a restaurant experience, or ask me 'Is the
-     food good?' and I'll check my knowledge base.
+Bot: I'm here for restaurant questions! Want to know what guests love about
+     our food, or how our service rates? That's where I can really help.
 ```
-*Intent path: off_domain → general_responses("off_domain") → diversified template*
+*Intent path: off_domain → general_responses("off_domain") → 5 varied redirect templates*
 
 ---
 
 **Interaction 6 — Follow-up with Memory**
 ```
 User: What do people complain about?
-Bot: Based on 3,713 annotations, the most common complaints by category:
-       food: 17% negative (209/1232)
-       service: 37% negative (218/597)
-       price: 36% negative (115/321)
-       ambience: 23% negative (98/431)
+Bot: Here's what guests tend to flag:
+       service: 37% negative mentions (218 out of 597)
+       price: 36% negative mentions (115 out of 321)
+       ambience: 23% negative mentions (98 out of 431)
+       food: 17% negative mentions (209 out of 1232)
 
-User: That's a lot for service. Why is it so bad?
-Bot: [Would reference previous context about service complaints]
+User: What about the service? Why is it so mixed?
+Bot: [LLM] Service feedback is split — 54% positive but 37% negative.
+     Our team is aware and working on consistency across shifts.
 ```
-*Intent path: domain_query → COMPLAINT_KEYWORDS → answer_complaints_query()*
+*Intent path: domain_query → COMPLAINT_KEYWORDS → answer_complaints_query() → memory tracks "service" for follow-up*
 
 ---
 
@@ -218,6 +217,16 @@ Bot: [Would reference previous context about service complaints]
 **Model answer:** Five guard rails: (1) The LLM system prompt strictly instructs it to use only the provided facts — domain stats, model specs, accuracy numbers — and never invent data. (2) Post-processing filters strip any mention of medical, legal, or financial advice. (3) Off-domain counters track repeat off-topic queries — after 2 attempts, the system gives a firm redirect and stops engaging. (4) A fallback mechanism — if the OpenRouter API is unreachable, the Phase 1 deterministic responses take over with zero degradation in factual accuracy, just less natural wording. (5) Max 300 token output prevents rambling.
 **Follow-up:** "What if the LLM hallucinates anyway?"
 **Defense:** The system prompt is designed to constrain output to the provided data block. I've tested edge cases — asking for specific restaurant names, statistics not in the knowledge base — and the model defaults to acknowledging its limitations. The post-processing keyword filter catches obvious violations. But LLM guard-railing is inherently probabilistic — there's always a residual risk. That's why the deterministic fallback exists.
+
+---
+
+#### 16. "Why mixed persona instead of one fixed tone?"
+
+**Model answer:** A restaurant assistant should sound like staff when helping customers ("Our guests really enjoy the pasta"), but analytical when breaking down reviews or answering examiner questions about the model. The switch makes the bot more realistic and less robotic — a single monotone voice would feel like a research paper regardless of context. The persona is driven by intent: domain_query and greetings use a casual staff tone, while ABSA results and examiner responses retain an analytical voice. The LLM system prompt reinforces this with phrases like "use 'our guests' not 'reviewers'."
+
+**Follow-up:** "Does the tone switch confuse users?"
+
+**Defense:** No — the `[LLM]` prefix makes it clear when the LLM is active, and the tone difference between "Here is what I found: FOOD: negative" (analyst) and "Our guests really enjoy..." (staff) maps naturally to the task: analysis vs conversation. Users intuitively expect different voices for different interaction types.
 
 ---
 
@@ -381,10 +390,11 @@ The key insight: these are the same annotations that trained the sentiment class
 **What to say:**
 "The intent router is a priority-ordered decision tree:
 - Examiner questions checked first — 'what are your limitations?' must not fall through to help.
-- Help patterns next — expanded from just 'help' and 'capabilities' to 12 patterns including 'what can you do?'.
+- Help patterns next — expanded from just 'help' and 'capabilities' to 17 patterns including 'what else can you do?' and 'what other things'.
 - Domain queries use a two-stage filter: does the question contain a query pattern AND a restaurant term? 'Is the food good?' passes both. 'What is the weather?' passes the query pattern but fails the restaurant term check.
-- Greetings and farewells use token-set intersection — faster and more accurate than substring matching.
-- Restaurant review detection uses a lemmatized vocabulary of 120+ terms — 'prices' lemmatizes to 'price', 'waiters' to 'waiter'.
+- **Restaurant about-us detection** — before the review path, checks for 'your menu', 'what meals do you serve', 'best food', 'do you have'. Prevents 'based on your menu what meals do you serve?' from being misrouted to ABSA and getting nonsense output.
+- Greetings and farewells use token-set intersection — faster and more accurate than substring matching (prevents 'yo' in 'you' from triggering greeting).
+- Restaurant review detection uses a lemmatized vocabulary of 120+ terms — 'prices' lemmatizes to 'price', 'waiters' to 'waiter', 'desserts' to 'dessert'.
 - A spaCy fallback catches reviews with unknown food terms by looking for noun + copula patterns: 'The ramen was delicious' still triggers ABSA even though 'ramen' is not in the vocabulary."
 
 ---
@@ -407,24 +417,49 @@ Expected: Three aspects extracted — FOOD positive, SERVICE negative, PRICE neg
 
 **3. Domain Q&A:**
 Type: `Is the food here good?`
-Expected: "Based on 3,713 reviews... food is 70% positive."
-*Point out: "That number — 70% — comes from 867 positive food annotations divided by 1,232 total. It's computed, not guessed. I can show you the exact line of code."*
+Expected: "[LLM] Our guests really enjoy the food — about 70% of mentions are positive. Pizza and pasta come up the most in feedback."
+*Point out: "That 70% comes from 867 positive food annotations divided by 1,232 total. It's computed, not guessed. And the tone is casual — 'our guests' not 'reviewers' — because this is a customer question."*
 
 **4. Examiner Q&A:**
 Type: `What model are you using?`
-Expected: Self-knowledge response about Logistic Regression, TF-IDF, 3,693 annotations.
-*Point out: "The chatbot answers questions about itself. This was one of the big gaps in the baseline — 0 out of 6 examiner questions worked before."*
+Expected: "[LLM] I use a Logistic Regression classifier with TF-IDF features, trained on 3,693 aspect annotations from the SemEval-2014 corpus."
+*Point out: "The chatbot answers questions about itself. Notice the [LLM] prefix — you can see when the LLM is active vs when keyword fallback runs."*
 
 **5. Off-Domain:**
 Type: `What's the capital of France?`
-Expected: Polite redirect back to restaurant domain.
-*Point out: "Graceful degradation. It doesn't crash. It doesn't guess. It redirects to what it can actually do."*
+Expected: Polite, varied redirect. "I'm best at answering restaurant questions. Curious what guests tend to say about our food?"
+*Point out: "Graceful degradation — five varied redirect templates, doesn't repeat itself, doesn't crash."*
 
 **6. Follow-Up (Memory):**
 Type first: `What do people complain about?`
-Type second: `Why is service so bad?`
-Expected: Second response references service complaint stats and elaborates.
-*Point out: "The 3-turn memory tracks the previous topic. 'Why is service so bad?' isn't matched by any intent keyword — it's handled because the memory says the last topic was 'service'."*
+Type second: `And the food?`
+Expected: Second response switches to food stats (17% negative), maintaining conversation context.
+*Point out: "The 3-turn memory tracks the previous topic. 'And the food?' has no query keywords — memory fills the gap."*
+
+---
+
+### Mixed Persona: Analyst vs Staff Tone
+
+The chatbot adapts its tone based on intent — an analytical voice for reviews and examiner questions, and a casual restaurant-staff voice for domain queries and customer questions. The LLM system prompt instructs the model to use "our guests" instead of "reviewers" and "people say" instead of "sentiment was observed." Greetings and farewells skip the LLM entirely (templates are natural enough, and skipping saves ~1.5s latency). All LLM-generated responses are prefixed with `[LLM]` so you can distinguish generated from fallback output at a glance.
+
+**LLM Decision Logic:**
+| Intent | LLM called? | Reason |
+|--------|-------------|--------|
+| greeting, farewell | No | Templates already natural — no API cost or latency |
+| restaurant_review | Yes | ABSA output needs natural summarization |
+| domain_query | Yes | Stats benefit from conversational phrasing |
+| examiner | Yes | Technical facts benefit from natural explanation |
+| help, off_domain | Yes | Redirects need varied, contextual language |
+
+**CLI Flags for Demo & Testing:**
+| Flag | Behavior |
+|------|----------|
+| `python3 run_chatbot.py` | Train → evaluate → 50-question demo → interactive chat |
+| `--test-only` | Train → evaluate → 50-question demo → exit |
+| `--chat-only` | Train → evaluate → skip test → interactive chat directly |
+| `--no-llm` | Force keyword only (even with API key) — for debugging |
+
+**Point to make in viva:** "The LLM is a formatting layer. Every fact — the 70% positive food stat, the 70.99% accuracy, the top mentioned terms — comes from deterministic computations. If the API goes down, hit `--no-llm` and the chatbot works immediately with zero factual degradation."
 
 ---
 
