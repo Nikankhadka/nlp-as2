@@ -1,132 +1,100 @@
 num,type,input,response,time_s,verdict
-1,greeting,Hello!,"Hello! 👋 I am your restaurant review expert chatbot.
-I can analyse reviews and tell you how people feel about
-the food, service, price, or ambience.
-Just type a review or ask a question!",0.746,correct
-2,greeting,Hi there,"Hello! 👋 I am your restaurant review expert chatbot.
-I can analyse reviews and tell you how people feel about
-the food, service, price, or ambience.
-Just type a review or ask a question!",0.0,correct
-3,greeting,Good morning,"Hello! 👋 I am your restaurant review expert chatbot.
-I can analyse reviews and tell you how people feel about
-the food, service, price, or ambience.
-Just type a review or ask a question!",0.0,correct
-4,greeting,Hey!,"Hello! 👋 I am your restaurant review expert chatbot.
-I can analyse reviews and tell you how people feel about
-the food, service, price, or ambience.
-Just type a review or ask a question!",0.0,correct
-5,greeting,Howdy,"Hello! 👋 I am your restaurant review expert chatbot.
-I can analyse reviews and tell you how people feel about
-the food, service, price, or ambience.
-Just type a review or ask a question!",0.0,correct
-6,farewell,Goodbye,Thanks for chatting! Hope the insights were helpful. Goodbye! 👋,0.0,correct
-7,farewell,Bye,Thanks for chatting! Hope the insights were helpful. Goodbye! 👋,0.0,correct
-8,farewell,Thanks for your help,"I can help you with:
-  • Analysing sentiment in restaurant reviews
-  • Identifying which aspects are positive or negative
-  • Answering questions about food, service, price, ambience
+1,greeting,Hello!,"Hello! I'm doing well, how are you? I can answer questions about our restaurant, share what guests love most, or analyze a review. Where should we start?",0.0,correct
+2,greeting,Hi there,"Doing great, thanks! I'm here to help with anything restaurant-related — what's popular, how our service rates, or analyzing your dining experience. What would you like to know?",0.0,correct
+3,greeting,Good morning,"Hey! Doing well, how about you? I'm here to help with everything about our restaurant — what guests love about the food, how the service rates, or what dishes people mention most. What would you like to know?",0.0,correct
+4,greeting,Hey!,"Hey! Doing well, how about you? I'm here to help with everything about our restaurant — what guests love about the food, how the service rates, or what dishes people mention most. What would you like to know?",0.0,correct
+5,greeting,Howdy,"Doing great, thanks! I'm here to help with anything restaurant-related — what's popular, how our service rates, or analyzing your dining experience. What would you like to know?",0.0,correct
+6,farewell,Goodbye,"Glad I could help! Enjoy your meal — and when you have more questions, I'll be here.",0.0,correct
+7,farewell,Bye,Thanks for stopping by! Hope that was helpful. Come back anytime.,0.0,correct
+8,farewell,Thanks for your help,"I'm your restaurant knowledge assistant. I can:
+  1. Share what guests say about our food, service, prices, and vibe
+  2. Analyse a review — 'The steak was overcooked but the ambience was lovely'
+  3. Explain how I work — 'What model do you use?'
 
-Try typing:
-  ""The pasta was cold but the waiter was friendly""
-  ""What do people think about the service?""",0.0,correct
-9,restaurant_pos,The pizza was amazing,"Here is what I found:
+What would you like to try?",0.0,correct
+9,restaurant_pos,The pizza was amazing,"I analysed your review — the overall tone is positive.
 
-  😊 FOOD: positive  (about: pizza)
+  😊 pizza: positive
 
-Want to ask about a specific aspect like food quality or service?",0.004,correct
-10,restaurant_pos,The service was excellent,"Here is what I found:
+Curious about any of these in more detail?",0.005,correct
+10,restaurant_pos,The service was excellent,"Here is a summary of your review:
 
-  😊 SERVICE: positive  (about: service)
+  Service: positive(1x)  [service]",0.002,correct
+11,restaurant_pos,The desserts were delicious,"😊 Things you liked: desserts
 
-Want to ask about a specific aspect like food quality or service?",0.002,correct
-11,restaurant_pos,The desserts were delicious,"Here is what I found:
-
-  😊 FOOD: positive  (about: desserts)
-
-Want to ask about a specific aspect like food quality or service?",0.002,correct
+Anything else you'd like me to analyze?",0.002,correct
 12,restaurant_pos,The waitress was very nice,"Here is what I found:
 
   😊 SERVICE: positive  (about: waitress)
 
 Want to ask about a specific aspect like food quality or service?",0.002,correct
-13,restaurant_pos,The ambience was wonderful,"Here is what I found:
+13,restaurant_pos,The ambience was wonderful,"Here is a summary of your review:
 
-  😊 AMBIENCE: positive  (about: ambience)
+  Ambience: positive(1x)  [ambience]",0.002,correct
+14,restaurant_pos,Best pasta I have ever had,"😊 Things you liked: pasta, best pasta
 
-Want to ask about a specific aspect like food quality or service?",0.002,correct
-14,restaurant_pos,Best pasta I have ever had,"Here is what I found:
+Anything else you'd like me to analyze?",0.002,correct
+15,restaurant_neg,The pasta was cold,"Overall, your review feels positive to me. Breaking it down:
 
-  😊 FOOD: positive  (about: best pasta, pasta)
+  Food (pasta): positive 😊
 
-Want to ask about a specific aspect like food quality or service?",0.003,correct
-15,restaurant_neg,The pasta was cold,"Here is what I found:
-
-  😊 FOOD: positive  (about: pasta)
-
-Want to ask about a specific aspect like food quality or service?",0.002,partial
+Would you like a deeper breakdown on any of these?",0.002,partial
 16,restaurant_neg,The waiter was rude to us,"Here is what I found:
 
   😞 SERVICE: negative  (about: waiter)
 
-Want to ask about a specific aspect like food quality or service?",0.003,correct
-17,restaurant_neg,The food was terrible and overpriced,"Here is what I found:
-
-  😞 FOOD: negative  (about: food)
-
-Want to ask about a specific aspect like food quality or service?",0.003,correct
-18,restaurant_neg,The music was too loud,"Here is what I found:
-
-  😞 AMBIENCE: negative  (about: music)
-
 Want to ask about a specific aspect like food quality or service?",0.002,correct
+17,restaurant_neg,The food was terrible and overpriced,"Overall, your review feels negative to me. Breaking it down:
+
+  Food (food): negative 😞
+
+Would you like a deeper breakdown on any of these?",0.002,correct
+18,restaurant_neg,The music was too loud,"I analysed your review — the overall tone is negative.
+
+  😞 music: negative
+
+Curious about any of these in more detail?",0.003,correct
 19,restaurant_neg,The service was very slow,"Here is what I found:
 
   😞 SERVICE: negative  (about: service)
 
 Want to ask about a specific aspect like food quality or service?",0.002,correct
-20,restaurant_neg,This place is dirty,"Here is what I found:
+20,restaurant_neg,This place is dirty,"Here is a summary of your review:
 
-  😞 MISCELLANEOUS: negative  (about: this place, place)
+  Miscellaneous: negative(2x)  [this place, place]",0.002,correct
+21,restaurant_mixed,The pasta was cold but the waiter was incredibly friendly and fast,"😞 Things you didn't like: pasta, waiter
 
-Want to ask about a specific aspect like food quality or service?",0.002,correct
-21,restaurant_mixed,The pasta was cold but the waiter was incredibly friendly and fast,"Here is what I found:
+Anything else you'd like me to analyze?",0.003,correct
+22,restaurant_mixed,"Overpriced for the tiny portions, though the atmosphere was cozy","😞 Things you didn't like: portions, tiny portions
 
-  😞 SERVICE: negative  (about: waiter)
-  😞 FOOD: negative  (about: pasta)
-
-Want to ask about a specific aspect like food quality or service?",0.003,correct
-22,restaurant_mixed,"Overpriced for the tiny portions, though the atmosphere was cozy","Here is what I found:
-
-  🤔 AMBIENCE: conflict  (about: atmosphere)
-  😞 MISCELLANEOUS: negative  (about: tiny portions, portions)
-
-Want to ask about a specific aspect like food quality or service?",0.004,correct
+Anything else you'd like me to analyze?",0.003,correct
 23,restaurant_mixed,"Great value and quick service, but the music was too loud to talk","Here is what I found:
 
-  😞 PRICE: negative  (about: great value, value)
-  😞 AMBIENCE: negative  (about: music)
   😞 SERVICE: negative  (about: quick service, service)
+  😞 PRICE: negative  (about: value, great value)
+  😞 AMBIENCE: negative  (about: music)
 
 Want to ask about a specific aspect like food quality or service?",0.004,correct
-24,restaurant_mixed,The staff was rude and the waiting time was too long,"Here is what I found:
+24,restaurant_mixed,The staff was rude and the waiting time was too long,"I analysed your review — the overall tone is negative.
 
-  😞 MISCELLANEOUS: negative  (about: waiting, waiting time, time)
-  😞 SERVICE: negative  (about: staff)
+  😞 time: negative
+  😞 waiting: negative
+  😞 staff: negative
 
-Want to ask about a specific aspect like food quality or service?",0.003,correct
-25,restaurant_mixed,Amazing desserts and the ambience was perfect for a date night,"Here is what I found:
+Curious about any of these in more detail?",0.003,correct
+25,restaurant_mixed,Amazing desserts and the ambience was perfect for a date night,"Overall, your review feels positive to me. Breaking it down:
 
-  😊 FOOD: positive  (about: amazing desserts, desserts)
-  😊 MISCELLANEOUS: positive  (about: date, date night, night)
-  😊 AMBIENCE: positive  (about: ambience)
+  Miscellaneous (date, date night, night): positive 😊
+  Ambience (ambience): positive 😊
+  Food (desserts, amazing desserts): positive 😊
 
-Want to ask about a specific aspect like food quality or service?",0.003,correct
+Would you like a deeper breakdown on any of these?",0.003,correct
 26,restaurant_mixed,The risotto was overcooked and the sommelier was rude,"Here is what I found:
 
   😞 SERVICE: negative  (about: sommelier)
   😞 FOOD: negative  (about: risotto)
 
-Want to ask about a specific aspect like food quality or service?",0.003,correct
+Want to ask about a specific aspect like food quality or service?",0.002,correct
 27,restaurant_mixed,Food was decent but the place was dirty,"Here is what I found:
 
   😞 MISCELLANEOUS: negative  (about: place)
@@ -139,104 +107,101 @@ Want to ask about a specific aspect like food quality or service?",0.002,correct
   😞 MISCELLANEOUS: negative  (about: small portions, portions)
 
 Want to ask about a specific aspect like food quality or service?",0.002,correct
-29,domain_query,Is the food here good?,"Based on 3713 reviews in my training data, food is rated positively 70% of the time and negatively 17% of the time.",0.0,correct
-30,domain_query,What do people say about the service?,"Based on 3713 reviews in my training data, service is rated positively 54% of the time and negatively 37% of the time.",0.0,correct
-31,domain_query,How is the ambience?,"Based on 3713 reviews in my training data, ambience is rated positively 61% of the time and negatively 23% of the time.",0.0,correct
-32,domain_query,Tell me about the desserts,"Based on 3713 reviews in my training data, food is rated positively 70% of the time and negatively 17% of the time.",0.0,correct
-33,domain_query,What about the prices?,"Based on 3713 reviews in my training data, food is rated positively 70% of the time and negatively 17% of the time.",0.0,correct
-34,domain_query,Are the waiters friendly?,"Based on 3713 reviews in my training data, service is rated positively 54% of the time and negatively 37% of the time.",0.0,correct
-35,domain_query,How is the wine selection?,"Based on 3713 reviews in my training data, food is rated positively 70% of the time and negatively 17% of the time.",0.0,correct
-36,help,What can you do?,"Cannot detect sarcasm, neutral F1=45%, conflict F1=21%, 2014 vocabulary.",0.0,partial
-37,help,Help,"I can help you with:
-  • Analysing sentiment in restaurant reviews
-  • Identifying which aspects are positive or negative
-  • Answering questions about food, service, price, ambience
+29,domain_query,Is the food here good?,"70% of guests mention food positively. food, prices, menu get the most attention — that's 1232 mentions total.",0.0,partial
+30,domain_query,What do people say about the service?,"Our guests really enjoy the service — about 54% of 597 mentions are positive. The most talked-about are service, staff, waiter.",0.0,partial
+31,domain_query,How is the ambience?,"Our guests really enjoy the ambience — about 61% of 431 mentions are positive. The most talked-about are atmosphere, ambience, decor.",0.0,partial
+32,domain_query,Tell me about the desserts,"Looking at guest feedback, guests really enjoy the food — 70% positive vs 17% negative. The standouts are food, prices, menu.",0.0,correct
+33,domain_query,What about the prices?,"70% of guests mention food positively. food, prices, menu get the most attention — that's 1232 mentions total.",0.0,partial
+34,domain_query,Are the waiters friendly?,"People tend to say good things about our service: 54% positive out of 597 mentions. service, staff, waiter come up a lot in guest feedback.",0.0,correct
+35,domain_query,How is the wine selection?,"People tend to say good things about our food: 70% positive out of 1232 mentions. food, prices, menu come up a lot in guest feedback.",0.0,correct
+36,help,What can you do?,"Ask me anything about our restaurant! I can tell you:
+  • What dishes guests mention most and how they rate them
+  • How people feel about the service, price, and atmosphere
+  • How my analysis system works
 
-Try typing:
-  ""The pasta was cold but the waiter was friendly""
-  ""What do people think about the service?""",0.0,correct
-38,help,What are your capabilities?,Intent detection -> aspect extraction -> TF-IDF + Logistic Regression -> category mapping.,0.0,correct
-39,help,How do you work?,Intent detection -> aspect extraction -> TF-IDF + Logistic Regression -> category mapping.,0.0,correct
-40,general,What is the weather like today?,"Based on 3713 reviews in my training data, food is rated positively 70% of the time and negatively 17% of the time.",0.0,wrong
-41,general,Tell me about the football game,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,correct
-42,general,How do I fix my car?,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,correct
-43,general,What is the meaning of life?,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,correct
-44,general,Who won the election?,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,correct
-45,general,Tell me a joke,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,correct
-46,general,What time is it?,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,correct
-47,general,How old are you?,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,correct
-48,general,Can you recommend a movie?,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,correct
-49,general,What is the capital of France?,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,correct
+Try: 'What's popular?' or 'How accurate are you?'",0.0,correct
+37,help,Help,"Ask me anything about our restaurant! I can tell you:
+  • What dishes guests mention most and how they rate them
+  • How people feel about the service, price, and atmosphere
+  • How my analysis system works
+
+Try: 'What's popular?' or 'How accurate are you?'",0.0,correct
+38,help,What are your capabilities?,"Ask me anything about our restaurant! I can tell you:
+  • What dishes guests mention most and how they rate them
+  • How people feel about the service, price, and atmosphere
+  • How my analysis system works
+
+Try: 'What's popular?' or 'How accurate are you?'",0.0,correct
+39,help,How do you work?,"I can help with:
+  • What guests love about our food, service, price, atmosphere
+  • Popular dishes and most-mentioned items
+  • Breaking down a review you have
+  • How my system works behind the scenes
+
+Try: 'What's your best food?' or 'The pasta was amazing'",0.0,correct
+40,general,What is the weather like today?,"People tend to say good things about our food: 70% positive out of 1232 mentions. food, prices, menu come up a lot in guest feedback.",0.0,correct
+41,general,Tell me about the football game,"That's a bit outside my area — but I can tell you everything about our restaurant. Popular dishes, guest feedback, service quality... what interests you?",0.002,correct
+42,general,How do I fix my car?,"Sorry, I stick to restaurant topics! But I've got plenty to share — popular dishes, service ratings, guest feedback. What would you like to know?",0.002,correct
+43,general,What is the meaning of life?,"Happy to help with anything restaurant-related! Ask about our food, what people say about the service, or share a review. That's my sweet spot.",0.002,correct
+44,general,Who won the election?,"Happy to help with anything restaurant-related! Ask about our food, what people say about the service, or share a review. That's my sweet spot.",0.002,correct
+45,general,Tell me a joke,"That's a bit outside my area — but I can tell you everything about our restaurant. Popular dishes, guest feedback, service quality... what interests you?",0.002,correct
+46,general,What time is it?,"That's a bit outside my area — but I can tell you everything about our restaurant. Popular dishes, guest feedback, service quality... what interests you?",0.002,correct
+47,general,How old are you?,"Sorry, I stick to restaurant topics! But I've got plenty to share — popular dishes, service ratings, guest feedback. What would you like to know?",0.002,correct
+48,general,Can you recommend a movie?,"Happy to help with anything restaurant-related! Ask about our food, what people say about the service, or share a review. That's my sweet spot.",0.002,correct
+49,general,What is the capital of France?,"I'm here for restaurant questions! Want to know what guests love about our food, or how our service rates? That's where I can really help.",0.002,correct
 50,edge,,Please type something!,0.0,correct
-51,edge,Pizza,"Here is what I found:
+51,edge,Pizza,"Overall, your review feels positive to me. Breaking it down:
 
-  😊 FOOD: positive  (about: pizza)
+  Food (pizza): positive 😊
 
-Want to ask about a specific aspect like food quality or service?",0.002,correct
-52,edge,spagetti,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,correct
-53,edge,A,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,partial
-54,edge,12345,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,partial
-55,edge,!!!!,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,partial
-56,edge,Not bad,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,partial
-57,edge,The,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.001,partial
-58,examiner,What model are you using for sentiment analysis?,"Logistic Regression with TF-IDF features, trained on 3,693 annotations from SemEval-2014.",0.0,correct
-59,examiner,How accurate are your predictions?,"70.99% accuracy on test set, weighted F1: 0.715. Strongest on positive (84% F1).",0.0,correct
-60,examiner,What training data did you use?,"SemEval-2014 restaurant corpus: 3,041 sentences, 3,693 annotated aspect terms.",0.0,correct
-61,examiner,What are your limitations?,Intent detection -> aspect extraction -> TF-IDF + Logistic Regression -> category mapping.,0.0,correct
-62,examiner,How do you handle sarcasm?,"Sarcasm is a known limitation. 'Oh great, another cold meal' would be misclassified as positive.",0.0,correct
-63,examiner,Compare the food at two different restaurants,Cannot compare specific restaurants — no restaurant identities in training data.,0.0,partial
-64,negation,Not bad at all,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,partial
-65,negation,I would not say it was bad,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,partial
+Would you like a deeper breakdown on any of these?",0.002,correct
+52,edge,spagetti,"I'm here for restaurant questions! Want to know what guests love about our food, or how our service rates? That's where I can really help.",0.001,correct
+53,edge,A,"That's a bit outside my area — but I can tell you everything about our restaurant. Popular dishes, guest feedback, service quality... what interests you?",0.001,partial
+54,edge,12345,"That's a bit outside my area — but I can tell you everything about our restaurant. Popular dishes, guest feedback, service quality... what interests you?",0.001,partial
+55,edge,!!!!,"I'm here for restaurant questions! Want to know what guests love about our food, or how our service rates? That's where I can really help.",0.001,partial
+56,edge,Not bad,I'm best at answering restaurant questions. Curious what guests tend to say about our food? Or want me to break down a dining experience?,0.001,partial
+57,edge,The,"Happy to help with anything restaurant-related! Ask about our food, what people say about the service, or share a review. That's my sweet spot.",0.001,partial
+58,tech_questions,What model are you using for sentiment analysis?,"I use a Logistic Regression classifier with TF-IDF features, trained on 3,693 aspect annotations from the SemEval-2014 restaurant review corpus. For category mapping, I use a keyword-based classifier that's 340x faster than the BART zero-shot model I experimented with.",0.0,correct
+59,tech_questions,How accurate are your predictions?,I achieve 70.99% accuracy on the standard test set. My weighted F1 is 0.715. I'm strongest at detecting positive sentiment (84% F1) but struggle with neutral reviews (45% F1) and conflict cases (21% F1).,0.0,correct
+60,tech_questions,What training data did you use?,"I was trained on the SemEval-2014 restaurant corpus: 3,041 review sentences with 3,693 manually annotated aspect terms and 3,713 category annotations. Each annotation includes the aspect term, its category (food/service/price/ambience), and polarity (positive/negative/neutral/conflict).",0.0,correct
+61,tech_questions,What are your limitations?,"My main limitations: (1) I cannot detect sarcasm — 'Oh great, another cold meal' reads as positive to me. (2) I can't compare two specific restaurants. (3) My vocabulary is from 2014 — newer food terms and restaurant names may not be recognized. (4) Neutral and conflict sentiment are hard to classify accurately (F1 scores of 45% and 21% respectively).",0.0,correct
+62,tech_questions,How do you handle sarcasm?,"Sarcasm is a known limitation of my system. For example, 'Oh great, another cold meal' would be classified as positive because I detect the word 'great' without understanding the ironic context. Handling sarcasm would require a more sophisticated model like BERT trained on sarcasm-labeled data.",0.0,correct
+63,tech_questions,Compare the food at two different restaurants,"I cannot compare two specific restaurants because my training data doesn't include restaurant identities — only anonymized review sentences. I can tell you general trends (e.g., food is 70% positive, service is 54% positive), but not which restaurant is better.",0.0,correct
+64,negation,Not bad at all,I'm best at answering restaurant questions. Curious what guests tend to say about our food? Or want me to break down a dining experience?,0.001,partial
+65,negation,I would not say it was bad,"Happy to help with anything restaurant-related! Ask about our food, what people say about the service, or share a review. That's my sweet spot.",0.002,partial
 66,negation,The food was not great,"Here is what I found:
 
   😞 FOOD: negative  (about: food)
 
 Want to ask about a specific aspect like food quality or service?",0.002,correct
-67,negation,Oh great another cold meal,"Here is what I found:
+67,negation,Oh great another cold meal,"😊 Things you liked: meal, another cold meal
 
-  😊 FOOD: positive  (about: another cold meal, meal)
+Anything else you'd like me to analyze?",0.002,partial
+68,negation,It's not the worst but it could be better,"Here's what guests tend to flag:
+  service: 37% negative mentions (218 out of 597)
+  price: 36% negative mentions (115 out of 321)
+  ambience: 23% negative mentions (98 out of 431)
+  food: 17% negative mentions (209 out of 1232)",0.0,partial
+69,long_review,We went for dinner last night and had the most amazing steak cooked perfectly medium rare with a side of truffle fries that were crispy and delicious,"Here is a summary of your review:
 
-Want to ask about a specific aspect like food quality or service?",0.002,correct
-68,negation,It's not the worst but it could be better,"I specialise in restaurant review analysis. Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.002,partial
-69,long_review,We went for dinner last night and had the most amazing steak cooked perfectly medium rare with a side of truffle fries that were crispy and delicious,"Here is what I found:
+  Miscellaneous: neutral(1x) / positive(3x)  [dinner, side, crispy, night]
+  Food: positive(4x)  [fries, most amazing steak, steak, truffle fries]
 
-  😊 MISCELLANEOUS: positive  (about: side, crispy, dinner, night)
-  😊 FOOD: positive  (about: fries, steak, most amazing steak, truffle fries)
+That's a detailed review — multiple aspects always give a better picture!",0.006,partial
+70,long_review,"The appetizers were cold when they arrived, the main course took forty five minutes to come out, and when we complained the manager was completely unhelpful and dismissive","Ask me anything about our restaurant! I can tell you:
+  • What dishes guests mention most and how they rate them
+  • How people feel about the service, price, and atmosphere
+  • How my analysis system works
 
-Want to ask about a specific aspect like food quality or service?",0.006,correct
-70,long_review,"The appetizers were cold when they arrived, the main course took forty five minutes to come out, and when we complained the manager was completely unhelpful and dismissive","I can help you with:
-  • Analysing sentiment in restaurant reviews
-  • Identifying which aspects are positive or negative
-  • Answering questions about food, service, price, ambience
+Try: 'What's popular?' or 'How accurate are you?'",0.0,partial
+71,long_review,"The cocktails were innovative and well-crafted, the sushi was fresh and beautifully presented, but the dessert menu was disappointing and the waiter seemed distracted all evening","Here's what guests tend to flag:
+  service: 37% negative mentions (218 out of 597)
+  price: 36% negative mentions (115 out of 321)
+  ambience: 23% negative mentions (98 out of 431)
+  food: 17% negative mentions (209 out of 1232)",0.0,partial
+72,long_review,"Arrived at seven, seated by eight, ordered by eight thirty, food arrived at nine fifteen, no apology, no discount, the pasta was lukewarm and the wine was served at room temperature on a hot summer night","Overall, your review feels neutral to me. Breaking it down:
 
-Try typing:
-  ""The pasta was cold but the waiter was friendly""
-  ""What do people think about the service?""",0.0,partial
-71,long_review,"The cocktails were innovative and well-crafted, the sushi was fresh and beautifully presented, but the dessert menu was disappointing and the waiter seemed distracted all evening","Hello! 👋 I am your restaurant review expert chatbot.
-I can analyse reviews and tell you how people feel about
-the food, service, price, or ambience.
-Just type a review or ask a question!",0.0,partial
-72,long_review,"Arrived at seven, seated by eight, ordered by eight thirty, food arrived at nine fifteen, no apology, no discount, the pasta was lukewarm and the wine was served at room temperature on a hot summer night","Here is what I found:
+  Miscellaneous (temperature, seated, room, apology, room temperature, night, discount, hot summer night, served, summer): neutral 😐
+  Food (pasta, food, wine): positive 😊
 
-  😐 MISCELLANEOUS: neutral  (about: apology, summer, temperature, night, hot summer night, room, discount, served, room temperature, seated)
-  😊 FOOD: positive  (about: wine, pasta, food)
-
-Want to ask about a specific aspect like food quality or service?",0.008,correct
+Would you like a deeper breakdown on any of these?",0.007,partial

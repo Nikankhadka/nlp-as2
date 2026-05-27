@@ -1,139 +1,142 @@
 type,input,response
-greeting,Hello!,"🍴 Good to see you! I can answer questions about our restaurant, share what guests love most, or break down a review for you. Where should we start?"
-greeting,Hey there,"Hello! I'm here to help with anything restaurant-related — what's popular, how our service rates, or analysing your experience. What are you curious about?"
-greeting,Hi,"Hey! Looking for recommendations, or curious what people say about us? I've got the scoop on our food, service, prices, and ambience. What can I help with?"
-greeting,Good morning,"Welcome! 👋 I can tell you what our guests love about the food, service, and atmosphere — or help if you have questions. What would you like to know?"
-farewell,Goodbye,Thanks for stopping by! Hope that was helpful. Come back anytime. 👋
-farewell,Thanks,Thanks for chatting! Happy dining — reach out anytime you need restaurant info.
-restaurant_pos,The pizza was amazing,"😊 Things you liked: pizza
+greeting,Hello!,Hi there! I'm your restaurant assistant. Doing well — ready to help you with anything from popular dishes to guest feedback on our service and ambience. What are you curious about?
+greeting,Hey there,"I'm doing well, thanks for asking! I can share what our guests say about the food, service, price, and atmosphere — or break down a dining review for you. How can I help?"
+greeting,Hi,"Doing great, thanks! I'm here to help with anything restaurant-related — what's popular, how our service rates, or analyzing your dining experience. What would you like to know?"
+greeting,Good morning,"Doing great, thanks! I'm here to help with anything restaurant-related — what's popular, how our service rates, or analyzing your dining experience. What would you like to know?"
+farewell,Goodbye,"Glad I could help! Enjoy your meal — and when you have more questions, I'll be here."
+farewell,Thanks,Thanks for stopping by! Hope that was helpful. Come back anytime.
+restaurant_pos,The pizza was amazing,"Here is what I found:
 
-Anything else you'd like me to analyze?"
-restaurant_pos,The service was excellent,"Overall, your review feels positive to me. Breaking it down:
+  😊 FOOD: positive  (about: pizza)
 
-  Service (service): positive 😊
+Want to ask about a specific aspect like food quality or service?"
+restaurant_pos,The service was excellent,"Here is what I found:
 
-Would you like a deeper breakdown on any of these?"
+  😊 SERVICE: positive  (about: service)
+
+Want to ask about a specific aspect like food quality or service?"
 restaurant_pos,Great food and friendly staff,"Overall, your review feels positive to me. Breaking it down:
 
   Service (staff, friendly staff): positive 😊
-  Food (food, great food): positive 😊
+  Food (great food, food): positive 😊
 
 Would you like a deeper breakdown on any of these?"
-restaurant_pos,The desserts were delicious,"😊 Things you liked: desserts
+restaurant_pos,The desserts were delicious,"Overall, your review feels positive to me. Breaking it down:
 
-Anything else you'd like me to analyze?"
-restaurant_pos,The waitress was very nice,"Here is a summary of your review:
-
-  Service: positive(1x)  [waitress]"
-restaurant_pos,The ambience was wonderful,"Overall, your review feels positive to me. Breaking it down:
-
-  Ambience (ambience): positive 😊
+  Food (desserts): positive 😊
 
 Would you like a deeper breakdown on any of these?"
-restaurant_neg,The pasta was cold,"Here is a summary of your review:
+restaurant_pos,The waitress was very nice,"Overall, your review feels positive to me. Breaking it down:
 
-  Food: positive(1x)  [pasta]"
-restaurant_neg,The waiter was rude to us,"Overall, your review feels negative to me. Breaking it down:
-
-  Service (waiter): negative 😞
+  Service (waitress): positive 😊
 
 Would you like a deeper breakdown on any of these?"
-restaurant_neg,The food was terrible and overpriced,"Here is a summary of your review:
+restaurant_pos,The ambience was wonderful,"Here is what I found:
 
-  Food: negative(1x)  [food]"
-restaurant_neg,The music was too loud,"I analysed your review — the overall tone is negative.
-
-  😞 music: negative
-
-Curious about any of these in more detail?"
-restaurant_neg,The service was very slow,"Here is what I found:
-
-  😞 SERVICE: negative  (about: service)
-
-Want to ask about a specific aspect like food quality or service?"
-restaurant_neg,The bill was outrageous,"Here is a summary of your review:
-
-  Price: negative(1x)  [bill]"
-restaurant_mixed,The pasta was cold but the waiter was incredibly friendly and fast,"Here is a summary of your review:
-
-  Food: negative(1x)  [pasta]
-  Service: negative(1x)  [waiter]
-
-That's a detailed review — multiple aspects always give a better picture!"
-restaurant_mixed,"Overpriced for the tiny portions, though the atmosphere was cozy","I analysed your review — the overall tone is negative.
-
-  🤔 atmosphere: conflict
-  😞 portions: negative
-  😞 tiny portions: negative
-
-Curious about any of these in more detail?"
-restaurant_mixed,"Great value and quick service, but the music was too loud to talk","Here is what I found:
-
-  😞 PRICE: negative  (about: great value, value)
-  😞 SERVICE: negative  (about: service, quick service)
-  😞 AMBIENCE: negative  (about: music)
-
-Want to ask about a specific aspect like food quality or service?"
-restaurant_mixed,The staff was rude and the waiting time was too long,"Here is what I found:
-
-  😞 SERVICE: negative  (about: staff)
-  😞 MISCELLANEOUS: negative  (about: waiting time, waiting, time)
-
-Want to ask about a specific aspect like food quality or service?"
-restaurant_mixed,Amazing desserts and the ambience was perfect for a date night,"Here is what I found:
-
-  😊 MISCELLANEOUS: positive  (about: date night, night, date)
-  😊 FOOD: positive  (about: amazing desserts, desserts)
   😊 AMBIENCE: positive  (about: ambience)
 
 Want to ask about a specific aspect like food quality or service?"
-restaurant_mixed,The risotto was overcooked and the sommelier was rude,"😞 Things you didn't like: risotto, sommelier
+restaurant_neg,The pasta was cold,"Here is what I found:
 
-Anything else you'd like me to analyze?"
-restaurant_mixed,Food was decent but the place was dirty,"Here is a summary of your review:
-
-  Miscellaneous: negative(1x)  [place]
-  Food: negative(1x)  [food]
-
-That's a detailed review — multiple aspects always give a better picture!"
-restaurant_mixed,Excellent taste but small portions,"Here is what I found:
-
-  😊 FOOD: positive  (about: excellent taste, taste)
-  😞 MISCELLANEOUS: negative  (about: portions, small portions)
+  😊 FOOD: positive  (about: pasta)
 
 Want to ask about a specific aspect like food quality or service?"
-restaurant_query,Is the food here good?,"Our guests really enjoy the food — about 70% of 1232 mentions are positive. The most talked-about are food, prices, menu."
+restaurant_neg,The waiter was rude to us,"😞 Things you didn't like: waiter
+
+Anything else you'd like me to analyze?"
+restaurant_neg,The food was terrible and overpriced,"Overall, your review feels negative to me. Breaking it down:
+
+  Food (food): negative 😞
+
+Would you like a deeper breakdown on any of these?"
+restaurant_neg,The music was too loud,"😞 Things you didn't like: music
+
+Anything else you'd like me to analyze?"
+restaurant_neg,The service was very slow,"Overall, your review feels negative to me. Breaking it down:
+
+  Service (service): negative 😞
+
+Would you like a deeper breakdown on any of these?"
+restaurant_neg,The bill was outrageous,"😞 Things you didn't like: bill
+
+Anything else you'd like me to analyze?"
+restaurant_mixed,The pasta was cold but the waiter was incredibly friendly and fast,"Here is what I found:
+
+  😞 FOOD: negative  (about: pasta)
+  😞 SERVICE: negative  (about: waiter)
+
+Want to ask about a specific aspect like food quality or service?"
+restaurant_mixed,"Overpriced for the tiny portions, though the atmosphere was cozy","😞 Things you didn't like: portions, tiny portions
+
+Anything else you'd like me to analyze?"
+restaurant_mixed,"Great value and quick service, but the music was too loud to talk","😞 Things you didn't like: service, music, quick service, great value, value
+
+Anything else you'd like me to analyze?"
+restaurant_mixed,The staff was rude and the waiting time was too long,"😞 Things you didn't like: staff, waiting time, time, waiting
+
+Anything else you'd like me to analyze?"
+restaurant_mixed,Amazing desserts and the ambience was perfect for a date night,"Here is what I found:
+
+  😊 AMBIENCE: positive  (about: ambience)
+  😊 MISCELLANEOUS: positive  (about: night, date, date night)
+  😊 FOOD: positive  (about: amazing desserts, desserts)
+
+Want to ask about a specific aspect like food quality or service?"
+restaurant_mixed,The risotto was overcooked and the sommelier was rude,"Overall, your review feels negative to me. Breaking it down:
+
+  Food (risotto): negative 😞
+  Service (sommelier): negative 😞
+
+Would you like a deeper breakdown on any of these?"
+restaurant_mixed,Food was decent but the place was dirty,"Overall, your review feels negative to me. Breaking it down:
+
+  Miscellaneous (place): negative 😞
+  Food (food): negative 😞
+
+Would you like a deeper breakdown on any of these?"
+restaurant_mixed,Excellent taste but small portions,"Here is a summary of your review:
+
+  Miscellaneous: negative(2x)  [portions, small portions]
+  Food: positive(2x)  [excellent taste, taste]
+
+That's a detailed review — multiple aspects always give a better picture!"
+restaurant_query,Is the food here good?,"People tend to say good things about our food: 70% positive out of 1232 mentions. food, prices, menu come up a lot in guest feedback."
 restaurant_query,What do people say about the service?,"Our guests really enjoy the service — about 54% of 597 mentions are positive. The most talked-about are service, staff, waiter."
-restaurant_query,How is the ambience?,"People tend to say good things about our ambience: 61% positive out of 431 mentions. atmosphere, ambience, decor come up a lot in guest feedback."
-restaurant_query,Tell me about the desserts,"People tend to say good things about our food: 70% positive out of 1232 mentions. food, prices, menu come up a lot in guest feedback."
-restaurant_query,What about the prices?,"70% of guests mention food positively. food, prices, menu get the most attention — that's 1232 mentions total."
-restaurant_query,Are the waiters friendly?,"People tend to say good things about our service: 54% positive out of 597 mentions. service, staff, waiter come up a lot in guest feedback."
-help,What can you do?,"My main limitations: (1) I cannot detect sarcasm — 'Oh great, another cold meal' reads as positive to me. (2) I can't compare two specific restaurants. (3) My vocabulary is from 2014 — newer food terms and restaurant names may not be recognized. (4) Neutral and conflict sentiment are hard to classify accurately (F1 scores of 45% and 21% respectively)."
+restaurant_query,How is the ambience?,"Looking at guest feedback, guests really enjoy the ambience — 61% positive vs 23% negative. The standouts are atmosphere, ambience, decor."
+restaurant_query,Tell me about the desserts,"70% of guests mention food positively. food, prices, menu get the most attention — that's 1232 mentions total."
+restaurant_query,What about the prices?,"People tend to say good things about our food: 70% positive out of 1232 mentions. food, prices, menu come up a lot in guest feedback."
+restaurant_query,Are the waiters friendly?,"54% of guests mention service positively. service, staff, waiter get the most attention — that's 597 mentions total."
+help,What can you do?,"Here's what I do:
+  • Answer questions about our restaurant from guest feedback
+  • Analyse a dining review you share with me
+  • Explain my model and accuracy if you're curious
+
+Try asking 'Is the food good here?' or 'What do people complain about?'"
 help,Help,"Ask me anything about our restaurant! I can tell you:
   • What dishes guests mention most and how they rate them
   • How people feel about the service, price, and atmosphere
   • How my analysis system works
 
 Try: 'What's popular?' or 'How accurate are you?'"
-general,What is the weather like today?,"70% of guests mention food positively. food, prices, menu get the most attention — that's 1232 mentions total."
-general,Tell me about the football game,"I'm here for restaurant questions! Want to know what guests love about our food, or how our service rates? That's where I can really help."
-general,How do I fix my car?,"I'm here for restaurant questions! Want to know what guests love about our food, or how our service rates? That's where I can really help."
+general,What is the weather like today?,"Our guests really enjoy the food — about 70% of 1232 mentions are positive. The most talked-about are food, prices, menu."
+general,Tell me about the football game,I'm best at answering restaurant questions. Curious what guests tend to say about our food? Or want me to break down a dining experience?
+general,How do I fix my car?,"Sorry, I stick to restaurant topics! But I've got plenty to share — popular dishes, service ratings, guest feedback. What would you like to know?"
 general,What is the meaning of life?,"That's a bit outside my area — but I can tell you everything about our restaurant. Popular dishes, guest feedback, service quality... what interests you?"
-general,Who won the election?,"Sorry, I stick to restaurant topics! But I've got plenty to share — popular dishes, service ratings, guest feedback. What would you like to know?"
-general,Tell me a joke,"That's a bit outside my area — but I can tell you everything about our restaurant. Popular dishes, guest feedback, service quality... what interests you?"
-general,What time is it?,"That's a bit outside my area — but I can tell you everything about our restaurant. Popular dishes, guest feedback, service quality... what interests you?"
+general,Who won the election?,I'm best at answering restaurant questions. Curious what guests tend to say about our food? Or want me to break down a dining experience?
+general,Tell me a joke,"Sorry, I stick to restaurant topics! But I've got plenty to share — popular dishes, service ratings, guest feedback. What would you like to know?"
+general,What time is it?,"Happy to help with anything restaurant-related! Ask about our food, what people say about the service, or share a review. That's my sweet spot."
 general,How old are you?,"Happy to help with anything restaurant-related! Ask about our food, what people say about the service, or share a review. That's my sweet spot."
-general,That goal was out of this world,"Here is what I found:
+general,That goal was out of this world,"Here is a summary of your review:
 
-  😞 MISCELLANEOUS: negative  (about: world, this world, goal, that goal)
+  Miscellaneous: positive(2x) / negative(2x)  [that goal, goal, this world, world]"
+general,Can you recommend a movie?,"Sorry, I stick to restaurant topics! But I've got plenty to share — popular dishes, service ratings, guest feedback. What would you like to know?"
+edge,,Please type something!
+edge,Pizza,"Here is what I found:
+
+  😊 FOOD: positive  (about: pizza)
 
 Want to ask about a specific aspect like food quality or service?"
-general,Can you recommend a movie?,I'm best at answering restaurant questions. Curious what guests tend to say about our food? Or want me to break down a dining experience?
-edge,,Please type something!
-edge,Pizza,"😊 Things you liked: pizza
-
-Anything else you'd like me to analyze?"
-edge,spagetti,"Sorry, I stick to restaurant topics! But I've got plenty to share — popular dishes, service ratings, guest feedback. What would you like to know?"
-edge,A,"I'm here for restaurant questions! Want to know what guests love about our food, or how our service rates? That's where I can really help."
-edge,12345,"Happy to help with anything restaurant-related! Ask about our food, what people say about the service, or share a review. That's my sweet spot."
+edge,spagetti,"Happy to help with anything restaurant-related! Ask about our food, what people say about the service, or share a review. That's my sweet spot."
+edge,A,"Sorry, I stick to restaurant topics! But I've got plenty to share — popular dishes, service ratings, guest feedback. What would you like to know?"
+edge,12345,"Sorry, I stick to restaurant topics! But I've got plenty to share — popular dishes, service ratings, guest feedback. What would you like to know?"
 edge,!!!!,"I'm here for restaurant questions! Want to know what guests love about our food, or how our service rates? That's where I can really help."
