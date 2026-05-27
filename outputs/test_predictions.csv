@@ -1,0 +1,1135 @@
+sentence_id,term,polarity,predicted_polarity
+32897564#894393#2,bread,positive,positive
+33070600#670328#0,delivery times,positive,positive
+33070600#670328#2,Food,positive,positive
+36244464#949326#5,coffee,positive,positive
+32894246#870052#0,sushi,conflict,positive
+32894246#870052#0,place,positive,positive
+32894246#870052#1,people,positive,positive
+32894246#870052#2,Japanese food,positive,positive
+35390182#756337#4,asian salad,positive,positive
+35390182#756337#4,spicy tuna roll,positive,positive
+35390182#756337#5,rose roll,positive,positive
+35390182#756337#5,menu,neutral,positive
+11447227#436718#3,drinks,positive,positive
+11447227#436718#3,lychee martini,positive,positive
+11447227#436718#3,food,positive,positive
+33071731#1007204#3,Nicoise salad,negative,neutral
+33085939#758010#0,menu,positive,neutral
+33085939#758010#0,drinks,neutral,neutral
+33085939#758010#0,dessert pizza,neutral,neutral
+11313431#524365#3,food,positive,positive
+11313431#524365#3,live entertainment,positive,positive
+11359717#1138929#1,waiter,negative,negative
+11359717#1138929#3,sangria,negative,positive
+11359717#1138929#4,menu,negative,negative
+11313439#692431#0,sushi,positive,positive
+11313439#692431#0,portions,positive,positive
+11313439#692431#0,price,positive,positive
+11351513#832512#0,food,positive,positive
+11351513#832512#0,service,negative,negative
+35390148#588852#2,portions of the food,neutral,negative
+11351513#832512#1,waitress's,negative,negative
+11313431#524365#2,staff memebers,positive,positive
+11313431#524365#2,parking,positive,positive
+35196520#758440#4,desserts,positive,positive
+35196527#481646#2,Desserts,positive,positive
+35196527#481646#2,Tart of the Day,positive,positive
+35668126#536759#2,food,positive,positive
+35668126#536759#2,wine,positive,positive
+33070286#1133164#6,LASAGNA,positive,positive
+32894336#662479#0,array of sushi,positive,positive
+32894336#662479#1,cuisine,positive,positive
+32894336#662479#1,owners,positive,positive
+32894336#662479#1,staff,positive,positive
+32892130#435512#0,indian food,positive,positive
+32892130#435512#0,ambiance,positive,positive
+32892130#435512#4,food,positive,positive
+11432316#715219#2,service,positive,negative
+11432316#715219#2,garden,positive,positive
+11432316#715219#2,food,positive,negative
+11432316#715219#2,appetizers,positive,neutral
+11432316#715219#2,entrees,positive,negative
+11351354#412616#0,food,positive,positive
+11351354#412616#0,decor,positive,positive
+35714274#1076679#0,lunch,negative,neutral
+35714274#1076679#0,dinners,negative,positive
+35714274#1076679#5,steaks,negative,neutral
+35720486#684689#4,staff,negative,positive
+33064346#1483297#0,meatball parm,positive,positive
+11417054#1062693#2,latin food,positive,positive
+13383936#420974#4,taglierini with truffles,positive,positive
+13383936#420974#5,staff,positive,positive
+36244423#1058258#2,gnocchi,positive,positive
+11559272#409013#0,staff,positive,positive
+11559272#409013#0,food,positive,positive
+11559272#409013#0,portion size,positive,positive
+11559272#409013#0,portobello/gorgonzola/sausage appetizer,positive,positive
+11559272#409013#0,lobster risotto,positive,positive
+36244784#0#3,Entrees,neutral,positive
+36244784#0#3,lasagna,neutral,neutral
+36244784#0#3,fettuccine Alfredo,neutral,positive
+36244784#0#3,chicken parmigiana,neutral,neutral
+32938222#1552119#2,food,positive,positive
+32938222#1552119#2,teriyaki,positive,positive
+11546184#1465600#0,Meal,negative,neutral
+32895093#418997#3,Peanut Butter Sorbet,positive,positive
+32895093#418997#3,pizza with soy cheese,positive,positive
+32406302#615620#2,food,positive,positive
+32406302#615620#2,price,positive,positive
+11302356#1455624#1,food,positive,positive
+11302356#1455624#1,service,positive,positive
+11302356#1455624#1,atmosphere,positive,positive
+11302355#533813#0,food,positive,positive
+11302355#533813#0,waitstaff,positive,positive
+11302355#533813#0,atmosphere,positive,positive
+11302355#533813#0,beer,positive,positive
+35698351#821341#0,food,positive,positive
+35698351#821341#0,kimono shrimp special,positive,positive
+35698351#821341#0,atmosphere,positive,positive
+33070305#1312437#2,menu,positive,positive
+33070305#1312437#2,priced,positive,positive
+33070305#1312437#3,food,positive,positive
+33070305#1312437#3,ingredients,positive,positive
+11610073#973003#3,food,negative,negative
+11464789#378665#0,Appetizer,positive,positive
+11464789#378665#0,meal,positive,positive
+11464789#378665#1,spicy mussels,positive,positive
+32899282#556036#2,Onion Rings,positive,positive
+11351587#1488758#2,food,negative,negative
+11359656#1716239#1,portions,positive,positive
+11359656#1716239#1,service,positive,positive
+11359656#1716239#1,prices,positive,positive
+11359797#469087#7,service,negative,positive
+11359797#469087#7,food,negative,positive
+11359797#469087#6,waiter,negative,neutral
+11359797#469087#6,manager,negative,neutral
+32938828#1194079#1,food,positive,positive
+32938828#1194079#1,milkshakes,positive,positive
+11349445#757796#1,mushroom barley soup,positive,positive
+11602699#875811#1,food,positive,positive
+11602699#875811#1,staff,positive,positive
+11313316#1234433#2,duck,positive,positive
+11351762#644011#1,drinks,positive,positive
+11351762#644011#1,food,positive,positive
+35719198#0#5,curried casseroles,negative,negative
+33070461#1496736#1,food,positive,positive
+32882616#562969#4,taste,positive,positive
+33070309#423221#1,seafood,positive,negative
+33070309#423221#1,space,conflict,negative
+33070309#423221#1,cuisine,positive,negative
+32882616#562969#3,orange donut,neutral,neutral
+35171678#484493#3,atmosphere,positive,positive
+32945645#1528063#2,meats,negative,positive
+11546184#1465600#4,Management,negative,negative
+13383936#420974#2,ambience,positive,positive
+35692932#1064131#3,teas,positive,positive
+35692932#1064131#3,sweets,positive,positive
+11488685#420977#1,mojitos,positive,positive
+11488685#420977#1,service,positive,positive
+35397104#0#3,Sandwiches,positive,negative
+35397104#0#3,burgers,positive,positive
+35397104#0#3,salads,positive,positive
+35397104#0#3,lemon-dressed cobb,positive,positive
+35820984#608922#1,design,positive,positive
+35820984#608922#2,food,positive,positive
+35820984#608922#3,staff,positive,positive
+36245348#821441#2,taste,negative,negative
+11432442#650772#5,fajita,negative,negative
+11432442#650772#5,mole sauce,negative,negative
+11432442#650772#6,roasted chickens,positive,positive
+32944693#1193404#4,atmosphere,positive,positive
+32944693#1193404#1,food,positive,positive
+32944693#1193404#1,selection,positive,positive
+32944693#1193404#1,prices,positive,positive
+32944693#1193404#1,drinks,positive,positive
+35693214#539116#1,steak,positive,positive
+32950007#1320096#3,waiters,positive,negative
+32950007#1320096#3,food,neutral,negative
+35938288#666236#2,priced,positive,positive
+11350660#564640#1,selection of food,positive,positive
+11350660#564640#1,atmosphere,positive,positive
+35393632#1591698#7,dessert,negative,negative
+35393632#1591698#7,taste,negative,negative
+15087705#871249#1,Food,positive,conflict
+11651062#1264882#1,hot dog,negative,neutral
+11359619#487952#3,bar,positive,positive
+11359619#487952#3,food,positive,positive
+11351628#404492#6,waiters,negative,positive
+35709141#1107179#0,atmosphere,positive,conflict
+32935211#1468239#1,food,positive,neutral
+33069901#1437116#3,wraps,positive,positive
+33069901#1437116#3,burgers,positive,positive
+33069901#1437116#3,salads,positive,positive
+33069901#1437116#3,mango margareta,positive,positive
+35709337#1579632#6,prices,positive,negative
+33069901#1437116#1,service,positive,positive
+11351725#582163#9,waiter,positive,negative
+11351725#582163#9,staff,negative,positive
+11351725#582163#7,folding chair,negative,negative
+11432842#416795#1,Service,positive,positive
+11432842#416795#2,fettucino alfredo,positive,positive
+33067279#1612676#1,food,positive,positive
+33067279#1612676#1,vegan options,positive,positive
+32930165#1643018#3,Indian food,negative,neutral
+11359727#487554#5,Smoked Trout,positive,positive
+11359727#487554#5,Lamb Chops,positive,positive
+11359727#487554#5,Veal Chops,positive,positive
+11359727#487554#5,Rabbit,positive,positive
+11359727#487554#5,potato gratin,positive,positive
+11359727#487554#2,chef,neutral,negative
+11359727#487554#2,food,positive,neutral
+11359727#487554#2,service,positive,neutral
+32893609#708406#2,eggs benedict,positive,positive
+32893609#708406#2,mussels,positive,positive
+32893609#708406#2,hamburger,positive,positive
+32926987#668438#1,waiters,positive,positive
+32935729#785247#5,falafal,negative,negative
+32935729#785247#5,chicken,positive,negative
+32935211#1468239#3,grand marnier shrimp,positive,positive
+32944704#492723#0,food,positive,positive
+32944704#492723#0,food,positive,positive
+32944704#492723#0,service,positive,positive
+33061325#0#3,Desserts,neutral,positive
+33061325#0#3,flan,neutral,positive
+33061325#0#3,sopaipillas,neutral,positive
+32894513#498296#0,portions,negative,negative
+35709141#1107179#4,wait staff,negative,negative
+35709141#1107179#1,food,negative,positive
+35709141#1107179#1,service,negative,positive
+35709141#1107179#2,sushi,negative,neutral
+11350496#1560668#3,service,positive,positive
+11350496#1560668#3,soup,positive,positive
+11351625#909535#1,crepes,positive,negative
+11351622#0#5,desserts,positive,positive
+11351622#0#5,creme brulee,positive,positive
+11351622#0#5,apple tart,positive,positive
+11351620#1180095#0,shrimp creole,positive,positive
+11351620#1180095#1,chicken dinner,positive,positive
+32464595#574909#4,chili signed food items,negative,negative
+32938222#1552119#1,decor,neutral,positive
+11351620#1180095#3,food,positive,conflict
+32464595#574909#2,coconut rice,positive,positive
+32464595#574909#2,ribs,positive,positive
+32464595#574909#2,beef,positive,positive
+32893040#1716582#5,avocado salad,positive,positive
+32893040#1716582#6,honey BBQ rib tips,positive,positive
+32893040#1716582#0,Chinese food,positive,positive
+35170181#0#2,Service,positive,negative
+32464601#418474#1,atmosphere,conflict,conflict
+32464601#418474#2,staff,positive,positive
+11359618#788741#3,Waiters,positive,positive
+11359618#788741#3,pasta,positive,positive
+33068517#482841#2,wine list,positive,positive
+33068517#482841#2,cocktail menu,positive,positive
+33068517#482841#1,crab cakes,positive,positive
+33068517#482841#1,BBQ rib,positive,positive
+35869867#649564#1,food,positive,positive
+32864873#471207#1,service,positive,negative
+11350539#680470#4,sauce,conflict,negative
+33069536#707145#3,service,positive,neutral
+33069536#707145#3,desserts,positive,neutral
+32899414#512291#0,atmosphere,positive,positive
+32899414#512291#0,drinks,neutral,positive
+32899414#512291#0,appetizers,neutral,neutral
+32469157#1273114#1,pizza,positive,positive
+36072604#1106889#2,service,positive,negative
+36072604#1106889#2,food,positive,positive
+36072604#1106889#2,beer list,positive,positive
+12036269#580745#1,chinese food,negative,neutral
+12036269#580745#2,waiter,neutral,positive
+35695422#1464305#3,scallops,neutral,positive
+35695422#1464305#3,asparagus,neutral,positive
+35695422#1464305#3,soft shell crab,neutral,positive
+35695422#1464305#3,cheese plate,neutral,positive
+36220672#1714981#3,service,positive,negative
+11651062#1264882#2,hotdogs,negative,negative
+32971013#1044651#2,staff,positive,positive
+32971013#1044651#2,Saag gosht,positive,positive
+33064238#563983#2,garlic knots,positive,positive
+32971013#1044651#0,Indian food,positive,positive
+33064238#563983#0,pizza,positive,positive
+32896473#439063#3,music,negative,positive
+11350010#590580#1,service,positive,positive
+11359762#927332#1,owner,positive,positive
+11359762#927332#1,staff,positive,positive
+32950061#1264345#1,sushi,positive,positive
+32950061#1264345#1,menu,positive,positive
+11359767#969393#2,food,positive,positive
+11359767#969393#2,sushi,positive,positive
+11359767#969393#2,cooked food,positive,positive
+33106326#864352#0,dinner specials,positive,neutral
+32405935#675215#0,food,positive,positive
+32405935#675215#0,drinks,positive,positive
+32405935#675215#0,dining atmosphere,positive,positive
+32894669#1075584#0,price,negative,negative
+32894669#1075584#0,food,negative,neutral
+32894669#1075584#1,Food portion,negative,negative
+33085669#409731#11,chairs,positive,positive
+33070461#1496736#6,Tacos Pastor,positive,positive
+33070461#1496736#6,Tostada de Tinga,positive,positive
+11447227#436718#2,bartenders,positive,positive
+11447227#436718#2,managers,positive,positive
+11447227#436718#2,decor,positive,positive
+32889544#0#4,hot and sour soup,positive,positive
+32889544#0#4,soup and sandwich meal,positive,positive
+35693136#561234#0,drinks,positive,positive
+35693136#561234#0,atmosphere,positive,positive
+35693136#561234#0,service,positive,positive
+35693136#561234#0,food,positive,positive
+11484031#1129679#4,chick peas with shrimp (appetizer),positive,positive
+11351628#404492#9,service,negative,negative
+32893510#483382#1,lamb,positive,positive
+11359619#487952#6,soft shell crab sandwich with fries,positive,positive
+33070605#1232775#2,hong kong-style food,positive,positive
+11351664#1238806#6,food,positive,positive
+11351664#1238806#6,wine,positive,positive
+33070305#1312437#4,staff,positive,positive
+11478791#397331#1,kitchen food,positive,positive
+11478791#397331#1,Sushi,positive,positive
+35171678#484493#2,service,positive,positive
+35171678#484493#2,waitresses,positive,positive
+35171678#484493#2,atmosphere,positive,positive
+11351664#1238806#1,italian food,positive,positive
+35693081#540596#1,food,positive,positive
+35693081#540596#1,rolls,positive,positive
+35693081#540596#1,sushi/sashimi,neutral,positive
+35693081#540596#2,sashimi,negative,positive
+35708055#673129#2,price,negative,negative
+11651063#1217842#0,hot dogs,positive,positive
+11651063#1217842#0,breakfast sandwiches,positive,positive
+11651063#1217842#0,tator tots,positive,positive
+11651063#1217842#0,English muffins,positive,positive
+11651063#1217842#0,Taylor ham,positive,positive
+11651063#1217842#0,pork product,positive,positive
+11349845#1188496#1,manager,negative,negative
+11349845#1188496#1,bartender,negative,negative
+11349845#1188496#1,drinks,neutral,negative
+11349845#1188496#1,waiting,negative,negative
+32892130#435512#1,service,positive,positive
+32892130#435512#1,atmosphere,positive,positive
+11359797#469087#5,green chillis,negative,negative
+11359797#469087#5,dish,negative,negative
+11351819#985076#1,service,negative,negative
+11351819#985076#1,food,negative,negative
+11351819#985076#1,meals,neutral,negative
+33061445#591371#1,lunch,neutral,neutral
+33061445#591371#1,take-out,neutral,positive
+33061445#591371#1,dine-in,neutral,positive
+32934709#796678#2,food,neutral,neutral
+32934709#796678#2,fresh juice concoctions,positive,positive
+32894963#1707639#1,food,positive,positive
+32894963#1707639#1,prices,positive,positive
+32894963#1707639#3,place,positive,positive
+32894963#1707639#3,soul food,positive,neutral
+33059678#631861#3,roast chicken,neutral,positive
+33059678#631861#3,salad,neutral,positive
+32894966#1727613#7,chicken with avocado,positive,positive
+32894966#1727613#7,tuna,positive,positive
+11558693#1436895#4,meals,negative,negative
+11558693#1436895#6,chicken,negative,negative
+11558693#1436895#6,sauce,negative,negative
+12037822#470071#0,Malted Milk Ball Gelato,positive,positive
+11558693#1436895#9,meal,negative,negative
+35700731#1595671#2,service,negative,negative
+11350033#1264371#4,bar service,negative,neutral
+35158410#1207085#5,Dessert,positive,positive
+11660930#655010#6,service,positive,positive
+12036269#580745#8,black vinegar,neutral,positive
+12036269#580745#8,shredded ginger,neutral,positive
+11350390#802808#2,lighting,negative,negative
+11350390#802808#2,food,negative,negative
+11350390#802808#2,disco pop duo,negative,negative
+11350390#802808#2,escargot,negative,negative
+11359619#487952#4,place,positive,positive
+11565268#560107#1,service,positive,positive
+11565268#560107#1,owner,positive,positive
+11351628#404492#5,waiters,negative,positive
+11359791#791967#1,food,positive,positive
+11359790#823900#2,waiter,negative,negative
+11351628#404492#2,salads,positive,positive
+11351628#404492#2,vegetarian platters,positive,positive
+32935729#785247#10,meal,positive,positive
+11359727#487554#3,food,neutral,neutral
+11639814#570590#2,service,positive,positive
+11350141#1745557#0,pizza,neutral,positive
+11350141#1745557#1,pizza,positive,positive
+11350141#1745557#4,service,positive,positive
+11432442#650772#0,chicken,positive,positive
+32406302#615620#1,food,positive,positive
+11484031#1129679#1,host (owner),positive,positive
+11484031#1129679#1,servers,positive,positive
+11351561#744321#0,food,positive,positive
+11351561#744321#0,atmosphere,positive,positive
+11351561#744321#0,hostess,positive,positive
+33068635#1533725#2,food,positive,positive
+33068635#1533725#2,service,positive,positive
+11313316#1234433#1,Vietnamese Beef Noodle Soup,neutral,negative
+11661949#1709112#5,dining experience,negative,negative
+33069536#707145#0,Indian food,positive,positive
+33069536#707145#1,waiters,positive,positive
+35693081#540596#0,interior,positive,positive
+35693081#540596#0,service,positive,positive
+35393632#1591698#4,food,positive,positive
+35393632#1591698#4,decor,positive,positive
+33009300#626261#5,menu,positive,positive
+33009300#626261#5,selection,positive,positive
+11350539#680470#3,sauce,positive,positive
+11350539#680470#3,crust,positive,positive
+33059931#926509#0,sushi,positive,positive
+33059931#926509#1,selection,positive,positive
+33059931#926509#1,rolls with crab,positive,positive
+11349871#518230#2,host,positive,positive
+11349871#518230#2,bartender,positive,positive
+11349871#518230#2,servers,positive,positive
+11349871#518230#3,food,positive,positive
+11349871#518230#4,potato spinach gnocchi,positive,positive
+11349871#518230#4,lamb,positive,positive
+33071731#1007204#0,lunch,neutral,neutral
+32889544#0#3,sandwiches,positive,negative
+11351753#0#4,port,positive,positive
+11351753#0#4,Portuguese cheese cart,positive,positive
+35084984#412657#1,burger,neutral,neutral
+35084984#412657#1,blueberry pancakes,positive,neutral
+35084984#412657#2,food,positive,neutral
+35084984#412657#2,bill,positive,neutral
+33064221#427885#3,toppings,positive,positive
+33064221#427885#3,crust,positive,positive
+11548230#560890#2,service,positive,positive
+11548230#560890#2,food,positive,positive
+35700989#574718#1,waitstaff,positive,positive
+35700989#574718#1,food,positive,positive
+35700989#574718#2,lobster ravioli,positive,positive
+11639814#570590#0,meal,positive,positive
+11359618#788741#2,Service,positive,positive
+11359618#788741#2,price,positive,positive
+11359618#788741#2,wait,positive,negative
+12036269#580745#3,food,negative,conflict
+33070601#438491#0,Coffee,positive,negative
+33070601#438491#0,Cosi sandwiches,negative,negative
+11661949#1709112#3,drink,neutral,neutral
+35693081#540596#3,prices,positive,conflict
+32944714#1559783#1,food,positive,positive
+32944714#1559783#1,waiting,negative,negative
+11558693#1436895#1,place,positive,positive
+11558693#1436895#1,ambience,positive,positive
+35700731#1595671#0,brunch,neutral,neutral
+35819603#1613701#3,food,positive,neutral
+35714274#1076679#4,crust,negative,negative
+11351664#1238806#4,food,positive,positive
+32936760#1397861#9,cake,negative,neutral
+33068517#482841#0,dinner,neutral,neutral
+11351400#495795#1,SERVICE,positive,positive
+11546184#1465600#1,Delmonico steak,negative,negative
+11482070#503858#1,menu,negative,neutral
+11349922#547169#3,rice,neutral,neutral
+11349922#547169#3,beans,neutral,neutral
+11349922#547169#3,chicken,neutral,neutral
+32894483#1088884#0,service,positive,positive
+32894483#1088884#0,value,positive,positive
+32944674#542988#0,food,positive,positive
+32944674#542988#0,value,positive,negative
+32944674#542988#2,garlic soup,positive,positive
+32896492#738746#0,falafel,positive,positive
+32896492#738746#0,tabouleh,positive,positive
+32896492#738746#0,humus,positive,positive
+32896492#738746#0,Mediterranean delights,positive,positive
+33069847#1306433#1,pizza's,positive,positive
+35709451#1061726#1,Staff,positive,positive
+11359727#487554#4,Chef,positive,negative
+33059931#926509#2,sushi,positive,positive
+33059931#926509#2,priced,positive,positive
+35819603#1613701#2,Seafood Paella for two,positive,negative
+35819603#1613701#4,apetizers,positive,positive
+35819603#1613701#4,Sangria,positive,positive
+11558693#1436895#7,service,positive,negative
+11558693#1436895#7,server,positive,positive
+33009300#626261#3,staff,positive,positive
+33009300#626261#3,food,positive,positive
+35819603#1613701#6,Service,positive,positive
+35708055#673129#4,Host,negative,negative
+35708055#673129#4,Hostess,negative,negative
+11351453#683961#0,wait staff,positive,positive
+11351453#683961#0,meal,positive,positive
+11351453#683961#1,salmon dishes,positive,positive
+11351451#805713#1,foie gras,positive,positive
+11351324#0#2,menu,neutral,positive
+11624981#549489#5,mac cheese,positive,negative
+11624981#549489#6,brunch menu,positive,neutral
+11624981#549489#7,jazz singer,positive,neutral
+15069510#648179#2,service,positive,positive
+15069510#648179#3,food,neutral,neutral
+15069510#648179#3,breakfast food,neutral,neutral
+15069510#648179#3,soups,neutral,positive
+15069510#648179#3,salads,neutral,positive
+15069510#648179#3,sandwiches,neutral,positive
+11519527#1541586#1,FOOD,negative,positive
+11519527#1541586#3,BANANA PUDDING,negative,negative
+11519527#1541586#3,CRABCAKES,negative,negative
+11519527#1541586#3,MAC AND CHEESE,negative,negative
+35759841#1360876#1,staff,negative,positive
+35759841#1360876#1,prices,negative,negative
+11639667#1085238#2,service,positive,positive
+32464595#574909#0,food,positive,positive
+32892297#645108#0,downstairs bar scene,positive,positive
+32892297#645108#1,food,positive,conflict
+32892297#645108#1,price,negative,negative
+32892297#645108#1,drinks,neutral,negative
+32950061#1264345#0,casual lunches,neutral,positive
+35393630#1095759#2,Tequila,positive,negative
+11660930#655010#5,beer selection,positive,positive
+11660930#655010#5,beers,neutral,positive
+11359613#884374#3,delivary,negative,negative
+13383936#420974#1,food,positive,negative
+13383936#420974#1,owner,positive,negative
+11484031#1129679#3,homemade pastas,positive,positive
+11484031#1129679#3,gnocchi,positive,positive
+14336883#1094817#3,vegetable risotto,negative,negative
+14336883#1094817#3,flavor,negative,negative
+32935729#785247#8,price,positive,positive
+35390148#588852#4,service,negative,negative
+32405935#675215#1,dinner,positive,neutral
+32405935#675215#1,prices,negative,positive
+32895093#418997#1,sandwiches,positive,positive
+32895093#418997#1,soup,positive,positive
+32895093#418997#1,pizza,positive,positive
+32895093#418997#1,homemade sorbets,positive,positive
+35393630#1095759#1,homemade Guacamole,positive,positive
+35393630#1095759#1,entree,positive,positive
+35393630#1095759#1,deserts,positive,positive
+11461396#699654#0,sushi,positive,positive
+11461396#699654#0,priced,positive,positive
+35869867#649564#3,deserts,positive,positive
+32408649#945413#2,grill,positive,neutral
+32408649#945413#2,Churrasco,positive,neutral
+32408649#945413#2,Ribs,positive,neutral
+35196520#758440#0,traditional Italian items,positive,positive
+35196520#758440#0,setting,positive,positive
+35196520#758440#0,served,positive,positive
+33085669#409731#7,iced blended mocha,positive,positive
+33085669#409731#7,hot white mocha,positive,positive
+33068909#1189415#1,late lunch,neutral,neutral
+32894416#1193614#4,parmesan cheese,neutral,neutral
+35177381#521555#1,waitress,negative,neutral
+35177381#521555#1,food,neutral,neutral
+35177381#521555#1,wine,neutral,neutral
+15094232#1295193#3,service,negative,negative
+15094232#1295193#3,portions,negative,negative
+11302357#835238#2,ambiance,conflict,conflict
+33071731#1007204#4,salad,neutral,neutral
+33071731#1007204#4,salad dressing,neutral,neutral
+33071731#1007204#4,quesedilla,neutral,neutral
+33069847#1306433#0,pizza's,positive,positive
+11302357#835238#1,service,negative,negative
+11302357#835238#1,food,negative,conflict
+11302357#835238#1,cost,negative,negative
+35709451#1061726#4,food,positive,positive
+35709451#1061726#4,staff,positive,positive
+35701425#1155856#4,bar,neutral,neutral
+35816071#637243#1,Chef,positive,positive
+33069536#707145#4,Indian food,positive,positive
+33069536#707145#4,service,positive,positive
+32935583#854234#1,Odessa stew,positive,positive
+32935583#854234#1,Rabbit stew,positive,positive
+32935583#854234#1,salads,positive,positive
+32935583#854234#1,kompot,positive,positive
+36220672#1714981#2,lunch,positive,neutral
+33071731#1007204#5,waitress,neutral,negative
+35158451#1089920#4,quality of the meat,negative,negative
+32894966#1727613#2,smoothies,positive,positive
+32894966#1727613#2,fresh juices,positive,positive
+11351587#1488758#7,black roasted codfish,positive,positive
+11351587#1488758#7,dish,positive,positive
+11359790#823900#3,waiter,negative,negative
+11359790#823900#3,menu,neutral,negative
+11359790#823900#3,manager,neutral,negative
+33068664#1164940#0,taste,negative,negative
+33068664#1164940#0,chicken,negative,negative
+11624981#549489#10,reservation,neutral,neutral
+35084984#412657#0,brunch,neutral,neutral
+33069925#747092#0,sushi,neutral,neutral
+33069536#707145#2,food,positive,positive
+33069536#707145#2,served,positive,positive
+35709337#1579632#1,erbazzone emiliana,positive,positive
+35709337#1579632#1,mostarda on the cheese plate,positive,positive
+35709337#1579632#1,dishes,positive,positive
+33066089#490193#3,food,positive,positive
+33066089#490193#3,bar,positive,positive
+33066089#490193#3,vibe,positive,positive
+32892130#435512#2,candlelight,neutral,neutral
+32892130#435512#2,music,neutral,neutral
+32935729#785247#11,food,positive,positive
+35869867#649564#0,dining experience,positive,positive
+11359613#884374#6,food,positive,positive
+11359613#884374#6,service,positive,conflict
+35700731#1595671#1,place,positive,positive
+35700731#1595671#1,food,positive,positive
+11558693#1436895#5,Chicken Teriyaki,neutral,neutral
+11558693#1436895#5,Garlic Shrimp,neutral,neutral
+11558693#1436895#0,Japanese food,negative,positive
+32894966#1727613#10,staff members,positive,positive
+32894966#1727613#10,drink,neutral,neutral
+11359717#1138929#0,atmosphere,positive,positive
+32938222#1552119#3,Sashimi portion,positive,negative
+32938222#1552119#3,artifical lobster meat,negative,negative
+32891589#573560#1,wheat crusted pizza,positive,positive
+32891589#573560#1,ingredients,positive,positive
+33070309#423221#0,dinner,positive,positive
+33070309#423221#0,food,positive,positive
+33070309#423221#0,service,positive,positive
+32936760#1397861#7,cake,positive,positive
+32936760#1397861#5,staff,negative,negative
+32936760#1397861#5,slices,negative,negative
+33085939#758010#1,wait staff,negative,negative
+11351664#1238806#5,wine list,positive,positive
+11351664#1238806#5,priced,positive,positive
+33068890#423889#0,salads,positive,positive
+36244423#1058258#4,bathroom,positive,positive
+32893040#1716582#1,delivers,positive,positive
+32893040#1716582#1,food,positive,positive
+32893040#1716582#1,prices,positive,positive
+32893040#1716582#1,service,positive,positive
+32893040#1716582#1,repast,positive,positive
+33070286#1133164#3,WAITERS,neutral,positive
+33070286#1133164#1,ITALIAN MEAL,neutral,positive
+32897564#894393#0,pizza,positive,negative
+35714274#1076679#2,steak,neutral,neutral
+35509422#0#3,organic grilled burgers,positive,positive
+35509422#0#3,dish,positive,positive
+35509422#0#3,Jerusalem market-style falafel wraps,positive,positive
+35509422#0#3,"Mediterranean salads--layered with beets, goat cheese and walnuts",positive,positive
+11302357#835238#3,dining experience,negative,neutral
+11302357#835238#3,waiter,neutral,neutral
+32936760#1397861#6,texture,positive,positive
+32936760#1397861#6,hint of cocoa,positive,positive
+11359762#927332#4,round corner table next to the large window,positive,positive
+32891589#573560#4,flavor,positive,negative
+32891589#573560#4,twist on pizza,positive,negative
+11350033#1264371#1,AC,negative,negative
+11351328#1638529#0,service,negative,negative
+11351328#1638529#0,sales people,negative,negative
+33009300#626261#1,location,negative,negative
+35708055#673129#1,display and quality of the food,negative,negative
+11351628#404492#1,food,positive,positive
+32935583#854234#0,food,positive,positive
+11639814#570590#1,food,positive,positive
+11639814#570590#1,Italian cuisine,positive,positive
+11313359#650269#4,atmoshere,positive,negative
+11351814#1650882#5,booth by the windows,neutral,positive
+11351814#1650882#5,place,positive,positive
+11351814#1650882#5,food,positive,positive
+11351814#1650882#5,service,positive,positive
+33070601#438491#1,coffee,positive,positive
+11651065#413029#2,wine list,negative,positive
+11651065#413029#2,vintages,negative,neutral
+11639261#426600#0,priced,negative,positive
+11639261#426600#0,food,negative,positive
+11639261#426600#0,scenery,negative,positive
+33069925#747092#1,new hamburger with special sauce,positive,neutral
+33069925#747092#1,big mac,negative,neutral
+35196520#758440#1,pasta,positive,positive
+35196520#758440#1,sauce,neutral,negative
+35196520#758440#1,portions,positive,negative
+12036269#580745#6,prices,negative,negative
+12036269#580745#6,food,negative,negative
+15087705#871249#2,Service,negative,negative
+15087705#871249#2,staff,negative,negative
+35693216#1233439#3,owners,positive,positive
+35692932#1064131#2,owner,positive,positive
+11484031#1129679#0,place,positive,positive
+33106326#864352#4,meal,positive,positive
+35709451#1061726#0,place,positive,positive
+11351762#644011#3,service,positive,positive
+36244423#1058258#1,staff,positive,positive
+36244423#1058258#1,food,positive,positive
+11350496#1560668#4,fortune cookies,negative,negative
+11350496#1560668#4,cookie,negative,negative
+11461396#699654#3,sushi lunch,positive,positive
+11464789#378665#2,mojito,positive,positive
+11464789#378665#2,back patio,positive,positive
+11351513#832512#2,service,negative,negative
+11408372#630381#0,meal,positive,positive
+11408372#630381#0,braised lamb shank with mashed potatoes,positive,positive
+32894669#1075584#2,waitress,negative,negative
+32894669#1075584#2,soy sauce,neutral,neutral
+32894669#1075584#2,lunch,neutral,neutral
+11661949#1709112#2,bar,neutral,neutral
+11661949#1709112#2,bartender,negative,neutral
+32933228#1700177#1,fried pork dumplings,positive,positive
+32933228#1700177#1,orange chicken/beef,positive,positive
+32933228#1700177#1,fried rice,positive,positive
+11359762#927332#0,menu,positive,negative
+35709275#573688#1,french fries -- with the kalmata dip,positive,positive
+11349845#1188496#0,wait,negative,negative
+11349845#1188496#0,manager,negative,negative
+11349845#1188496#0,bartender,neutral,negative
+11349845#1188496#0,drinks,neutral,negative
+11313359#650269#5,boutique selection of wines,neutral,positive
+32896492#738746#2,assortment of wraps,positive,positive
+32896492#738746#2,traditional Mediterranean fare,neutral,neutral
+11351816#1162694#1,Fresh veggies,positive,positive
+11351816#1162694#1,middle eastern spreads,positive,positive
+11351816#1162694#1,cheese,positive,positive
+11351816#1162694#1,falafel,positive,positive
+11351816#1162694#1,soup,positive,positive
+11351816#1162694#1,fish,positive,positive
+11351816#1162694#1,rice,positive,positive
+11351816#1162694#1,root vegetables,positive,positive
+11351816#1162694#1,rice medley,positive,positive
+11351816#1162694#1,spinach thing,positive,positive
+11351816#1162694#1,lamb kebabs,positive,positive
+11351816#1162694#1,cheese baclava,positive,positive
+11351816#1162694#1,fooood,positive,positive
+32405935#675215#2,Saketini,positive,positive
+32405935#675215#2,bar menu,negative,positive
+35668286#0#0,look,negative,positive
+11350031#590790#3,martinis,positive,positive
+33060905#1138585#2,chairs,neutral,negative
+33060905#1138585#2,table,neutral,neutral
+35693216#1233439#1,happy hour,positive,positive
+35693216#1233439#1,service,positive,positive
+35693216#1233439#1,atmosphere,positive,positive
+33068909#1189415#2,waiter,negative,negative
+33068909#1189415#2,kitchen,neutral,negative
+33068909#1189415#2,waiting,negative,negative
+33070383#592089#0,quaility,positive,positive
+33070383#592089#0,atmosphere,positive,positive
+32889544#0#0,space,negative,positive
+32889544#0#0,prices,positive,neutral
+32889544#0#0,treats,positive,positive
+35698240#574381#4,menu,neutral,conflict
+33064238#563983#1,seats,positive,positive
+11651065#413029#3,value,positive,positive
+36216551#1233442#1,food,positive,negative
+36216551#1233442#1,attitude,positive,negative
+11351725#582163#4,glass of wine,neutral,neutral
+35720486#684689#0,flavors,neutral,conflict
+32938222#1552119#4,place,positive,positive
+32938222#1552119#4,service,positive,positive
+32408649#945413#3,Food,positive,positive
+32408649#945413#3,price,positive,positive
+33106326#864352#1,burrito,positive,neutral
+33106326#864352#1,tacos,positive,neutral
+33106326#864352#1,margarita,neutral,neutral
+33106326#864352#1,dessert,neutral,neutral
+11351622#0#1,space,neutral,positive
+33060905#1138585#1,reservations,neutral,neutral
+11538980#453602#1,food,negative,negative
+11538980#453602#1,interior,negative,negative
+11538980#453602#1,owners,negative,negative
+11538980#453602#1,dining,neutral,negative
+35196527#481646#3,service,positive,positive
+35196527#481646#3,food,positive,positive
+35196527#481646#3,value,positive,positive
+35196527#481646#3,wait,positive,positive
+35743460#0#3,Egg McMuffin sandwich,neutral,positive
+35743460#0#3,hot cakes,neutral,positive
+35743460#0#3,breakfast,neutral,negative
+36072604#1106889#0,service,neutral,negative
+36072604#1106889#0,food,negative,positive
+11567247#1415594#2,music,positive,positive
+11567247#1415594#2,bartender,positive,positive
+11567247#1415594#2,drinks,positive,positive
+33070605#1232775#3,rice dishes,positive,neutral
+33070605#1232775#3,noodle dishes,positive,neutral
+33070605#1232775#3,ice drink,positive,neutral
+32899414#512291#3,Cuisine,negative,neutral
+32899414#512291#3,bill,negative,neutral
+32899414#512291#3,asian fusion,neutral,conflict
+32899414#512291#3,billed,negative,neutral
+11351622#0#3,dishes,positive,positive
+11351622#0#3,king crab salad with passion fruit vinaigrette,positive,positive
+11351622#0#3,fettuccine with grilled seafood in a rosemary-orange sauce,positive,positive
+11351622#0#3,bistro menu,neutral,positive
+35170181#0#3,Dishes,positive,positive
+35170181#0#3,"""Roy's Classics""",positive,positive
+35170181#0#3,menu,neutral,neutral
+35170181#0#3,recipes,positive,positive
+35170181#0#3,macadamia-crusted mahi mahi,positive,positive
+35170181#0#3,sweet honey-mustard beef short ribs,positive,positive
+32893040#1716582#4,cold sesame noodles,positive,positive
+35177381#521555#0,food,negative,neutral
+35177381#521555#0,meal,negative,neutral
+35177381#521555#0,served,neutral,positive
+35886114#1249751#0,argentine chorizo appetizer,negative,negative
+35886114#1249751#0,fennel flavored Italian sausage,negative,negative
+33059678#631861#0,dinner,positive,neutral
+32867472#663531#2,delivery,positive,positive
+32867472#663531#2,value,positive,positive
+32894966#1727613#8,sandwiches,positive,positive
+32894966#1727613#8,soy mayonaise,positive,positive
+33060905#1138585#0,hostess,negative,negative
+33060905#1138585#0,table,neutral,neutral
+35196527#481646#4,dinner,positive,neutral
+35709337#1579632#2,food,positive,neutral
+35709337#1579632#2,staff,positive,positive
+35709337#1579632#2,food,positive,neutral
+35709337#1579632#2,wine,positive,neutral
+35938288#666236#1,music,positive,positive
+35938288#666236#1,tapas,positive,positive
+35938288#666236#1,selection of wines (primarily Spanish),positive,positive
+35938288#666236#1,clientele,positive,positive
+32867472#663531#1,food,positive,positive
+32867472#663531#1,dumplings,positive,positive
+32867472#663531#1,cold sesame noodles,positive,positive
+32867472#663531#1,chicken,positive,positive
+32867472#663531#1,shrimp dishs,positive,positive
+11484031#1129679#2,food,positive,positive
+11484031#1129679#2,food,positive,positive
+11351819#985076#2,entrees,neutral,negative
+11351819#985076#2,Waiting,negative,negative
+15069510#648179#4,place,positive,negative
+11351451#805713#2,duck confitte,positive,positive
+35695422#1464305#2,wine list,positive,positive
+35695422#1464305#2,tapas,positive,positive
+35695422#1464305#2,atmosphere,positive,positive
+11313316#1234433#3,price,positive,neutral
+11313316#1234433#3,food,positive,neutral
+11417054#1062693#1,food,positive,positive
+11417054#1062693#1,service,positive,positive
+11417054#1062693#1,prices,positive,positive
+35693083#822138#0,food,positive,positive
+11351625#909535#0,meal,positive,positive
+15094232#1295193#0,food,positive,positive
+15094232#1295193#0,service,positive,positive
+35171678#484493#1,dinner menu,positive,positive
+35171678#484493#1,entrees,positive,positive
+35171678#484493#1,seafood,positive,positive
+35171678#484493#1,steaks,positive,positive
+35171678#484493#1,non-meat alternatives,neutral,positive
+11482070#503858#0,menu,negative,positive
+11482070#503858#0,food,negative,positive
+32443281#959917#3,appetizers,neutral,neutral
+32443281#959917#3,service,negative,neutral
+11359717#1138929#5,food,negative,conflict
+11359717#1138929#5,price,negative,negative
+11302357#835238#0,waitress,negative,positive
+11302357#835238#0,entree,neutral,positive
+11351762#644011#2,prices,positive,negative
+33071731#1007204#6,bill,negative,neutral
+33071731#1007204#6,gratuity,negative,neutral
+35177381#521555#3,halibut cheek appetizer,neutral,negative
+35177381#521555#3,portion of foie gras,positive,neutral
+35177381#521555#3,meal,conflict,neutral
+33061445#591371#3,Food,positive,positive
+33061445#591371#3,empenadas,positive,positive
+33061445#591371#3,plaintains,positive,positive
+33061445#591371#3,afternoon snack,positive,positive
+13383936#420974#3,pasta specials,positive,positive
+13383936#420974#3,appetizer,positive,positive
+35743460#0#2,Big Mac,positive,positive
+35743460#0#2,Chicken McNuggets,positive,positive
+35743460#0#2,Filet-O-Fish sandwich,positive,positive
+35743460#0#2,McDonald's famous french fries,positive,positive
+35743460#0#2,entree-sized salads,neutral,positive
+11351451#805713#4,noise,conflict,negative
+11350539#680470#2,pizza,positive,negative
+35393632#1591698#3,Tables,negative,negative
+32894522#1633452#0,lunch,neutral,neutral
+11359767#969393#1,scene,positive,negative
+35668126#536759#4,blue bar area,positive,neutral
+35390148#588852#0,upstrairs dining area,neutral,negative
+35509422#0#4,veggie burger,positive,neutral
+35509422#0#4,chickpeas,positive,neutral
+35509422#0#4,carrots,positive,neutral
+35509422#0#4,vegetables,positive,neutral
+35509422#0#4,spices,positive,neutral
+11351521#768768#1,tables,negative,negative
+35158410#1207085#3,service,positive,negative
+11351399#0#7,Menus,neutral,positive
+11351399#0#7,sweet corn-foie gras brulee,neutral,positive
+11351399#0#6,Carinthia cheese ravioli with wild mushrooms,positive,positive
+11351399#0#6,caviar-topped sturgeon,positive,positive
+11351399#0#6,green spinach-vodka sauce,positive,positive
+32894522#1633452#3,burgers,positive,negative
+32894522#1633452#3,patties,positive,negative
+32896492#738746#1,lunch,neutral,positive
+32896492#738746#1,delivery service,positive,positive
+12036269#580745#4,quality,positive,positive
+12036269#580745#4,prices,positive,positive
+11351328#1638529#4,staff person,neutral,negative
+11351328#1638529#4,fork,neutral,negative
+33068734#650934#1,specials,positive,neutral
+33068734#650934#1,salmon,negative,positive
+33068734#650934#2,pastas,positive,positive
+33068734#650934#3,Atmosphere,negative,positive
+33070532#604874#0,decor,positive,neutral
+11351745#499992#0,wait staff,positive,positive
+35717889#579150#0,food,positive,positive
+35717889#579150#1,dishes,positive,positive
+35717889#579150#1,place,positive,positive
+35717889#579150#2,desserts,positive,positive
+11351682#1496136#0,food,positive,positive
+11351682#1496136#0,staff,positive,positive
+11504679#821993#0,Service,positive,positive
+11504679#821993#0,atmosphere,positive,positive
+11504679#821993#1,Branzini,neutral,neutral
+11504679#821993#1,fish,negative,neutral
+11349760#848056#1,food,positive,positive
+11349760#848056#1,service,positive,positive
+11349760#848056#1,price,positive,positive
+35704115#614067#0,menu,positive,positive
+35704115#614067#0,ambiance,positive,positive
+35704115#614067#0,service,positive,positive
+35704115#614067#0,FOOD,positive,positive
+33061498#586991#0,food,positive,positive
+33061498#586991#0,wine,positive,positive
+33061498#586991#0,host,positive,positive
+11313392#560011#1,Pizzas,positive,positive
+11313392#560011#1,appetizers,positive,neutral
+11313392#560011#1,main courses,positive,positive
+11313392#560011#2,calamari,positive,positive
+11313392#560011#2,pasta,positive,positive
+11313392#560011#2,Sliced steak entree,positive,positive
+11513049#499488#4,caeser salad,positive,positive
+11513049#499488#5,fried calamari,positive,positive
+11513049#499488#8,atmosphere,conflict,conflict
+11513049#499488#0,food,positive,positive
+11660480#640405#1,food,positive,positive
+11660480#640405#1,service,positive,positive
+35682567#1590699#1,portions,positive,positive
+35682567#1590699#1,service,positive,positive
+35682567#1590699#2,chicken milanese,positive,positive
+35698333#556353#0,tapas,positive,positive
+35698333#556353#0,prices,positive,positive
+33072753#1351349#2,service,conflict,positive
+33072753#1351349#0,chocolate raspberry cake,positive,negative
+33072753#1351349#0,flavor,positive,negative
+11651310#581605#1,waiter,positive,positive
+11651310#581605#1,food,positive,positive
+11651310#581605#1,wine,positive,positive
+11610050#517598#0,MEAL,positive,negative
+11610050#517598#0,SERVICE,positive,negative
+35739302#844266#0,hot dogs,positive,positive
+11563005#745685#2,service,positive,positive
+11563005#745685#3,food,positive,positive
+11563005#745685#3,wine,positive,positive
+11563005#745685#3,desserts,positive,positive
+11563005#745685#4,dining experience,positive,positive
+11570675#1355721#1,food,negative,positive
+11570675#1355721#1,service,negative,negative
+11463275#424927#1,escargot,positive,positive
+11408946#789662#1,menu,positive,neutral
+11408946#789662#3,Deco,positive,positive
+11408946#789662#3,ambiance,positive,positive
+32444534#501179#2,french food,positive,positive
+33068425#562449#1,Indian food,positive,neutral
+33068425#562449#3,curry,positive,neutral
+33068425#562449#5,poori,positive,positive
+33068425#562449#5,naan,positive,positive
+33068425#562449#5,paratha,positive,positive
+33068425#562449#4 ,homemade breads,positive,positive
+35703223#626682#0,sushi,positive,positive
+35703223#626682#1,Korean dishes,positive,positive
+11351741#1733901#0,prix fixe menu,neutral,neutral
+32857960#1320058#5,waiter,positive,negative
+35701421#583735#2,place,positive,positive
+35701421#583735#2,service,positive,positive
+35701421#583735#2,food,positive,positive
+32864873#582572#0,burgers,positive,positive
+32864873#582572#0,grilled cheeses,positive,positive
+32864873#582572#0,french fries,positive,positive
+11351354#812637#0,Yellowfin Tuna,positive,positive
+11351354#812637#0,Calf's liver,positive,positive
+11538980#1053497#1,Sushi,positive,positive
+11538980#1053497#4,bill,negative,conflict
+35158410#1207085#2,steak,neutral,neutral
+35158410#1207085#2,choices of sauces,positive,negative
+35158410#1207085#2,sauce cart,neutral,negative
+35158410#1207085#2,table,neutral,neutral
+15094232#1295193#2,sushi,positive,positive
+15094232#1295193#2,duck,positive,positive
+15094232#1295193#2,entrees,neutral,positive
+32894267#698671#5,variety,positive,positive
+11351328#1638529#2,utensils,neutral,negative
+11351328#1638529#2,pie,neutral,negative
+11350539#680470#6,thin crust,negative,neutral
+11350539#680470#6,slices,negative,neutral
+33071731#1007204#2,green beans,neutral,negative
+33071731#1007204#2,egg,neutral,negative
+33071731#1007204#2,anchovy dressing,neutral,negative
+33071731#1007204#2,nicoise olives,neutral,negative
+33071731#1007204#2,red onion,neutral,negative
+32938896#0#2,meal,neutral,neutral
+32938896#0#2,Amazin' Greens salads,neutral,positive
+32938896#0#2,Buffalo Chicken Kickers,neutral,positive
+32938896#0#2,Cinna Stix,neutral,positive
+32938896#0#2,side orders,neutral,positive
+33070588#0#2,fries,neutral,positive
+33070588#0#2,meaty chili,neutral,positive
+33070588#0#2,stuffed baked potatoes,neutral,positive
+33070588#0#2,menu,neutral,positive
+33070588#0#2,chocolate Frosty,positive,positive
+11482070#503858#2,waiter,neutral,negative
+11482070#503858#2,menu,neutral,negative
+32936760#1397861#8,cake,negative,conflict
+32936760#1397861#8,employees,negative,conflict
+32936760#1397861#8,cake,conflict,conflict
+35720486#684689#1,Cherry Marscapone,neutral,negative
+35719198#0#3,roti canai appetizer,positive,positive
+35719198#0#3,mango chicken,positive,positive
+35719198#0#3,fried pancake served with pungent curry dipping sauce,positive,positive
+33507331#1177339#1,outside,negative,conflict
+33507331#1177339#1,atmosphere,positive,conflict
+32935729#785247#3,ground chickpea soup,negative,negative
+32935729#785247#3,starter,neutral,negative
+35709141#1107179#3,sushi,negative,negative
+11351354#412616#1,service,negative,negative
+11351354#412616#1,quality of food,positive,negative
+11351354#412616#1,bartenders,negative,negative
+11351354#412616#1,clientele,negative,negative
+11351354#412616#1,staff,negative,negative
+11349840#433070#8,meal,positive,positive
+11349840#433070#7,desserts,neutral,negative
+35391416#500259#5,tables,negative,neutral
+35391416#500259#5,rooftop bar,neutral,neutral
+32944704#492723#1,decoration,positive,negative
+32950007#1320096#2,ambience,positive,positive
+32950007#1320096#2,food,positive,positive
+32950007#1320096#2,catfish,positive,positive
+32950007#1320096#2,service,positive,positive
+11350033#1264371#3,food,neutral,neutral
+11660930#655010#4,brisket,positive,positive
+11660930#655010#4,ribs,positive,positive
+11660930#655010#4,wings,positive,positive
+11660930#655010#4,cajun shrimp,neutral,positive
+35509422#0#0,atmosphere,positive,positive
+35509422#0#1,counter,neutral,neutral
+35393632#1591698#0,bottle of wine,neutral,neutral
+35196527#481646#0,menu,positive,neutral
+35196527#481646#0,Japanese dishes,neutral,neutral
+35196527#481646#0,Foie Gras Unagi Napolean,neutral,positive
+35196527#481646#0,Jap style hamburger steak,neutral,positive
+35196527#481646#0,spicy cod roe spaghetti,neutral,positive
+35196527#481646#0,black cod with miso base,neutral,positive
+35196527#481646#0,rack of lamb in black truffle sauce,neutral,positive
+35816071#637243#2,food,positive,positive
+35816071#637243#2,appetizers,positive,positive
+35816071#637243#2,entrees,positive,negative
+11359613#884374#0,food,positive,conflict
+11349840#433070#6,pasta primavera,positive,positive
+11349840#433070#6,fresh veggies,positive,positive
+32894267#698671#4,sushi,positive,negative
+35693083#822138#1,flan,positive,positive
+32927541#579582#0,pizza,positive,negative
+11349536#778388#0,dinner,neutral,neutral
+11349536#778388#0,food,positive,positive
+35700989#574718#3,wine,positive,positive
+35700989#574718#3,dessert menu,positive,positive
+35709275#573688#2,place,positive,negative
+35709275#573688#2,bar,positive,neutral
+35709275#573688#2,takeout,neutral,positive
+11351587#1488758#1,ambiance,positive,conflict
+33069925#747092#3,cocktail hour,positive,negative
+33069925#747092#3,filet mignon,negative,negative
+33069925#747092#3,non-sushi selection,positive,negative
+33069925#747092#3,appetizers,positive,negative
+11351725#582163#3,courses,neutral,negative
+11351725#582163#3,served,negative,negative
+11359764#1373169#1,place,neutral,positive
+35698351#821341#1,size,negative,negative
+11351360#1704700#0,chicken tacos,positive,positive
+11351360#1704700#0,Hibiscus lemonade,positive,positive
+11351360#1704700#0,place,positive,positive
+32894791#1611374#1,place,positive,positive
+32894791#1611374#1,soup,neutral,positive
+32894791#1611374#1,french dish,neutral,positive
+32894791#1611374#1,glass of wine,neutral,positive
+36072604#1106889#4,place,positive,positive
+11350033#1264371#2,casual drink,positive,neutral
+11350033#1264371#2,outdoors,positive,positive
+11350033#1264371#2,place,positive,positive
+11567247#1415594#1,dance floor,neutral,positive
+11351521#768768#2,pre-show meal,neutral,positive
+11651065#413029#1,fried foods,negative,positive
+11651065#413029#1,dishes,positive,positive
+11651065#413029#1,lamb entree,positive,positive
+11651065#413029#1,salads (avocado shrimp),positive,positive
+11351816#1162694#2,service,negative,positive
+32897564#894393#1,dabs of real mozzarella,neutral,positive
+32897564#894393#1,sauce,positive,positive
+11349845#1188496#2,drinks,negative,negative
+11349845#1188496#2,people,negative,negative
+11349845#1188496#2,dining,negative,negative
+33070305#1312437#5,room,negative,negative
+33070305#1312437#5,place,negative,negative
+11432842#416795#4,Prices,positive,positive
+35509422#0#2,space,positive,negative
+35509422#0#2,outdoor eating area,positive,negative
+35670845#1650649#3,[female] servers,positive,positive
+35170181#0#5,dessert,positive,conflict
+35170181#0#5,chocolate and peanut butter tart,positive,conflict
+35170181#0#5,sweets,neutral,conflict
+11359619#487952#7,appetizer,neutral,neutral
+11359619#487952#7,calamari,positive,positive
+32464595#574909#1,service,positive,positive
+32464595#574909#1,food,positive,positive
+11349536#778388#2,dinner,neutral,neutral
+11349536#778388#2,music,neutral,negative
+11349536#778388#2,lounge,neutral,neutral
+35816071#637243#3,room,positive,positive
+35816071#637243#3,bi-level space,positive,positive
+35816071#637243#3,long bar,positive,positive
+35816071#637243#3,drink,neutral,neutral
+11350142#1253117#2,appetizer selection,negative,neutral
+11350142#1253117#2,mozzarella sticks,neutral,neutral
+11350142#1253117#2,menu,negative,neutral
+32950061#1264345#3,waitstaff,positive,positive
+32950061#1264345#3,service,positive,positive
+32935729#785247#4,chicken and falafel platters,neutral,positive
+32935729#785247#4,fresh leaf salad,neutral,positive
+33085669#409731#2,atmosphere,positive,positive
+11351628#404492#8,waiters,negative,negative
+32896473#439063#0,service,conflict,positive
+32896473#439063#0,desserts,positive,positive
+32896473#439063#0,coffee,positive,positive
+32899282#556036#1,served,neutral,positive
+32899282#556036#1,Focacchia bread,neutral,neutral
+32894966#1727613#3,smoothies,negative,positive
+32894966#1727613#3,fresh juices,positive,positive
+32464601#418474#0,food,conflict,negative
+32464601#418474#0,pialla,positive,negative
+32464601#418474#0,dish,positive,negative
+11432442#650772#2,guac,conflict,negative
+11432442#650772#2,fresh salsa,neutral,negative
+11432442#650772#2,flavor,negative,negative
+11313290#1139539#1,prices,negative,negative
+11313290#1139539#1,staff,conflict,negative
+11313290#1139539#1,new menu,positive,negative
+33061445#591371#0,lunch,neutral,neutral
+33061445#591371#0,food,positive,positive
+33070383#592089#1,seafood,positive,negative
+33070383#592089#1,Greek food,positive,negative
+35668286#0#2,menu,neutral,positive
+35668286#0#2,burgers,neutral,positive
+35668286#0#2,steaks,neutral,positive
+35668286#0#2,shepherds pie,neutral,positive
+35668286#0#2,portabella lasagna,neutral,positive
+35668286#0#2,pub fare,neutral,positive
+35714274#1076679#1,food,neutral,neutral
+35714274#1076679#1,prices,negative,negative
+11351725#582163#2,service,negative,negative
+11351725#582163#2,food,neutral,negative
+33060905#1138585#4,food,neutral,neutral
+33060905#1138585#4,prices,negative,neutral
+35695422#1464305#5,menu,positive,positive
+36220672#1714981#0,menu,neutral,positive
+33068909#1189415#4,waiter,negative,negative
+33068909#1189415#4,meal,neutral,neutral
+33067279#1612676#0,brunch,neutral,neutral
+33067279#1612676#0,vegan cranberry pancakes,neutral,neutral
+33067279#1612676#0,rice milk,neutral,neutral
+35709451#1061726#3,bartender,positive,positive
+32443281#959917#4,service,negative,negative
+32443281#959917#4,drink,neutral,negative
+32443281#959917#4,drinks,neutral,negative
+11661949#1709112#8,owner,negative,positive
+35698240#574381#2,Owner,positive,positive
+11350390#802808#3,food,negative,neutral
+11350390#802808#3,waiter,negative,negative
+11482070#503858#3,food,negative,negative
+11351628#404492#3,Creamy appetizers,positive,positive
+11351628#404492#3,warm pitas,neutral,positive
+11351628#404492#3,taramasalata,positive,positive
+11351628#404492#3,eggplant salad,positive,positive
+11351628#404492#3,"Greek yogurt (with cuccumber, dill, and garlic)",positive,positive
