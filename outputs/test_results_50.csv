@@ -1,306 +1,129 @@
-num,type,input,response_fast,response_bart,bart_time_s,time_s
-1,greeting,Hello!,"Hello! 👋 I am your restaurant review expert chatbot.
-I can analyse reviews and tell you how people feel about
-the food, service, price, or ambience.",,,0.0
-2,greeting,Hey there,"Hello! 👋 I am your restaurant review expert chatbot.
-I can analyse reviews and tell you how people feel about
-the food, service, price, or ambience.",,,0.0
-3,greeting,Hi,"Hello! 👋 I am your restaurant review expert chatbot.
-I can analyse reviews and tell you how people feel about
-the food, service, price, or ambience.",,,0.0
-4,greeting,Good morning,"Hello! 👋 I am your restaurant review expert chatbot.
-I can analyse reviews and tell you how people feel about
-the food, service, price, or ambience.",,,0.0
-5,greeting,Howdy,"Hello! 👋 I am your restaurant review expert chatbot.
-I can analyse reviews and tell you how people feel about
-the food, service, price, or ambience.",,,0.0
-6,farewell,Goodbye,Thanks for chatting! Hope the insights were helpful. Goodbye! 👋,,,0.0
-7,farewell,Thanks for your help,Thanks for chatting! Hope the insights were helpful. Goodbye! 👋,,,0.0
-8,restaurant_pos,The pizza was amazing,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""","Here is what I found:
+type,input,response
+greeting,Hello!,Good to see you! I specialise in restaurant review analysis. Share a review and I'll tell you which aspects people loved or hated. Or ask me 'Is the food good?' for insights from my training data.
+greeting,Hey there,"🍴 Hello! I analyse restaurant reviews. Describe a dining experience and I'll break down the sentiment for each aspect — food, service, price, and ambience. What can I help with?"
+greeting,Hi,"Hello! 👋 I am your restaurant review expert chatbot. I can analyse reviews and tell you how people feel about the food, service, price, or ambience. Just type a review or ask a question!"
+greeting,Good morning,"Hey! Welcome to your restaurant review assistant. I can break down the sentiment of any dining experience — tell me about a meal you had, or ask me about trends in restaurant feedback!"
+farewell,Goodbye,Thanks for the chat! Best of luck with your dining adventures. See you next time!
+farewell,Thanks,Thanks for the chat! Best of luck with your dining adventures. See you next time!
+restaurant_pos,The pizza was amazing,"😊 Things you liked: pizza
 
-  😊 FOOD: positive  (about: pizza)
+Anything else you'd like me to analyze?"
+restaurant_pos,The service was excellent,"Here is a summary of your review:
 
-Want to ask about a specific aspect like food quality or service?",0.85,0.85
-9,restaurant_pos,The service was excellent,"Here is what I found:
+  Service: positive(1x)  [service]"
+restaurant_pos,Great food and friendly staff,"😊 Things you liked: great food, food, staff, friendly staff
 
-  😊 SERVICE: positive  (about: service)
+Anything else you'd like me to analyze?"
+restaurant_pos,The desserts were delicious,"Here is a summary of your review:
 
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
-
-  😊 SERVICE: positive  (about: service)
-
-Want to ask about a specific aspect like food quality or service?",0.36,0.37
-10,restaurant_pos,Great food and friendly staff,"Here is what I found:
-
-  😊 SERVICE: positive  (about: staff, friendly staff)
-  😊 FOOD: positive  (about: food, great food)
-
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
-
-  😊 SERVICE: positive  (about: staff, friendly staff)
-  😊 FOOD: positive  (about: food, great food)
-
-Want to ask about a specific aspect like food quality or service?",1.16,1.17
-11,restaurant_pos,The desserts were delicious,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""","Here is what I found:
-
-  😊 FOOD: positive  (about: desserts)
-
-Want to ask about a specific aspect like food quality or service?",0.37,0.37
-12,restaurant_pos,The waitress was very nice,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""","Here is what I found:
+  Food: positive(1x)  [desserts]"
+restaurant_pos,The waitress was very nice,"Here is what I found:
 
   😊 SERVICE: positive  (about: waitress)
 
-Want to ask about a specific aspect like food quality or service?",0.37,0.37
-13,restaurant_pos,The ambience was wonderful,"Here is what I found:
+Want to ask about a specific aspect like food quality or service?"
+restaurant_pos,The ambience was wonderful,"😊 Things you liked: ambience
 
-  😊 AMBIENCE: positive  (about: ambience)
+Anything else you'd like me to analyze?"
+restaurant_neg,The pasta was cold,"Here is a summary of your review:
 
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
+  Food: positive(1x)  [pasta]"
+restaurant_neg,The waiter was rude to us,"Here is a summary of your review:
 
-  😊 MISCELLANEOUS: positive  (about: ambience)
+  Service: negative(1x)  [waiter]"
+restaurant_neg,The food was terrible and overpriced,"Here is a summary of your review:
 
-Want to ask about a specific aspect like food quality or service?",0.37,0.37
-14,restaurant_pos,Best pasta I have ever had,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""","Here is what I found:
+  Food: negative(1x)  [food]"
+restaurant_neg,The music was too loud,"I analysed your review — the overall tone is negative.
 
-  😊 FOOD: positive  (about: pasta, best pasta)
+  😞 music: negative
 
-Want to ask about a specific aspect like food quality or service?",0.63,0.63
-15,restaurant_neg,The pasta was cold,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""","Here is what I found:
-
-  😊 FOOD: positive  (about: pasta)
-
-Want to ask about a specific aspect like food quality or service?",0.37,0.37
-16,restaurant_neg,The waiter was rude to us,"Here is what I found:
-
-  😞 SERVICE: negative  (about: waiter)
-
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
-
-  😞 SERVICE: negative  (about: waiter)
-
-Want to ask about a specific aspect like food quality or service?",0.37,0.37
-17,restaurant_neg,The food was terrible and overpriced,"Here is what I found:
-
-  😞 FOOD: negative  (about: food)
-
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
-
-  😞 FOOD: negative  (about: food)
-
-Want to ask about a specific aspect like food quality or service?",0.37,0.37
-18,restaurant_neg,The music was too loud,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""","I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.11,0.11
-19,restaurant_neg,The service was very slow,"Here is what I found:
+Curious about any of these in more detail?"
+restaurant_neg,The service was very slow,"Here is what I found:
 
   😞 SERVICE: negative  (about: service)
 
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
+Want to ask about a specific aspect like food quality or service?"
+restaurant_neg,The bill was outrageous,"I analysed your review — the overall tone is negative.
 
-  😞 SERVICE: negative  (about: service)
+  😞 bill: negative
 
-Want to ask about a specific aspect like food quality or service?",0.37,0.37
-20,restaurant_neg,The bill was outrageous,"Here is what I found:
+Curious about any of these in more detail?"
+restaurant_mixed,The pasta was cold but the waiter was incredibly friendly and fast,"Here is a summary of your review:
 
-  😞 PRICE: negative  (about: bill)
+  Service: negative(1x)  [waiter]
+  Food: negative(1x)  [pasta]
 
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
+That's a detailed review — multiple aspects always give a better picture!"
+restaurant_mixed,"Overpriced for the tiny portions, though the atmosphere was cozy","Overall, your review feels negative to me. Breaking it down:
 
-  😞 PRICE: negative  (about: bill)
+  Miscellaneous (tiny portions, portions): negative 😞
+  Ambience (atmosphere): conflict 🤔
 
-Want to ask about a specific aspect like food quality or service?",0.37,0.37
-21,restaurant_neg,This place is dirty,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""","Here is what I found:
+Would you like a deeper breakdown on any of these?"
+restaurant_mixed,"Great value and quick service, but the music was too loud to talk","Here is a summary of your review:
 
-  😞 MISCELLANEOUS: negative  (about: place)
-  😞 AMBIENCE: negative  (about: this place)
+  Ambience: negative(1x)  [music]
+  Service: negative(2x)  [service, quick service]
+  Price: negative(2x)  [great value, value]
 
-Want to ask about a specific aspect like food quality or service?",0.64,0.65
-22,restaurant_mixed,The pasta was cold but the waiter was incredibly friendly and fast,"Here is what I found:
+That's a detailed review — multiple aspects always give a better picture!"
+restaurant_mixed,The staff was rude and the waiting time was too long,"😞 Things you didn't like: waiting time, time, waiting, staff
 
-  😞 FOOD: negative  (about: pasta)
-  😞 SERVICE: negative  (about: waiter)
+Anything else you'd like me to analyze?"
+restaurant_mixed,Amazing desserts and the ambience was perfect for a date night,"😊 Things you liked: amazing desserts, date, night, ambience, date night, desserts
 
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
+Anything else you'd like me to analyze?"
+restaurant_mixed,The risotto was overcooked and the sommelier was rude,"😞 Things you didn't like: risotto, sommelier
 
-  😞 FOOD: negative  (about: pasta)
-  😞 SERVICE: negative  (about: waiter)
+Anything else you'd like me to analyze?"
+restaurant_mixed,Food was decent but the place was dirty,"Here is a summary of your review:
 
-Want to ask about a specific aspect like food quality or service?",0.62,0.62
-23,restaurant_mixed,"Overpriced for the tiny portions, though the atmosphere was cozy","Here is what I found:
+  Food: negative(1x)  [food]
+  Miscellaneous: negative(1x)  [place]
 
-  😞 MISCELLANEOUS: negative  (about: portions, tiny portions)
-  🤔 AMBIENCE: conflict  (about: atmosphere)
+That's a detailed review — multiple aspects always give a better picture!"
+restaurant_mixed,Excellent taste but small portions,"😊 Things you liked: taste, excellent taste
+😞 Things you didn't like: small portions, portions
 
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
+Anything else you'd like me to analyze?"
+restaurant_query,Is the food here good?,"Across my training set, food gets positive marks 70% of the time (867 out of 1232 mentions) — with 17% negative."
+restaurant_query,What do people say about the service?,"Across my training set, service gets positive marks 54% of the time (324 out of 597 mentions) — with 37% negative."
+restaurant_query,How is the ambience?,"Looking at 431 ambience mentions in my data: 61% positive, 23% negative, 5% neutral."
+restaurant_query,Tell me about the desserts,"Across my training set, food gets positive marks 70% of the time (867 out of 1232 mentions) — with 17% negative."
+restaurant_query,What about the prices?,My knowledge base shows food sentiment is mostly favorable: 70% positive vs 17% negative across 1232 mentions.
+restaurant_query,Are the waiters friendly?,"Based on 3713 reviews in my training data, service is rated positively 54% of the time and negatively 37% of the time."
+help,What can you do?,"I'm a restaurant review expert! My capabilities:
+  • ABSA: Extract aspects and classify sentiment (positive/negative/neutral)
+  • Knowledge Q&A: Stats from 3,693 training annotations
+  • Self-knowledge: I can explain my architecture and performance
 
-  😞 MISCELLANEOUS: negative  (about: portions, tiny portions)
-  🤔 AMBIENCE: conflict  (about: atmosphere)
+Go ahead, try any restaurant question or share a dining review!"
+help,Help,"I'm a restaurant review expert! My capabilities:
+  • ABSA: Extract aspects and classify sentiment (positive/negative/neutral)
+  • Knowledge Q&A: Stats from 3,693 training annotations
+  • Self-knowledge: I can explain my architecture and performance
 
-Want to ask about a specific aspect like food quality or service?",0.86,0.87
-24,restaurant_mixed,"Great value and quick service, but the music was too loud to talk","Here is what I found:
+Go ahead, try any restaurant question or share a dining review!"
+general,What is the weather like today?,"Looking at 1232 food mentions in my data: 70% positive, 17% negative, 7% neutral."
+general,Tell me about the football game,I specialise in restaurant review analysis — I'd be more helpful analysing a dining experience or answering questions about restaurant trends. Would you like to share a review?
+general,How do I fix my car?,"I'm a restaurant review chatbot, so I'm not equipped for that. But I can analyse a dining review or tell you what people tend to say about restaurant food, service, price, or ambience. Want to try?"
+general,What is the meaning of life?,"Sorry, I stick to restaurant reviews! I can break down the sentiment of any dining experience or answer questions about what people say about restaurants. Would you like to analyze a review instead?"
+general,Who won the election?,"I'm a restaurant review chatbot, so I'm not equipped for that. But I can analyse a dining review or tell you what people tend to say about restaurant food, service, price, or ambience. Want to try?"
+general,Tell me a joke,"That's outside my domain — I focus on restaurant reviews and sentiment analysis. Try describing a restaurant experience, or ask me 'Is the food good?' and I'll check my knowledge base."
+general,What time is it?,"I'm a restaurant review chatbot, so I'm not equipped for that. But I can analyse a dining review or tell you what people tend to say about restaurant food, service, price, or ambience. Want to try?"
+general,How old are you?,That's not my area of expertise unfortunately. I analyse restaurant reviews and answer questions about dining trends. Share a review like 'The pizza was great' and I'll break it down for you!
+general,That goal was out of this world,"Overall, your review feels positive to me. Breaking it down:
 
-  😞 SERVICE: negative  (about: service, quick service)
-  😞 AMBIENCE: negative  (about: music)
-  😞 PRICE: negative  (about: great value, value)
+  Miscellaneous (world, goal, that goal, this world): positive 😊
 
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
+Would you like a deeper breakdown on any of these?"
+general,Can you recommend a movie?,"I'm a restaurant review chatbot, so I'm not equipped for that. But I can analyse a dining review or tell you what people tend to say about restaurant food, service, price, or ambience. Want to try?"
+edge,,Please type something!
+edge,Pizza,"Here is a summary of your review:
 
-  😞 SERVICE: negative  (about: service, quick service)
-  😞 AMBIENCE: negative  (about: music)
-  😞 PRICE: negative  (about: great value, value)
-
-Want to ask about a specific aspect like food quality or service?",1.39,1.4
-25,restaurant_mixed,The staff was rude and the waiting time was too long,"Here is what I found:
-
-  😞 MISCELLANEOUS: negative  (about: waiting, time, waiting time)
-  😞 SERVICE: negative  (about: staff)
-
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
-
-  😞 MISCELLANEOUS: negative  (about: time, waiting time)
-  😞 SERVICE: negative  (about: waiting, staff)
-
-Want to ask about a specific aspect like food quality or service?",1.17,1.17
-26,restaurant_mixed,Amazing desserts and the ambience was perfect for a date night,"Here is what I found:
-
-  😊 AMBIENCE: positive  (about: ambience)
-  😊 FOOD: positive  (about: amazing desserts, desserts)
-  😊 MISCELLANEOUS: positive  (about: night, date night, date)
-
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
-
-  😊 MISCELLANEOUS: positive  (about: night, ambience)
-  😊 FOOD: positive  (about: amazing desserts, desserts)
-  😊 AMBIENCE: positive  (about: date night, date)
-
-Want to ask about a specific aspect like food quality or service?",1.68,1.69
-27,restaurant_mixed,The risotto was overcooked and the sommelier was rude,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""","Here is what I found:
-
-  😞 FOOD: negative  (about: risotto)
-  😞 SERVICE: negative  (about: sommelier)
-
-Want to ask about a specific aspect like food quality or service?",0.63,0.63
-28,restaurant_mixed,Food was decent but the place was dirty,"Here is what I found:
-
-  😞 MISCELLANEOUS: negative  (about: place)
-  😞 FOOD: negative  (about: food)
-
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
-
-  😞 MISCELLANEOUS: negative  (about: place)
-  😞 FOOD: negative  (about: food)
-
-Want to ask about a specific aspect like food quality or service?",0.66,0.66
-29,restaurant_mixed,Excellent taste but small portions,"Here is what I found:
-
-  😞 MISCELLANEOUS: negative  (about: small portions, portions)
-  😊 FOOD: positive  (about: excellent taste, taste)
-
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
-
-  😞 MISCELLANEOUS: negative  (about: small portions, portions)
-  😊 FOOD: positive  (about: excellent taste, taste)
-
-Want to ask about a specific aspect like food quality or service?",1.18,1.19
-30,restaurant_query,Is the food here good?,"Here is what I found:
-
-  😊 FOOD: positive  (about: food)
-
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
-
-  😊 FOOD: positive  (about: food)
-
-Want to ask about a specific aspect like food quality or service?",0.38,0.38
-31,restaurant_query,What do people say about the service?,"Here is what I found:
-
-  😞 SERVICE: negative  (about: service)
-  😞 MISCELLANEOUS: negative  (about: people)
-
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
-
-  😞 SERVICE: negative  (about: service)
-  😞 AMBIENCE: negative  (about: people)
-
-Want to ask about a specific aspect like food quality or service?",0.65,0.65
-32,restaurant_query,How is the ambience?,"Here is what I found:
-
-  😊 AMBIENCE: positive  (about: ambience)
-
-Want to ask about a specific aspect like food quality or service?","Here is what I found:
-
-  😊 MISCELLANEOUS: positive  (about: ambience)
-
-Want to ask about a specific aspect like food quality or service?",0.38,0.38
-33,restaurant_query,Tell me about the desserts,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""","I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.11,0.11
-34,restaurant_query,What about the prices?,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""","I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.13,0.13
-35,restaurant_query,Are the waiters friendly?,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""","I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",0.11,0.11
-36,help,What can you do?,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",,,0.0
-37,help,Help,"I can help with restaurant review analysis.
-Try: ""The pasta was cold but the waiter was friendly""",,,0.0
-38,general,What is the weather like today?,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",,,0.0
-39,general,Tell me about the football game,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",,,0.0
-40,general,How do I fix my car?,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",,,0.0
-41,general,What is the meaning of life?,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",,,0.0
-42,general,Tell me a joke,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",,,0.0
-43,general,How old are you?,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",,,0.0
-44,general,That goal was out of this world,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",,,0.0
-45,edge,,Please type something!,,,0.0
-46,edge,Pizza,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",,,0.0
-47,edge,spagetti,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",,,0.0
-48,edge,A,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",,,0.0
-49,edge,12345,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",,,0.0
-50,edge,!!!!,"I am not sure I understood that.
-Try typing a restaurant review like:
-  ""The pasta was cold but the waiter was friendly""",,,0.0
+  Food: positive(1x)  [pizza]"
+edge,spagetti,"That's outside my domain — I focus on restaurant reviews and sentiment analysis. Try describing a restaurant experience, or ask me 'Is the food good?' and I'll check my knowledge base."
+edge,A,"That's outside my domain — I focus on restaurant reviews and sentiment analysis. Try describing a restaurant experience, or ask me 'Is the food good?' and I'll check my knowledge base."
+edge,12345,"That's outside my domain — I focus on restaurant reviews and sentiment analysis. Try describing a restaurant experience, or ask me 'Is the food good?' and I'll check my knowledge base."
+edge,!!!!,That's not my area of expertise unfortunately. I analyse restaurant reviews and answer questions about dining trends. Share a review like 'The pizza was great' and I'll break it down for you!
