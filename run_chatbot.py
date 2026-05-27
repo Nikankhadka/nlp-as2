@@ -1204,11 +1204,21 @@ def evaluate_test_set():
 results = evaluate_test_set()
 
 # ============================================================
+# CLI ARGUMENT PARSING
+# ============================================================
+_chat_only = '--chat-only' in sys.argv
+_test_only = '--test-only' in sys.argv
+_show_test = not _chat_only
+
+# ============================================================
 # 50-QUESTION TEST HARNESS
 # ============================================================
-print('\n' + '='*60)
-print('RUNNING 50-QUESTION TEST HARNESS')
-print('='*60)
+if _show_test:
+    print('\n' + '='*60)
+    print('RUNNING 50-QUESTION TEST HARNESS')
+    print('='*60)
+else:
+    print('\n[Skipping 50-question test — --chat-only mode]')
 
 test_questions = [
     ('greeting', 'Hello!'),
@@ -1271,47 +1281,102 @@ test_questions = [
 ]
 
 test_results = []
-for qtype, question in test_questions:
-    try:
-        response = chat_keyword(question)
-    except Exception as e:
-        response = f'[ERROR: {e}]'
-    test_results.append({
-        'type': qtype,
-        'input': question,
-        'response': response
-    })
-    short = response[:80].replace('\n', ' | ')
-    print(f'[{qtype:20s}] {question[:40]:40s} -> {short}')
+if _show_test:
+    for qtype, question in test_questions:
+        try:
+            response = chat_keyword(question)
+        except Exception as e:
+            response = f'[ERROR: {e}]'
+        test_results.append({
+            'type': qtype,
+            'input': question,
+            'response': response
+        })
+        short = response[:80].replace('\n', ' | ')
+        print(f'[{qtype:20s}] {question[:40]:40s} -> {short}')
 
-results_df = pd.DataFrame(test_results)
-results_path = PROJECT_ROOT / 'outputs' / 'test_results_50.csv'
-results_df.to_csv(results_path, index=False)
-print(f'\nTest results saved to {results_path}')
+    results_df = pd.DataFrame(test_results)
+    results_path = PROJECT_ROOT / 'outputs' / 'test_results_50.csv'
+    results_df.to_csv(results_path, index=False)
+    print(f'\nTest results saved to {results_path}')
+
+    # ============================================================
+    # SUMMARY
+    # ============================================================
+    print('\n' + '='*60)
+    print('SUMMARY')
+    print('='*60)
+    print(f'Test set accuracy:       {results["accuracy"]:.4f}')
+    print(f'Test set macro-F1:       {results["macro_f1"]:.4f}')
+    print(f'Test set weighted-F1:    {results["weighted_f1"]:.4f}')
+    print(f'Domain knowledge:        {DOMAIN_KNOWLEDGE["_overall_total"]} annotations aggregated')
+    print(f'Model save location:     {PROJECT_ROOT / "outputs" / "chatbot_model.pkl"}')
+
+    type_counts = Counter(r['type'] for r in test_results)
+    print(f'\nQuestion breakdown:')
+    for t, c in sorted(type_counts.items()):
+        print(f'  {t}: {c}')
+
+    errors = [r for r in test_results if r['response'].startswith('[ERROR')]
+    if errors:
+        print(f'\nErrors encountered: {len(errors)}')
+        for e in errors:
+            print(f'  [{e["type"]}] {e["input"]}: {e["response"]}')
+    else:
+        print(f'\nNo runtime errors encountered.')
+
 
 # ============================================================
-# SUMMARY
+# INTERACTIVE CHAT MODE
 # ============================================================
-print('\n' + '='*60)
-print('SUMMARY')
-print('='*60)
-print(f'Test set accuracy:       {results["accuracy"]:.4f}')
-print(f'Test set macro-F1:       {results["macro_f1"]:.4f}')
-print(f'Test set weighted-F1:    {results["weighted_f1"]:.4f}')
-print(f'Domain knowledge:        {DOMAIN_KNOWLEDGE["_overall_total"]} annotations aggregated')
-print(f'Model save location:     {PROJECT_ROOT / "outputs" / "chatbot_model.pkl"}')
+def interactive_chat():
+    banner = """
+============================================================
+  RESTAURANTXPERT — Interactive Chat Mode
+============================================================
+  I can help with:
+    \u2022 Review: "The pizza was amazing"
+    \u2022 Domain Q: "Is the food good?"
+    \u2022 Examiner Q: "How accurate are you?"
+    \u2022 Help: "What can you do?"
+    \u2022 Stats: "What do people complain about?"
+    \u2022 Trends: "What are the most mentioned terms?"
+  Type 'exit', 'quit', or 'bye' to end the session.
+============================================================
+"""
+    print(banner)
 
-type_counts = Counter(r['type'] for r in test_results)
-print(f'\nQuestion breakdown:')
-for t, c in sorted(type_counts.items()):
-    print(f'  {t}: {c}')
+    msg_count = 0
+    intent_counts = Counter()
 
-errors = [r for r in test_results if r['response'].startswith('[ERROR')]
-if errors:
-    print(f'\nErrors encountered: {len(errors)}')
-    for e in errors:
-        print(f'  [{e["type"]}] {e["input"]}: {e["response"]}')
-else:
-    print(f'\nNo runtime errors encountered.')
+    while True:
+        try:
+            user_input = input('You: ').strip()
+        except (EOFError, KeyboardInterrupt):
+            print('\n')
+            break
+
+        if not user_input:
+            continue
+
+        if user_input.lower() in ('exit', 'quit', 'bye'):
+            print('Bot: Goodbye! Thanks for chatting.\n')
+            break
+
+        msg_count += 1
+        intent = detect_intent(user_input)
+        intent_counts[intent] += 1
+        response = chat(user_input)
+        print(f'Bot: {response}\n')
+
+    if msg_count > 0:
+        print(f'--- Session Summary: {msg_count} messages ---')
+        for intent, count in intent_counts.most_common():
+            print(f'  {intent}: {count}')
+
+
+# Always enter interactive chat unless --test-only flag
+if not _test_only:
+    interactive_chat()
 
 print('\nDone!')
