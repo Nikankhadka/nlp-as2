@@ -1,14 +1,12 @@
-"""Domain knowledge base — aggregate training annotations into stats,
-and answer customer questions about restaurant categories.
-Why pre-compute? When a user asks "Is the food good?", we look up exact counts
-instead of guessing. Every percentage is traceable to a specific annotation count."""
+"""Domain knowledge base — aggregates training annotations into stats and answers
+restaurant queries from pre-computed category-level statistics."""
 
 import random
 from collections import Counter, defaultdict
 
 from .config import CATEGORIES, LEMMATIZER
 
-# --- Keywords for matching what category a question is about ---
+
 DOMAIN_QUERY_PATTERNS = {
     'food':     ['food', 'dish', 'meal', 'eat', 'pizza', 'pasta', 'sushi', 'taste',
                  'dessert', 'desserts', 'cuisine', 'flavor', 'menu', 'appetizer',
@@ -51,10 +49,6 @@ POPULAR_KEYWORDS = [
 
 
 def classify_domain_query(text, restaurant_terms_lem):
-    """Determine which category a customer question is about (food/service/price/ambience).
-    Uses a two-stage filter: the question must contain both a query phrase AND a
-    restaurant-related term. This prevents "What is the weather?" from being treated
-    as a restaurant question."""
     import re
     text_lower = text.lower()
     tokens = set(re.findall(r'[a-z]+', text_lower))
@@ -80,14 +74,7 @@ def classify_domain_query(text, restaurant_terms_lem):
     return None
 
 
-# ============================================================
-# DOMAIN KNOWLEDGE COMPUTATION (runs once at startup)
-# ============================================================
-
 def compute_domain_knowledge(train_xml_path):
-    """Aggregate all 3,693 training annotations into summary statistics.
-    Counts: how many food mentions? How many positive? What are the top terms?
-    The result is a dictionary used by all answer_*_query() functions."""
     import xml.etree.ElementTree as ET
     root = ET.parse(train_xml_path).getroot()
     cat_polarity = defaultdict(list)
@@ -125,13 +112,7 @@ def compute_domain_knowledge(train_xml_path):
     return knowledge
 
 
-# ============================================================
-# QUERY ANSWERS — each returns a response from the knowledge base
-# ============================================================
-
 def answer_domain_query(category, domain_knowledge):
-    """Answer a question about a specific category (food/service/price/ambience).
-    Picks a random template for variety. Includes top mentioned terms for that category."""
     stats = domain_knowledge.get(category)
     if not stats:
         return ("I can tell you about our food, service, prices, or atmosphere — "
@@ -169,7 +150,6 @@ def answer_domain_query(category, domain_knowledge):
 
 
 def answer_overall_query(domain_knowledge):
-    """Give a bird's-eye view of all guest feedback across all categories."""
     overall_pos = round(100 * sum(
         domain_knowledge[c]['positive'] for c in CATEGORIES
         if c in domain_knowledge) / domain_knowledge['_overall_total'])
@@ -188,7 +168,6 @@ def answer_overall_query(domain_knowledge):
 
 
 def answer_complaints_query(domain_knowledge):
-    """List what guests complain about most, sorted by negativity percentage."""
     categories_by_neg = sorted(
         [(c, domain_knowledge[c]) for c in CATEGORIES if c in domain_knowledge],
         key=lambda x: x[1]['negative_pct'], reverse=True
@@ -201,7 +180,6 @@ def answer_complaints_query(domain_knowledge):
 
 
 def answer_popular_query(domain_knowledge):
-    """Show the most-mentioned items across all guest feedback."""
     top = domain_knowledge['_top_terms'][:8]
     terms = ', '.join(f'{t}' for t, c in top)
     return (f"The most mentioned things by our guests: {terms}. "
@@ -211,9 +189,6 @@ def answer_popular_query(domain_knowledge):
 
 
 def answer_restaurant_overview(domain_knowledge):
-    """Promote the restaurant holistically — mention ALL categories.
-    Used when someone says 'tell me about your restaurant' — we give a well-rounded
-    pitch covering food, service, ambience, and value, like a real staff member would."""
     food_stats = domain_knowledge.get('food', {})
     service_stats = domain_knowledge.get('service', {})
     ambience_stats = domain_knowledge.get('ambience', {})

@@ -1,7 +1,5 @@
-"""Main application — chatbot orchestrator, training, evaluation, and CLI.
-chat() routes user input to the right handler based on intent,
-optionally wrapping responses through the LLM for natural conversation.
-chat_keyword() is the fast, deterministic version used by the test harness."""
+"""Main application — chatbot orchestrator with training, evaluation,
+interactive CLI, and 50-question test harness."""
 
 import sys, pickle, time
 from collections import Counter
@@ -33,8 +31,6 @@ from .llm import call_llm
 
 @dataclass
 class ChatbotState:
-    """All trained/loaded objects needed by the chatbot at runtime.
-    Created during init() and passed to chat() functions."""
     tfidf: object
     clf: object
     single_lex: set
@@ -46,13 +42,7 @@ class ChatbotState:
     no_llm: bool = False
 
 
-# ============================================================
-# INITIALIZATION — train model and compute knowledge base
-# ============================================================
-
 def init(no_llm=False):
-    """Load data, train the sentiment model, compute domain knowledge.
-    Called once at startup. Returns a ChatbotState used by all chat functions."""
     print('Loading XML data...', flush=True)
     train_data = parse_restaurant_xml(TRAIN_XML, 'train')
     print(f'Loaded {len(train_data.aspects)} training aspect annotations', flush=True)
@@ -62,7 +52,6 @@ def init(no_llm=False):
     print(f'Single: {len(single_lex)} | Multi: {len(multi_lex)} | Head: {len(head_lex)}', flush=True)
 
     print('Preparing features...', flush=True)
-
     tfidf, clf = train_model(train_data.aspects)
 
     print('Computing domain knowledge from training annotations...', flush=True)
@@ -96,13 +85,7 @@ def init(no_llm=False):
     )
 
 
-# ============================================================
-# CHAT — keyword-only (no LLM, used by test harness)
-# ============================================================
-
 def chat_keyword(user_input, state):
-    """Fast, deterministic chat — no LLM wrapping.
-    Used by the test harness and by chat() as the Phase 1 step."""
     if not user_input.strip():
         return 'Please type something!'
 
@@ -153,14 +136,7 @@ def chat_keyword(user_input, state):
         return general_responses(intent)
 
 
-# ============================================================
-# CHAT — full version with LLM wrapping
-# ============================================================
-
 def chat(user_input, state):
-    """Main chat entry point. Runs Phase 1 (deterministic) first,
-    then optionally wraps through LLM for natural phrasing.
-    Greetings and farewells skip the LLM (templates are already natural)."""
     if not user_input.strip():
         return 'Please type something!'
 
@@ -276,10 +252,6 @@ def chat(user_input, state):
     return general_responses('general')
 
 
-# ============================================================
-# EVALUATION ON TEST SET
-# ============================================================
-
 def evaluate_test_set(state):
     print('\n' + '=' * 60)
     print('EVALUATING ON TEST SET')
@@ -287,7 +259,7 @@ def evaluate_test_set(state):
     test_data = parse_restaurant_xml(TEST_XML, 'test')
     print(f'Loaded {len(test_data.aspects)} test aspect annotations', flush=True)
 
-    from sklearn.metrics import accuracy_score, f1_score, classification_report, confusion_matrix
+    from sklearn.metrics import accuracy_score, f1_score, classification_report
 
     predictions = []
     for _, row in test_data.aspects.iterrows():
@@ -307,10 +279,6 @@ def evaluate_test_set(state):
 
     return {'accuracy': acc, 'weighted_f1': f1_weighted, 'samples': len(y_true)}
 
-
-# ============================================================
-# 50-QUESTION TEST HARNESS (keyword-only)
-# ============================================================
 
 def run_fifty_question_test(state):
     import pandas as pd
@@ -405,10 +373,6 @@ def run_fifty_question_test(state):
     return test_results
 
 
-# ============================================================
-# INTERACTIVE CHAT MODE
-# ============================================================
-
 def interactive_chat(state):
     banner = f"""
 ============================================================
@@ -462,10 +426,6 @@ def interactive_chat(state):
         for intent, count in intent_counts.most_common():
             print(f'  {intent}: {count}')
 
-
-# ============================================================
-# ENTRY POINT
-# ============================================================
 
 def main():
     _chat_only = '--chat-only' in sys.argv

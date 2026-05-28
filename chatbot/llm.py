@@ -1,9 +1,5 @@
-"""LLM wrapper — uses OpenRouter API to add natural conversation on top of
-the deterministic Phase 1 responses. Shows a "Thinking..." indicator while
-the API call is in progress.
-Why a wrapper not the brain: The LLM formats responses naturally but all facts
-come from deterministic computations. If the API is down, the bot falls back
-to keyword-only mode with zero loss in factual accuracy."""
+"""LLM wrapper — OpenRouter API integration for natural response rephrasing,
+with guard rails and graceful fallback to deterministic responses."""
 
 import sys
 import requests as http_requests
@@ -15,9 +11,6 @@ LLM_OFF_DOMAIN_COUNT = {}
 
 
 def _build_llm_system_prompt(domain_knowledge):
-    """Build the system prompt that tells the LLM what tone to use and what
-    facts it can reference. The LLM never invents data — it only rephrases
-    what we provide."""
     stats_text = []
     for cat in ['food', 'service', 'price', 'ambience']:
         if cat in domain_knowledge:
@@ -68,8 +61,6 @@ YOUR TASK: Take the structured Phase 1 result I provide and rephrase it naturall
 
 
 def call_llm(user_message, context, phase1_result, intent, domain_knowledge, no_llm=False):
-    """Send the Phase 1 result to OpenRouter and return the LLM's natural rephrasing.
-    Falls back to deterministic response if API is unavailable or --no-llm is set."""
     if not LLM_ENABLED or no_llm:
         return _llm_fallback(phase1_result, intent)
 
@@ -122,9 +113,6 @@ def call_llm(user_message, context, phase1_result, intent, domain_knowledge, no_
 
 
 def _apply_guard_rails(llm_response, user_message, intent):
-    """Post-processing safety checks on LLM output.
-    Blocks forbidden topics (medical, legal, financial), tracks off-domain counting,
-    and enforces a 2-strike redirect for persistent off-topic users."""
     response_lower = llm_response.lower()
     text_lower = user_message.lower()
 
@@ -152,8 +140,6 @@ def _apply_guard_rails(llm_response, user_message, intent):
 
 
 def _llm_fallback(phase1_result, intent):
-    """Return the raw Phase 1 response when LLM is unavailable.
-    Also used when --no-llm flag is active."""
     if phase1_result:
         return phase1_result
     from .responses import general_responses

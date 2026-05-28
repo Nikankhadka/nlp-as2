@@ -1,1 +1,1 @@
-"""Chatbot package — refactored from single-file run_chatbot.py into focused modules."""
+"""RestaurantXpert — ABSA chatbot for restaurant reviews."""

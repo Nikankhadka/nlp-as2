@@ -1,7 +1,4 @@
-"""Text cleaning and XML data loading.
-Why: All user input and training text must be normalized before analysis —
-lowercase, expand contractions, strip noise. XML parsing creates structured
-DataFrames from the SemEval-2014 annotation files."""
+"""Text cleaning and XML parsing for SemEval-2014 restaurant data."""
 
 import re
 import xml.etree.ElementTree as ET
@@ -13,25 +10,21 @@ from .config import TOKEN_RE
 
 
 def normalize_text(text):
-    """Collapse multiple spaces into one."""
     return ' '.join((text or '').split())
 
 
 def normalize_term(term):
-    """Lowercase and strip special chars from aspect terms like 'Pizza' -> 'pizza'."""
     term = normalize_text(term).lower().strip()
     term = re.sub(r'[^a-z0-9\s\-\']', ' ', term)
     return re.sub(r'\s+', ' ', term)
 
 
 def clean_text(text):
-    """Full cleaning pipeline: expand 'don't' -> 'do not', lowercase, remove URLs/HTML."""
     text = contractions.fix(str(text)).lower()
     text = re.sub(r'http\S+|www\S+|<.*?>', '', text)
     return re.sub(r'\s+', ' ', text).strip()
 
 
-# --- Parsed dataset container ---
 @dataclass(frozen=True)
 class ParsedDataset:
     name: str
@@ -41,9 +34,6 @@ class ParsedDataset:
 
 
 def parse_restaurant_xml(path, split_name):
-    """Read SemEval-2014 XML into three DataFrames: sentences, aspects, categories.
-    Each review sentence may have multiple aspect terms and category labels.
-    We pull them all out into flat tables for training."""
     root = ET.parse(path).getroot()
     sentences, aspects, categories = [], [], []
 

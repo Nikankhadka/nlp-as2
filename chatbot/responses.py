@@ -1,14 +1,8 @@
-"""Response templates — pre-written responses for greetings, farewells,
-help requests, off-domain redirects, and tech/self-knowledge questions.
-Why pre-written instead of pure LLM: templates are fast, reliable, and
-greetings don't need LLM processing (saves ~1.5s latency)."""
+"""Response templates — pre-written replies for greetings, farewells, help,
+off-domain, and tech/self-knowledge questions."""
 
 import random
 
-
-# ============================================================
-# GREETING, FAREWELL, HELP, OFF-DOMAIN
-# ============================================================
 
 def general_responses(intent):
     if intent == 'greeting':
@@ -57,10 +51,6 @@ def general_responses(intent):
     return ("I'm not sure I understood that. Try typing a restaurant review like:\n"
             '  "The pasta was cold but the waiter was friendly"')
 
-
-# ============================================================
-# TECH / SELF-KNOWLEDGE RESPONSES
-# ============================================================
 
 TECH_QUESTION_RESPONSES = {
     'model': (

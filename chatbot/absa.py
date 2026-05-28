@@ -1,7 +1,7 @@
 """ABSA engine — aspect extraction, category mapping, feature engineering,
-sentiment training, and response formatting.
-This is the "brain" that analyzes restaurant reviews."""
+sentiment classification, and response formatting."""
 
+import random
 import re
 from collections import Counter, defaultdict
 
@@ -13,9 +13,6 @@ from .config import nlp, STOPWORDS, CATEGORIES
 from .data_utils import clean_text, normalize_term
 
 
-# --- Words that describe opinions, not things being reviewed ---
-# We exclude these from aspect extraction because "great", "terrible", etc.
-# tell us how someone feels, not WHAT they're reviewing.
 NON_ASPECTS = set([
     'good', 'great', 'bad', 'excellent', 'amazing', 'terrible',
     'delicious', 'friendly', 'nice', 'love', 'loved', 'horrible',
@@ -30,14 +27,7 @@ EMOJI = {
 }
 
 
-# ============================================================
-# ASPECT EXTRACTION — three methods cascaded together
-# ============================================================
-
 def build_extraction_lexicon(df):
-    """Learn common restaurant terms from training data.
-    Returns three sets: single-word terms, multi-word phrases, and head nouns.
-    Why: spaCy might not know "tiramisu" is a food — the lexicon fills that gap."""
     tc = Counter(df['term_normalized'])
     hc = Counter(df['term_normalized'].apply(lambda t: t.split()[-1]))
     return (
@@ -48,11 +38,6 @@ def build_extraction_lexicon(df):
 
 
 def extract_aspects_spacy(text, single, multi, heads):
-    """Find all aspect terms in a review using spaCy grammar + learned lexicon.
-    Three methods run in sequence:
-    1. spaCy POS tagging finds nouns/proper nouns (pasta, waiter, atmosphere)
-    2. spaCy noun chunks catch multi-word phrases (wait staff, dining room)
-    3. Lexicon lookup catches domain-specific terms spaCy might miss (tiramisu)"""
     cleaned = clean_text(text)
     doc = nlp(cleaned)
     found = set()
@@ -84,16 +69,7 @@ def extract_aspects_spacy(text, single, multi, heads):
     return list(found)
 
 
-# ============================================================
-# CATEGORY MAPPER — keyword-based, 340x faster than BART
-# ============================================================
-
 def predict_category_fast(term):
-    """Map an aspect term to food/service/price/ambience/miscellaneous.
-    Uses keyword matching — fast, transparent, and easy to maintain.
-    Why not BERT? For 5 categories on well-defined restaurant vocabulary,
-    a keyword engine is 340x faster, uses no GPU/disk, and every decision
-    is explainable."""
     tl = term.lower()
     if any(w in tl for w in [
         'food', 'dish', 'pasta', 'pizza', 'taste', 'flavor', 'dessert', 'meal',
@@ -122,15 +98,7 @@ def predict_category_fast(term):
     return 'miscellaneous'
 
 
-# ============================================================
-# FEATURE ENGINEERING — [ASPECT] tagging
-# ============================================================
-
 def make_feature(text, term):
-    """Wrap the aspect term in [ASPECT]...[/ASPECT] tags within the full review.
-    Why: This tells TF-IDF which word is the classification target.
-    Without it, 'cold' is just a word — with it, the model learns that
-    'cold' near a food [ASPECT] is different from 'cold' near a drink [ASPECT]."""
     txt = clean_text(text)
     tn = normalize_term(term)
     idx = txt.find(tn)
@@ -139,16 +107,7 @@ def make_feature(text, term):
     return txt[:idx] + f' [ASPECT] {txt[idx:idx + len(tn)]} [/ASPECT] ' + txt[idx + len(tn):]
 
 
-# ============================================================
-# TRAINING — TF-IDF + SMOTE + Logistic Regression
-# ============================================================
-
 def train_model(train_df):
-    """Train the sentiment classifier on SemEval-2014 data.
-    Pipeline: TF-IDF vectorizes text -> SMOTE balances minority classes ->
-    Logistic Regression classifies sentiment (positive/negative/neutral/conflict).
-    SMOTE is needed because 'conflict' has only ~45 examples out of 3,693 —
-    without it, the model would always predict 'positive' and still get high accuracy."""
     train_df = train_df.copy()
     train_df['clean_text'] = train_df['text'].apply(clean_text)
     train_df['feature'] = train_df.apply(
@@ -169,14 +128,7 @@ def train_model(train_df):
     return tfidf, clf
 
 
-# ============================================================
-# ABSA RESPONSE FORMATTING — 5 varied templates
-# ============================================================
-
 def format_absa_response(results):
-    """Turn extracted aspects and sentiments into a readable response.
-    Picks one of 5 templates randomly for variety — so repeated reviews
-    don't get the exact same phrasing every time."""
     if not results:
         return ('I could not identify specific aspects in your message.\n'
                 'Try mentioning food, service, price, or ambience specifically.')
@@ -258,11 +210,7 @@ def _format_absa_v5(by_cat, results):
     return '\n'.join(lines)
 
 
-# --- Single-aspect analysis (used by chat functions) ---
-import random
-
 def analyse(text, single_lex, multi_lex, head_lex, tfidf, clf):
-    """Full sentiment pipeline: extract aspects -> map categories -> classify sentiment."""
     aspects = extract_aspects_spacy(text, single_lex, multi_lex, head_lex)
     results = []
     seen = set()

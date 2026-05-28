@@ -1,6 +1,4 @@
-"""Conversation memory — tracks last 3 turns + last topic for follow-up questions.
-Why: Lets the bot answer "What about the service?" after someone asked about food,
-without the user needing to repeat context."""
+"""Conversation memory — last 3 turns + topic tracking for follow-up questions."""
 
 from collections import deque
 

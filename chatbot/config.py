@@ -1,10 +1,8 @@
-"""Shared configuration — paths, constants, API settings, spaCy/NLTK loading.
-These are loaded once at startup and used by all other modules."""
+"""Shared config — paths, env vars, API settings, spaCy/NLTK singletons."""
 
 import sys, os, re
 from pathlib import Path
 
-# --- Environment variables (.env file) ---
 _ENV_PATH = Path(__file__).resolve().parent.parent / '.env'
 if _ENV_PATH.exists():
     with open(_ENV_PATH) as _f:
@@ -14,7 +12,6 @@ if _ENV_PATH.exists():
                 _key, _val = _line.split('=', 1)
                 os.environ.setdefault(_key.strip(), _val.strip())
 
-# --- Project paths (works on both Colab and local) ---
 IN_COLAB = 'google.colab' in sys.modules
 if IN_COLAB:
     from google.colab import drive
@@ -26,17 +23,14 @@ else:
 TRAIN_XML = PROJECT_ROOT / 'data' / 'raw' / 'Restaurants_Train_v2.xml'
 TEST_XML  = PROJECT_ROOT / 'data' / 'raw' / 'Restaurants_Test_Gold.xml'
 
-# --- API config ---
 LLM_API_KEY = os.environ.get('OPENROUTER_API_KEY', '')
 LLM_MODEL = 'z-ai/glm-4.5-air'
 LLM_API_URL = 'https://openrouter.ai/api/v1/chat/completions'
 LLM_ENABLED = bool(LLM_API_KEY)
 
-# --- Text processing constants ---
 TOKEN_RE = re.compile(r'[A-Za-z][A-Za-z\-\']+')
 CATEGORIES = ['food', 'service', 'price', 'ambience', 'miscellaneous']
 
-# --- Load spaCy and NLTK (one-time, shared by all modules) ---
 import spacy
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
